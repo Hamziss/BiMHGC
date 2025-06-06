@@ -1,0 +1,17 @@
+Embedding Statistics
+====================
+Timestamp: 2025-05-31T15:05:51.232278
+Model: ParallelHGVAE
+Species: Saccharomyces_cerevisiae
+Embedding Shape: torch.Size([1456, 100])
+Embedding Mean: -1.365404
+Embedding Std: 1.377451
+Embedding Min: -44.306290
+Embedding Max: 12.359564
+Learning Rate: 0.001
+Hidden1: 200
+Hidden2: 100
+Dropout Rate: 0.5
+Epochs: 150
+PPI Networks: 30
+PPI Network Names: collins_gasa4_1, collins_gasa4_2, collins_gasa4_3, collins_gasa4_4, collins_gasa4_5...

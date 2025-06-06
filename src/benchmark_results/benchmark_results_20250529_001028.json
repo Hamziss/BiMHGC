@@ -1,0 +1,188 @@
+[
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-28\\run_23-59-33\\dnn_model_fold_1.pt",
+    "threshold": 0.69,
+    "binary_classification_metrics": {
+      "F1_score": 0.903,
+      "AUPRC": 0.9663538755051541,
+      "AUROC": 0.9894744897959183,
+      "Precision": 0.892,
+      "Recall": 0.914,
+      "Sensitivity": 0.914,
+      "Specificity": 0.978,
+      "ACC": 0.967
+    },
+    "complex_level_metrics": {
+      "precision": 0.8892730486944469,
+      "recall": 0.9249996696429752,
+      "f1": 0.9067795971937169,
+      "accuracy": 0.5219275609893261,
+      "sensitivity": 0.937980241492865,
+      "PPV": 0.29042016757912575
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 289,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-00-52\\dnn_model_fold_2.pt",
+    "threshold": 0.69,
+    "binary_classification_metrics": {
+      "F1_score": 0.92,
+      "AUPRC": 0.9745185693781121,
+      "AUROC": 0.991436224489796,
+      "Precision": 0.901,
+      "Recall": 0.939,
+      "Sensitivity": 0.939,
+      "Specificity": 0.979,
+      "ACC": 0.973
+    },
+    "complex_level_metrics": {
+      "precision": 0.9013602376325723,
+      "recall": 0.9535710880103258,
+      "f1": 0.9267258760226743,
+      "accuracy": 0.5319211591146517,
+      "sensitivity": 0.964873765093304,
+      "PPV": 0.29324055617422046
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 294,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-02-09\\dnn_model_fold_3.pt",
+    "threshold": 0.61,
+    "binary_classification_metrics": {
+      "F1_score": 0.914,
+      "AUPRC": 0.9605843605309123,
+      "AUROC": 0.9826479591836733,
+      "Precision": 0.914,
+      "Recall": 0.914,
+      "Sensitivity": 0.914,
+      "Specificity": 0.983,
+      "ACC": 0.971
+    },
+    "complex_level_metrics": {
+      "precision": 0.9116604552436555,
+      "recall": 0.9321425242348128,
+      "f1": 0.9217827268319252,
+      "accuracy": 0.5297047400908661,
+      "sensitivity": 0.955543358946213,
+      "PPV": 0.2936414230162904
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 283,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-03-26\\dnn_model_fold_4.pt",
+    "threshold": 0.69,
+    "binary_classification_metrics": {
+      "F1_score": 0.911,
+      "AUPRC": 0.954706351325446,
+      "AUROC": 0.989,
+      "Precision": 0.911,
+      "Recall": 0.911,
+      "Sensitivity": 0.911,
+      "Specificity": 0.982,
+      "ACC": 0.97
+    },
+    "complex_level_metrics": {
+      "precision": 0.91103170425918,
+      "recall": 0.9464282334184881,
+      "f1": 0.9283877051902788,
+      "accuracy": 0.5354023508617699,
+      "sensitivity": 0.9670691547749726,
+      "PPV": 0.2964169376025768
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 281,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-04-48\\dnn_model_fold_5.pt",
+    "threshold": 0.6,
+    "binary_classification_metrics": {
+      "F1_score": 0.929,
+      "AUPRC": 0.977508035529743,
+      "AUROC": 0.9942142857142857,
+      "Precision": 0.941,
+      "Recall": 0.918,
+      "Sensitivity": 0.918,
+      "Specificity": 0.989,
+      "ACC": 0.977
+    },
+    "complex_level_metrics": {
+      "precision": 0.931407605990034,
+      "recall": 0.9535710880103258,
+      "f1": 0.942354049180138,
+      "accuracy": 0.5345555445338586,
+      "sensitivity": 0.9621295279912184,
+      "PPV": 0.2969970486078857
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 277,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-06-08\\dnn_ensemble_model.pt",
+    "threshold": 0.69,
+    "binary_classification_metrics": {
+      "F1_score": 0.901,
+      "AUPRC": 0.9602744240668916,
+      "AUROC": 0.9886198979591837,
+      "Precision": 0.889,
+      "Recall": 0.914,
+      "Sensitivity": 0.914,
+      "Specificity": 0.977,
+      "ACC": 0.967
+    },
+    "complex_level_metrics": {
+      "precision": 0.8892730486944469,
+      "recall": 0.9249996696429752,
+      "f1": 0.9067795971937169,
+      "accuracy": 0.5219714259774366,
+      "sensitivity": 0.937980241492865,
+      "PPV": 0.29046898589600106
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 289,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    }
+  }
+]

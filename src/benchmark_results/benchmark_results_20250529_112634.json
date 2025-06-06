@@ -1,0 +1,206 @@
+[
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-28\\run_23-59-33\\dnn_model_fold_1.pt",
+    "threshold": 0.78,
+    "binary_classification_metrics": {
+      "F1_score": 0.899,
+      "AUPRC": 0.964488437569592,
+      "AUROC": 0.9886785714285714,
+      "Precision": 0.941,
+      "Recall": 0.861,
+      "Sensitivity": 0.861,
+      "Specificity": 0.989,
+      "ACC": 0.968
+    },
+    "complex_level_metrics": {
+      "precision": 0.934362573605184,
+      "recall": 0.9035711058674623,
+      "f1": 0.9187039117062011,
+      "accuracy": 0.5207402767132688,
+      "sensitivity": 0.9143798024149287,
+      "PPV": 0.2965621452652774
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 259,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    },
+    "saved_files": {
+      "complexes_file": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\predicted_complexes\\predicted_complexes\\2025-05-29\\predicted_complexes_dnn_model_fold_1_20250529_112632.txt"
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-00-52\\dnn_model_fold_2.pt",
+    "threshold": 0.69,
+    "binary_classification_metrics": {
+      "F1_score": 0.913,
+      "AUPRC": 0.9698652007738238,
+      "AUROC": 0.9905127551020408,
+      "Precision": 0.889,
+      "Recall": 0.939,
+      "Sensitivity": 0.939,
+      "Specificity": 0.976,
+      "ACC": 0.97
+    },
+    "complex_level_metrics": {
+      "precision": 0.885521587366469,
+      "recall": 0.9535710880103258,
+      "f1": 0.9182823719710728,
+      "accuracy": 0.5348430856812355,
+      "sensitivity": 0.9654226125137212,
+      "PPV": 0.2963024923936716
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 297,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    },
+    "saved_files": {
+      "complexes_file": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\predicted_complexes\\predicted_complexes\\2025-05-29\\predicted_complexes_dnn_model_fold_2_20250529_112632.txt"
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-02-09\\dnn_model_fold_3.pt",
+    "threshold": 0.58,
+    "binary_classification_metrics": {
+      "F1_score": 0.917,
+      "AUPRC": 0.9539883499230264,
+      "AUROC": 0.9823596938775511,
+      "Precision": 0.912,
+      "Recall": 0.921,
+      "Sensitivity": 0.921,
+      "Specificity": 0.982,
+      "ACC": 0.972
+    },
+    "complex_level_metrics": {
+      "precision": 0.9084503843484563,
+      "recall": 0.9357139515307317,
+      "f1": 0.9218756408981854,
+      "accuracy": 0.5304832203512378,
+      "sensitivity": 0.9577387486278814,
+      "PPV": 0.29383007367864117
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 284,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    },
+    "saved_files": {
+      "complexes_file": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\predicted_complexes\\predicted_complexes\\2025-05-29\\predicted_complexes_dnn_model_fold_3_20250529_112633.txt"
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-03-26\\dnn_model_fold_4.pt",
+    "threshold": 0.73,
+    "binary_classification_metrics": {
+      "F1_score": 0.896,
+      "AUPRC": 0.9562404321443994,
+      "AUROC": 0.9890994897959183,
+      "Precision": 0.899,
+      "Recall": 0.893,
+      "Sensitivity": 0.893,
+      "Specificity": 0.98,
+      "ACC": 0.965
+    },
+    "complex_level_metrics": {
+      "precision": 0.8865245083246425,
+      "recall": 0.9392853788266505,
+      "f1": 0.9121376259517343,
+      "accuracy": 0.5311835526323319,
+      "sensitivity": 0.9473106476399561,
+      "PPV": 0.297849461831811
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 282,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    },
+    "saved_files": {
+      "complexes_file": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\predicted_complexes\\predicted_complexes\\2025-05-29\\predicted_complexes_dnn_model_fold_4_20250529_112633.txt"
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-04-48\\dnn_model_fold_5.pt",
+    "threshold": 0.61,
+    "binary_classification_metrics": {
+      "F1_score": 0.923,
+      "AUPRC": 0.9745144960311927,
+      "AUROC": 0.9938061224489796,
+      "Precision": 0.931,
+      "Recall": 0.914,
+      "Sensitivity": 0.914,
+      "Specificity": 0.986,
+      "ACC": 0.974
+    },
+    "complex_level_metrics": {
+      "precision": 0.931407605990034,
+      "recall": 0.949999660714407,
+      "f1": 0.9406067705833941,
+      "accuracy": 0.5318360259909202,
+      "sensitivity": 0.95993413830955,
+      "PPV": 0.29465517190576695
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 277,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    },
+    "saved_files": {
+      "complexes_file": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\predicted_complexes\\predicted_complexes\\2025-05-29\\predicted_complexes_dnn_model_fold_5_20250529_112633.txt"
+    }
+  },
+  {
+    "model_path": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\trained_models\\2025-05-29\\run_00-06-08\\dnn_ensemble_model.pt",
+    "threshold": 0.77,
+    "binary_classification_metrics": {
+      "F1_score": 0.893,
+      "AUPRC": 0.9616363321014,
+      "AUROC": 0.9883086734693878,
+      "Precision": 0.924,
+      "Recall": 0.864,
+      "Sensitivity": 0.864,
+      "Specificity": 0.986,
+      "ACC": 0.965
+    },
+    "complex_level_metrics": {
+      "precision": 0.9166663194445761,
+      "recall": 0.9035711058674623,
+      "f1": 0.9100666079283195,
+      "accuracy": 0.5199694329849547,
+      "sensitivity": 0.9143798024149287,
+      "PPV": 0.2956848024471205
+    },
+    "data_info": {
+      "num_test_complexes": 280,
+      "num_negative_complexes": 1400,
+      "num_predicted_complexes": 264,
+      "embedding_shape": [
+        1589,
+        100
+      ]
+    },
+    "saved_files": {
+      "complexes_file": "D:\\code\\ia\\codesandbox\\HGC-final-clean\\src\\predicted_complexes\\predicted_complexes\\2025-05-29\\predicted_complexes_dnn_ensemble_model_20250529_112634.txt"
+    }
+  }
+]
