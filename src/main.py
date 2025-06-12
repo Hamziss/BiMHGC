@@ -401,12 +401,12 @@ if __name__ == "__main__":
     parser.add_argument('--feature_path', type=str, default="protein_feature", help="feature path data")
     parser.add_argument('--PPI_path', type=str, default="PPI", help="Default PPI data path")
     parser.add_argument('--ppi_paths', type=str, nargs='+', default=[
-        "collins_gasa4_1", "collins_gasa4_2", "collins_gasa4_3", "collins_gasa4_4", "collins_gasa4_5",
-        "collins_gasa4_6", "collins_gasa4_7", "collins_gasa4_8", "collins_gasa4_9", "collins_gasa4_10",
-        "collins_gasa4_11", "collins_gasa4_12", "collins_gasa4_13", "collins_gasa4_14", "collins_gasa4_15",
-        "collins_gasa4_16", "collins_gasa4_17", "collins_gasa4_18", "collins_gasa4_19", "collins_gasa4_20",
-        "collins_gasa4_21", "collins_gasa4_22", "collins_gasa4_23", "collins_gasa4_24", "collins_gasa4_25",
-        "collins_gasa4_26", "collins_gasa4_27", "collins_gasa4_28", "collins_gasa4_29", "collins_gasa4_30"
+        "DIPcssa_1", "DIPcssa_2", "DIPcssa_3", "DIPcssa_4", "DIPcssa_5",
+        "DIPcssa_6", "DIPcssa_7", "DIPcssa_8", "DIPcssa_9", "DIPcssa_10",
+        "DIPcssa_11", "DIPcssa_12", "DIPcssa_13", "DIPcssa_14", "DIPcssa_15",
+        "DIPcssa_16", "DIPcssa_17", "DIPcssa_18", "DIPcssa_19", "DIPcssa_20",
+        "DIPcssa_21", "DIPcssa_22", "DIPcssa_23", "DIPcssa_24", "DIPcssa_25",
+        "DIPcssa_26", "DIPcssa_27", "DIPcssa_28", "DIPcssa_29", "DIPcssa_30"
     ], help="Multiple PPI network paths")
     parser.add_argument('--PC_path', type=str, default="Protein_complex", help="Protein complex data path")
     parser.add_argument('--model', type=str, default="ParallelHGVAE", help="Feature coding")
@@ -416,8 +416,8 @@ if __name__ == "__main__":
     parser.add_argument('--hidden1', type=int, default=200, help="Number of units in hidden layer 1.")
     parser.add_argument('--hidden2', type=int, default=100, help="Number of units in hidden layer 2.")
     parser.add_argument('--droprate', type=float, default=0.5, help="Dropout rate (1 - keep probability).")
-    parser.add_argument('--epochs', type=int, default=150, help="Number of epochs to HGVAE.")
-    parser.add_argument('--dataset_name', type=str, default="collins_gasa4", help="Dataset name.")
+    parser.add_argument('--epochs', type=int, default=200, help="Number of epochs to HGVAE.")
+    parser.add_argument('--dataset_name', type=str, default="DIPcssa", help="Dataset name.")
 
     args = parser.parse_args()
     print("Arguments:", args)

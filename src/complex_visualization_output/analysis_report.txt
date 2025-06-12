@@ -1,0 +1,40 @@
+PROTEIN COMPLEX ANALYSIS REPORT
+==================================================
+Generated on: 2025-06-12 12:45:40
+
+BASIC STATISTICS:
+Total number of complexes: 54
+Average complex size: 5.26
+Median complex size: 4.00
+Size range: 3 - 19
+
+Average prediction score: 0.8821
+Median prediction score: 0.8969
+Score range: 0.6911 - 0.9927
+
+SIZE DISTRIBUTION:
+Size 3: 21 complexes (38.9%)
+Size 4: 8 complexes (14.8%)
+Size 5: 6 complexes (11.1%)
+Size 6: 6 complexes (11.1%)
+Size 7: 7 complexes (13.0%)
+Size 10: 2 complexes (3.7%)
+Size 11: 1 complexes (1.9%)
+Size 12: 2 complexes (3.7%)
+Size 19: 1 complexes (1.9%)
+
+TOP 10 COMPLEXES BY PREDICTION SCORE:
+Complex_4: 0.9927 (size: 4)
+Complex_15: 0.9861 (size: 7)
+Complex_20: 0.9855 (size: 7)
+Complex_31: 0.9824 (size: 6)
+Complex_17: 0.9824 (size: 6)
+Complex_13: 0.9823 (size: 3)
+Complex_8: 0.9800 (size: 4)
+Complex_11: 0.9731 (size: 5)
+Complex_27: 0.9724 (size: 6)
+Complex_22: 0.9703 (size: 7)
+
+PROTEIN STATISTICS:
+Total unique proteins: 165
+Most frequent protein: YGR090W (appears in 5 complexes)
