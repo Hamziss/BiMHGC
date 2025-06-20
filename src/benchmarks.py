@@ -182,6 +182,7 @@ def benchmark_pretrained_model(model_path, embeddings, protein_complexes, protei
     np.random.shuffle(all_idx)
     all_complexes = [all_complexes[i] for i in all_idx]
     all_labels = all_labels[all_idx]
+    print("all_labels shape:", all_labels.shape)
     
     print(f"Total evaluation set: {len(all_complexes)} complexes ({len(PC)} positive, {len(PC_negative)} negative)")
     
@@ -192,9 +193,13 @@ def benchmark_pretrained_model(model_path, embeddings, protein_complexes, protei
     # Convert to numpy for evaluation
     y_true = all_labels.detach().cpu().numpy()
     y_pred = predictions.detach().cpu().numpy()
+    print(f"Predictions made for {len(y_pred)} complexes")
+    print(f"Predictions shape: {y_pred.shape}, Labels shape: {y_true.shape}")
+    print("y_true shape:", y_true.shape)
     
     # Calculate metrics
     F1_score, threshold, Precision, Recall, Sensitivity, Specificity, ACC = calculate_fmax(y_pred, y_true)
+    print("F1 Score:", F1_score)
     precision_curve, recall_curve, thresholds = precision_recall_curve(y_true, y_pred)
     auprc = auc(recall_curve, precision_curve)
     auroc = roc_auc_score(y_true, y_pred)
@@ -418,17 +423,17 @@ def main():
                        help='Species to use')
     parser.add_argument('--trained_models_dir', type=str, default="trained_models", 
                        help='Directory containing trained models')
-    parser.add_argument('--embedding_type', type=str, default="protein_feature_Embeddings_collins_1",
+    parser.add_argument('--embedding_type', type=str, default="protein_feature_Embeddings_collins_csa2_1",
                        help='Type of embeddings to use')
     parser.add_argument('--output_dir', type=str, default="benchmark_results",
                        help='Directory to save benchmark results')
     parser.add_argument('--run_new_training', action='store_true',
                        help='Also run new training for comparison')
-    parser.add_argument('--ppi_path', type=str, default="collins_1",
+    parser.add_argument('--ppi_path', type=str, default="collins_csa2_1",
                        help='PPI network directory')
     parser.add_argument('--show_binary_metrics', action='store_true',
                        help='Include binary classification metrics in summary table')
-    parser.add_argument('--dataset_name', type=str, default="collins",
+    parser.add_argument('--dataset_name', type=str, default="collins_csa2",
                        help='Name of the dataset to use')
 
     args = parser.parse_args()

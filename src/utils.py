@@ -132,6 +132,7 @@ def select_subunits(df, protein_list, fold):
                 subunits = random.sample(protein_list, subunit_count)
                 complex_list.append(subunits)
         return complex_list
+ 
 ###根据阳性数据集的分布取阴性数据集
 def negative_on_distribution(PC, protein_list, fold):
         PC_subunit_count = {}

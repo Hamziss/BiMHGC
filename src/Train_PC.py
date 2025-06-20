@@ -11,26 +11,134 @@ import pandas as pd
 from datetime import datetime
 from sklearn.metrics import precision_recall_curve,roc_auc_score
 from sklearn.metrics import auc
+import matplotlib.pyplot as plt
 
-def train_DNN(X, Y_train, Train_PC, Test_PC, epochs, learning_rate, drop_rate, save_model=False, model_save_path=None):
+def train_DNN(X, Y_train, Train_PC, Test_PC, epochs, learning_rate, drop_rate, save_model=False, model_save_path=None, validation_split=0.2, early_stopping_patience=50, weight_decay=1e-5):
     model = PCpredict(int(X.shape[1]), 1).to(device=try_gpu())
-    loss = nn.BCELoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    loss_fn = nn.BCELoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
     Y_train = Y_train.to(device=try_gpu())
-    list_epoch = []
-    train_out = None 
+    
+    # Split training data for validation
+    n_samples = len(Train_PC)
+    n_val = int(n_samples * validation_split)
+    indices = torch.randperm(n_samples)
+    
+    train_indices = indices[n_val:]
+    val_indices = indices[:n_val]
+    
+    # Create validation sets
+    Train_PC_train = [Train_PC[i] for i in train_indices]
+    Train_PC_val = [Train_PC[i] for i in val_indices]
+    Y_train_train = Y_train[train_indices]
+    Y_train_val = Y_train[val_indices]
+    
+    # Training tracking
+    train_losses = []
+    val_losses = []
+    train_accuracies = []
+    val_accuracies = []
+    best_val_loss = float('inf')
+    patience_counter = 0
+    best_model_state = None
+    overfitting_detected = False
+    
+    print(f"Training samples: {len(Train_PC_train)}, Validation samples: {len(Train_PC_val)}")
+    print(f"Using weight decay: {weight_decay}")
+    
     for e in range(epochs):
-        list_epoch.append(e + 1)
+        # Training phase
         model.train()
-        out = model(X, Train_PC)
-        train_out = out # Store training output
-        loss_train = loss(out, Y_train)
+        train_out = model(X, Train_PC_train)
+        loss_train = loss_fn(train_out, Y_train_train)
+        
         optimizer.zero_grad()
         loss_train.backward(retain_graph=True)
         optimizer.step()
-
+        
+        # Calculate training accuracy
+        train_pred_binary = (train_out > 0.5).float()
+        train_acc = (train_pred_binary == Y_train_train).float().mean()
+        
+        # Validation phase
+        model.eval()
+        with torch.no_grad():
+            val_out = model(X, Train_PC_val)
+            loss_val = loss_fn(val_out, Y_train_val)
+            
+            # Calculate validation accuracy
+            val_pred_binary = (val_out > 0.5).float()
+            val_acc = (val_pred_binary == Y_train_val).float().mean()
+        
+        train_losses.append(loss_train.item())
+        val_losses.append(loss_val.item())
+        train_accuracies.append(train_acc.item())
+        val_accuracies.append(val_acc.item())
+        
+        # Enhanced overfitting detection with multiple criteria
+        if e > 50:  # Start checking after some initial training
+            recent_train_loss = np.mean(train_losses[-10:])
+            recent_val_loss = np.mean(val_losses[-10:])
+            recent_train_acc = np.mean(train_accuracies[-10:])
+            recent_val_acc = np.mean(val_accuracies[-10:])
+            
+            # Multiple overfitting indicators
+            loss_gap = recent_val_loss - recent_train_loss
+            acc_gap = recent_train_acc - recent_val_acc
+            
+            if (loss_gap > 0.1 or acc_gap > 0.15) and not overfitting_detected:
+                print(f"Potential overfitting detected at epoch {e}")
+                print(f"  Loss gap: {loss_gap:.4f}, Accuracy gap: {acc_gap:.4f}")
+                overfitting_detected = True
+        
+        # Early stopping check
+        if loss_val.item() < best_val_loss:
+            best_val_loss = loss_val.item()
+            patience_counter = 0
+            best_model_state = model.state_dict().copy()
+        else:
+            patience_counter += 1
+        
         if e % 100 == 0:
-            print(f"Epoch: {e + 1}; train_loss: {loss_train.data:.4f};")
+            print(f"Epoch {e}: Train Loss: {loss_train.item():.4f}, Val Loss: {loss_val.item():.4f}")
+            print(f"         Train Acc: {train_acc.item():.4f}, Val Acc: {val_acc.item():.4f}")
+            print(f"         Best Val Loss: {best_val_loss:.4f}, Patience: {patience_counter}/{early_stopping_patience}")
+        
+        # Early stopping
+        if patience_counter >= early_stopping_patience:
+            print(f"Early stopping at epoch {e}. Best validation loss: {best_val_loss:.4f}")
+            break
+    
+    # Load best model
+    if best_model_state is not None:
+        model.load_state_dict(best_model_state)
+        print(f"Loaded best model with validation loss: {best_val_loss:.4f}")
+    
+    # Final training output for compatibility
+    model.train()
+    train_out = model(X, Train_PC)
+    
+    # Calculate final validation metrics on best model
+    model.eval()
+    with torch.no_grad():
+        final_val_out = model(X, Train_PC_val)
+        final_val_loss = loss_fn(final_val_out, Y_train_val)
+        final_val_pred_binary = (final_val_out > 0.5).float()
+        final_val_acc = (final_val_pred_binary == Y_train_val).float().mean()
+    
+    # Save validation metrics
+    validation_metrics = {
+        'train_losses': train_losses,
+        'val_losses': val_losses,
+        'train_accuracies': train_accuracies,
+        'val_accuracies': val_accuracies,
+        'best_val_loss': best_val_loss,
+        'final_val_loss': final_val_loss.item(),
+        'final_val_accuracy': final_val_acc.item(),
+        'final_epoch': e if 'e' in locals() else epochs,
+        'overfitting_detected': overfitting_detected,
+        'early_stopped': patience_counter >= early_stopping_patience
+    }
     
     # Save model if requested
     if save_model and model_save_path:
@@ -44,14 +152,18 @@ def train_DNN(X, Y_train, Train_PC, Test_PC, epochs, learning_rate, drop_rate, s
             'training_config': {
                 'epochs': epochs,
                 'learning_rate': learning_rate,
-                'drop_rate': drop_rate
-            }
+                'drop_rate': drop_rate,
+                'weight_decay': weight_decay,
+                'validation_split': validation_split,
+                'early_stopping_patience': early_stopping_patience
+            },
+            'validation_metrics': validation_metrics
         }, model_save_path)
         print(f"Model saved to {model_save_path}")
     
     model.eval()
     out_valid = model(X, Test_PC)
-    return out_valid, model, train_out # Return training output as well
+    return out_valid, model, train_out, validation_metrics
 
 def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=None, model_params=None):
     # id转换--AdaPPI的金标准复合物数据集
@@ -102,8 +214,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
         all_idx = list(range(len(Train_PC_PN)))
         np.random.shuffle(all_idx)
         Train_PC_PN = [Train_PC_PN[i] for i in all_idx]
-        Train_labels = Train_labels[all_idx]
-        # 测试集
+        Train_labels = Train_labels[all_idx]        # 测试集
         Test_PC = [PC[i] for i in test_index]
         Test_label1 = torch.ones(len(Test_PC), 1, dtype=torch.float)
         Test_PC_negative = negative_on_distribution(Test_PC, list(PPI_dict.keys()), 5)
@@ -124,9 +235,32 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
             if not os.path.exists(models_dir):
                 os.makedirs(models_dir)
             fold_model_path = os.path.join(models_dir, f"dnn_model_fold_{len(trained_models)+1}.pt")
-        y_pred, model, train_pred = train_DNN(X, Train_labels, Train_PC_PN, Test_PC_PN, 150, 0.001, 0.3, 
+        
+        y_pred, model, train_pred, validation_metrics = train_DNN(X, Train_labels, Train_PC_PN, Test_PC_PN, 500, 0.001, 0.3, 
                                   save_model=True, model_save_path=fold_model_path)
         trained_models.append(model)  # Store the trained model
+
+        # Store validation metrics for analysis
+        print(f"Fold {len(trained_models)} - Final validation loss: {validation_metrics['best_val_loss']:.4f}")
+        print(f"Fold {len(trained_models)} - Training stopped at epoch: {validation_metrics['final_epoch']}")
+        
+        # Enhanced overfitting detection
+        overfitting_analysis = detect_overfitting(validation_metrics)
+        if overfitting_analysis['overfitting_detected']:
+            print(f"Fold {len(trained_models)} - OVERFITTING DETECTED!")
+            print(f"  Loss gap: {overfitting_analysis['loss_gap']:.4f}")
+            print(f"  Accuracy gap: {overfitting_analysis['accuracy_gap']:.4f}")
+            print(f"  Indicators: {overfitting_analysis['indicators']}")
+        
+        # Save validation plots if save_predictions is enabled
+        if save_predictions and dataset_info:
+            current_date = datetime.now().strftime("%Y-%m-%d")
+            current_time = datetime.now().strftime("%H-%M-%S")
+            plots_dir = os.path.join("validation_plots", current_date, f"run_{current_time}")
+            if not os.path.exists(plots_dir):
+                os.makedirs(plots_dir)
+            plot_path = os.path.join(plots_dir, f"validation_curves_fold_{len(trained_models)}.png")
+            plot_validation_curves(validation_metrics, plot_path)
 
         all_Y_lable.append(Test_labels)
         all_Y_pred.append(y_pred)
@@ -185,7 +319,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
         # Create reverse mapping from protein IDs back to names
         id_to_name = {v: k for k, v in protein_dict.items()}
         
-        # Convert predicted complexes from IDs back to protein names
+        # Convert predicted complexes from IDs to protein names
         predict_pc_names = []
         predict_pc_scores = []
         for i, pc in enumerate(predict_pc):
@@ -349,3 +483,109 @@ def predict_with_pretrained_dnn(model, X, test_complexes):
         predictions = model(X, test_complexes)
     
     return predictions
+
+def plot_validation_curves(validation_metrics, save_path=None):
+    """Plot training and validation curves to visualize overfitting."""
+    train_losses = validation_metrics['train_losses']
+    val_losses = validation_metrics['val_losses']
+    train_accuracies = validation_metrics['train_accuracies']
+    val_accuracies = validation_metrics['val_accuracies']
+    
+    epochs = range(1, len(train_losses) + 1)
+    
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))
+    
+    # Plot losses
+    ax1.plot(epochs, train_losses, 'b-', label='Training Loss')
+    ax1.plot(epochs, val_losses, 'r-', label='Validation Loss')
+    ax1.set_title('Training and Validation Loss')
+    ax1.set_xlabel('Epochs')
+    ax1.set_ylabel('Loss')
+    ax1.legend()
+    ax1.grid(True)
+    
+    # Plot accuracies
+    ax2.plot(epochs, train_accuracies, 'b-', label='Training Accuracy')
+    ax2.plot(epochs, val_accuracies, 'r-', label='Validation Accuracy')
+    ax2.set_title('Training and Validation Accuracy')
+    ax2.set_xlabel('Epochs')
+    ax2.set_ylabel('Accuracy')
+    ax2.legend()
+    ax2.grid(True)
+    
+    plt.tight_layout()
+    
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        print(f"Validation curves saved to {save_path}")
+    
+    return fig
+
+def detect_overfitting(validation_metrics, window_size=10, threshold=0.05):
+    """
+    Enhanced overfitting detection based on validation curves.
+    
+    Args:
+        validation_metrics: Dictionary containing training history
+        window_size: Size of moving window for trend analysis
+        threshold: Minimum difference between train/val performance to flag overfitting
+    
+    Returns:
+        dict: Overfitting analysis results
+    """
+    train_losses = validation_metrics['train_losses']
+    val_losses = validation_metrics['val_losses']
+    train_accuracies = validation_metrics['train_accuracies']
+    val_accuracies = validation_metrics['val_accuracies']
+    
+    if len(train_losses) < window_size:
+        return {'overfitting_detected': False, 'reason': 'Insufficient data for analysis'}
+    
+    # Calculate moving averages for the last window_size epochs
+    recent_train_loss = np.mean(train_losses[-window_size:])
+    recent_val_loss = np.mean(val_losses[-window_size:])
+    recent_train_acc = np.mean(train_accuracies[-window_size:])
+    recent_val_acc = np.mean(val_accuracies[-window_size:])
+    
+    # Calculate performance gaps
+    loss_gap = recent_val_loss - recent_train_loss
+    acc_gap = recent_train_acc - recent_val_acc
+    
+    # Detect diverging trends (validation getting worse while training improves)
+    mid_point = len(train_losses) // 2
+    if mid_point > window_size:
+        early_train_loss = np.mean(train_losses[mid_point-window_size:mid_point])
+        early_val_loss = np.mean(val_losses[mid_point-window_size:mid_point])
+        
+        train_improvement = early_train_loss - recent_train_loss
+        val_improvement = early_val_loss - recent_val_loss
+        
+        diverging_trend = train_improvement > 0 and val_improvement < 0
+    else:
+        diverging_trend = False
+    
+    # Overfitting indicators
+    large_loss_gap = loss_gap > threshold
+    large_acc_gap = acc_gap > threshold
+    high_confidence_but_poor_val = recent_train_acc > 0.9 and recent_val_acc < 0.8
+    
+    overfitting_detected = large_loss_gap or large_acc_gap or diverging_trend or high_confidence_but_poor_val
+    
+    analysis = {
+        'overfitting_detected': overfitting_detected,
+        'loss_gap': loss_gap,
+        'accuracy_gap': acc_gap,
+        'recent_train_loss': recent_train_loss,
+        'recent_val_loss': recent_val_loss,
+        'recent_train_acc': recent_train_acc,
+        'recent_val_acc': recent_val_acc,
+        'diverging_trend': diverging_trend,
+        'indicators': {
+            'large_loss_gap': large_loss_gap,
+            'large_acc_gap': large_acc_gap,
+            'high_confidence_poor_val': high_confidence_but_poor_val,
+            'diverging_trend': diverging_trend
+        }
+    }
+    
+    return analysis

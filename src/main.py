@@ -79,6 +79,7 @@ def main(args):
         all_proteins_df = all_proteins_df.sort_values(by=['ID'])
         Protein_dict = all_proteins_df
         
+        print("unified_protein_dict length:", len(unified_protein_dict), unified_protein_dict)
         # Save the unified protein dictionary
         Protein_dict.to_csv(os.path.join(args.data_path, args.species,
                             "Gene_Entry_ID_list/Protein_list.csv"),
@@ -380,8 +381,17 @@ def main(args):
             'cross_validation_folds': 5,
             'negative_sampling_ratio': 5
         }
-        
-        model_score = HGC_DNN(PC, protein_dict, PPI_dict, Embedding, 
+        unified_PPI_dict = {}
+        for pdt in PPI_dicts:
+            for prot, nbrs in pdt.items():
+                unified_PPI_dict.setdefault(prot, []).extend(nbrs)
+        # remove duplicates in neighbor lists
+        for prot, nbrs in unified_PPI_dict.items():
+            unified_PPI_dict[prot] = list(set(nbrs))  
+
+        print("PPI_dicts[0] length:", len(PPI_dicts[0]))
+
+        model_score = HGC_DNN(PC, protein_dict, PPI_dicts[0], Embedding, 
                              save_predictions=True, 
                              dataset_info=dataset_info, 
                              model_params=model_params)
@@ -401,12 +411,12 @@ if __name__ == "__main__":
     parser.add_argument('--feature_path', type=str, default="protein_feature", help="feature path data")
     parser.add_argument('--PPI_path', type=str, default="PPI", help="Default PPI data path")
     parser.add_argument('--ppi_paths', type=str, nargs='+', default=[
-        "DIPcssa_1", "DIPcssa_2", "DIPcssa_3", "DIPcssa_4", "DIPcssa_5",
-        "DIPcssa_6", "DIPcssa_7", "DIPcssa_8", "DIPcssa_9", "DIPcssa_10",
-        "DIPcssa_11", "DIPcssa_12", "DIPcssa_13", "DIPcssa_14", "DIPcssa_15",
-        "DIPcssa_16", "DIPcssa_17", "DIPcssa_18", "DIPcssa_19", "DIPcssa_20",
-        "DIPcssa_21", "DIPcssa_22", "DIPcssa_23", "DIPcssa_24", "DIPcssa_25",
-        "DIPcssa_26", "DIPcssa_27", "DIPcssa_28", "DIPcssa_29", "DIPcssa_30"
+        "collins_csa2_1", "collins_csa2_2", "collins_csa2_3", "collins_csa2_4", "collins_csa2_5",
+        "collins_csa2_6", "collins_csa2_7", "collins_csa2_8", "collins_csa2_9", "collins_csa2_10",
+        "collins_csa2_11", "collins_csa2_12", "collins_csa2_13", "collins_csa2_14", "collins_csa2_15",
+        "collins_csa2_16", "collins_csa2_17", "collins_csa2_18", "collins_csa2_19", "collins_csa2_20",
+        "collins_csa2_21", "collins_csa2_22", "collins_csa2_23", "collins_csa2_24", "collins_csa2_25",
+        "collins_csa2_26", "collins_csa2_27", "collins_csa2_28", "collins_csa2_29", "collins_csa2_30"
     ], help="Multiple PPI network paths")
     parser.add_argument('--PC_path', type=str, default="Protein_complex", help="Protein complex data path")
     parser.add_argument('--model', type=str, default="ParallelHGVAE", help="Feature coding")
@@ -417,7 +427,7 @@ if __name__ == "__main__":
     parser.add_argument('--hidden2', type=int, default=100, help="Number of units in hidden layer 2.")
     parser.add_argument('--droprate', type=float, default=0.5, help="Dropout rate (1 - keep probability).")
     parser.add_argument('--epochs', type=int, default=200, help="Number of epochs to HGVAE.")
-    parser.add_argument('--dataset_name', type=str, default="DIPcssa", help="Dataset name.")
+    parser.add_argument('--dataset_name', type=str, default="collins_csa2", help="Dataset name.")
 
     args = parser.parse_args()
     print("Arguments:", args)
