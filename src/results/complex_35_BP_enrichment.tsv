@@ -1,0 +1,9 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0019344	BP	e	cysteine biosynthetic process	2/3	10/6920	5.634811559246817e-06	10	2	0.02008905499378587	MET28, MET4
+GO:0042762	BP	e	regulation of sulfur metabolic process	2/3	13/6920	9.764180873770952e-06	5	2	0.02008905499378587	CBF1, MET28
+GO:0006534	BP	e	cysteine metabolic process	2/3	15/6920	1.31415536374526e-05	8	2	0.02008905499378587	MET28, MET4
+GO:0009070	BP	e	serine family amino acid biosynthetic process	2/3	23/6920	3.1640444171006936e-05	9	2	0.03627576924205945	MET28, MET4
+GO:0009086	BP	e	methionine biosynthetic process	2/3	32/6920	6.197636977946938e-05	11	2	0.04768182117103798	MET28, MET4
+GO:0009069	BP	e	serine family amino acid metabolic process	2/3	35/6920	7.432509726099207e-05	8	2	0.04768182117103798	MET28, MET4
+GO:0006555	BP	e	methionine metabolic process	2/3	35/6920	7.432509726099207e-05	10	2	0.04768182117103798	MET28, MET4
+GO:0000097	BP	e	sulfur amino acid biosynthetic process	2/3	37/6920	8.317805699265239e-05	8	2	0.04768182117103798	MET28, MET4

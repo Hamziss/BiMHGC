@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0042273	BP	e	ribosomal large subunit biogenesis	6/7	63/6920	3.103249155099855e-12	5	6	1.4231500625287935e-08	MAK21, NOC2, NOC3, NOG1, NOP7, NSA2
+GO:0042254	BP	e	ribosome biogenesis	7/7	201/6920	1.5742616865108356e-11	5	7	3.6097820471693457e-08	MAK21, NOC2, NOC3, NOG1, NOP7, NSA2, RSA3
+GO:0022613	BP	e	ribonucleoprotein complex biogenesis	7/7	242/6920	5.878338007055896e-11	4	7	8.986019366786112e-08	MAK21, NOC2, NOC3, NOG1, NOP7, NSA2, RSA3
+GO:0044085	BP	e	cellular component biogenesis	7/7	270/6920	1.276642312247797e-10	3	7	1.4636704109920994e-07	MAK21, NOC2, NOC3, NOG1, NOP7, NSA2, RSA3
