@@ -173,6 +173,7 @@ def benchmark_pretrained_model(model_path, embeddings, protein_complexes, protei
     positive_labels = torch.ones(len(PC), 1, dtype=torch.float)
     negative_labels = torch.zeros(len(PC_negative), 1, dtype=torch.float)
     all_labels = torch.cat((positive_labels, negative_labels), dim=0)
+   
     
     # Combine positive and negative complexes
     all_complexes = PC + PC_negative

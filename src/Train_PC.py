@@ -166,10 +166,10 @@ def train_DNN(X, Y_train, Train_PC, Test_PC, epochs, learning_rate, drop_rate, s
     return out_valid, model, train_out, validation_metrics
 
 def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=None, model_params=None):
-    # id转换--AdaPPI的金标准复合物数据集
+   
     PCs = []
     for pc in PC:
-        if len(pc) > 2:  # 至少3个元素在里面才要
+        if len(pc) > 2: 
             if set(pc).issubset(set(list(protein_dict.keys()))):
                 pc_map = [protein_dict[sub] for sub in pc]
                 PCs.append(pc_map)
@@ -204,7 +204,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
         np.random.shuffle(test_index)
         train_index = train_index.tolist()
         test_index = test_index.tolist()
-        # 训练集
+       
         Train_PC = [PC[i] for i in train_index]
         Train_label1 = torch.ones(len(Train_PC), 1, dtype=torch.float)
         Train_PC_negative = negative_on_distribution(Train_PC, list(PPI_dict.keys()), 5)
@@ -214,7 +214,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
         all_idx = list(range(len(Train_PC_PN)))
         np.random.shuffle(all_idx)
         Train_PC_PN = [Train_PC_PN[i] for i in all_idx]
-        Train_labels = Train_labels[all_idx]        # 测试集
+        Train_labels = Train_labels[all_idx]    
         Test_PC = [PC[i] for i in test_index]
         Test_label1 = torch.ones(len(Test_PC), 1, dtype=torch.float)
         Test_PC_negative = negative_on_distribution(Test_PC, list(PPI_dict.keys()), 5)
@@ -225,7 +225,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
         np.random.shuffle(all_idx) 
         Test_PC_PN = [Test_PC_PN[i] for i in all_idx]
         Test_labels = Test_labels[all_idx]
-          # 训练模型
+       
         fold_model_path = None
         if save_predictions and dataset_info:
             # Create model save path for this fold

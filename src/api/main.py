@@ -13,7 +13,7 @@ The custom weights file can be in one of these formats:
 """
 
 # main.py
-from fastapi import FastAPI, UploadFile, File, HTTPException, Form
+from fastapi import Body, FastAPI, UploadFile, File, HTTPException, Form
 from typing import Optional
 from sklearn.metrics import precision_recall_curve, roc_auc_score, auc
 import torch
@@ -28,11 +28,13 @@ parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, parent_dir)
 
 from Train_PC import HGC_DNN, load_pretrained_dnn, predict_with_pretrained_dnn  # Import the HGC_DNN function and pretrained model utilities
-from utils import calculate_fmax, try_gpu, load_txt_list, Nested_list_dup, convert_ppi  # Import utility functions
+from utils import calculate_fmax, generate_dynamic_ppi_data, try_gpu, load_txt_list, Nested_list_dup, convert_ppi  # Import utility functions
 from models import PCpredict  # Import the model class for creating models with custom weights
 from evaluation import get_score  # Import evaluation function
 from fastapi.middleware.cors import CORSMiddleware
-from utils import negative_on_distribution
+from utils import negative_on_distribution, print_bicluster, load_ppi_data_imad
+import biclustering  
+
 
 # Import load_ppi_data from local benchmarks module
 import importlib.util
@@ -305,3 +307,108 @@ def calculate_overlap_scores(predicted_complexes, reference_complexes):
         overlap_scores.append(round(max_overlap_score, 4))
     
     return overlap_scores
+
+EPSILON = 0.6
+MIN_ROW = 200
+MIN_COL = 4
+DYNAMIC_SUBNETS_COUNT = 30
+DGE_FOLDER_PATH = "./discretized_gene_expression_data"
+DYNAMIC_PPI_FOLDER_PATH = "./dataset/dynamic_PPINs"
+STATIC_PPI_FOLDER_PATH = "./static_PPINs"
+# Metaheuristics parameters
+METAHEURISTIC_PARAMS = {
+    "GA": {  # Genetic Algorithm
+        "DGE_df": pd.DataFrame,
+        "min_row": MIN_ROW,
+        "min_col": MIN_COL,
+        "population_size": 400,  # 400
+        "result_size": DYNAMIC_SUBNETS_COUNT,
+        "max_generations": 200,  # 100
+        "crossover_rate": 0.7,
+        "mutation_rate": 0.05,
+        "elitism_ratio": 0.1,  # 4
+    },
+    "SA": {  # Simulated Anealing
+        "DGE_df": pd.DataFrame,
+        "min_row": MIN_ROW,
+        "min_col": MIN_COL,
+        "initial_temperature": 0.01,  # 0.01
+        "final_temperature": 0.00001,  # 0.000000001
+        "cooling_rate": 0.9975,  # 0.99
+        "max_iterations": 10000,  # 10000
+        "neighborhood_size": 4,  # 10
+    },
+    "CS": {  # Cuckoo Search
+        "DGE_df": pd.DataFrame,
+        "min_row": MIN_ROW,
+        "min_col": MIN_COL,
+        "population_size": 400,
+        "result_size": DYNAMIC_SUBNETS_COUNT,
+        "max_generations": 100,
+        "discovery_rate": 0.3,
+        "levy_alpha": 2.0,
+        "levy_beta": 1.5,
+    },
+}
+
+@app.post("/get-dynamic-ppi")
+async def get_dynamic_ppi(
+    dataset_name: str = Body(...),
+    metaheuristic_name: str = Body(...)
+):    
+    # get dataset path
+    static_ppi_path = STATIC_PPI_FOLDER_PATH + "/" + dataset_name + ".tsv"
+
+    # get static PPI network
+    static_ppi_network = load_ppi_data_imad(static_ppi_path)
+    print(f"Loaded protein-protein interactions from {dataset_name} dataset")
+    print(f"{dataset_name} static PPI network size:")
+    
+   # load discretized gene expression data
+    DGE_DF = pd.read_csv(
+        DGE_FOLDER_PATH + "/" + dataset_name + "_DGE.tsv", sep="\t", index_col=0
+    )
+    print("Loaded discretized gene expression data")
+    print("Discretized gene expression data size:")
+    print(f"    - {DGE_DF.shape[0]} Proteins")
+    print(f"    - {DGE_DF.shape[1]} Time points")
+
+
+    METAHEURISTIC_PARAMS["SA"]["DGE_df"] = DGE_DF
+    METAHEURISTIC_PARAMS["GA"]["DGE_df"] = DGE_DF
+    METAHEURISTIC_PARAMS["CS"]["DGE_df"] = DGE_DF
+
+
+    biclustering_mean_fitness = {}
+    match metaheuristic_name:
+        case "GA":
+                obj = biclustering.GeneticAlgorithm(METAHEURISTIC_PARAMS["GA"])
+                obj.optim(debug=True)
+                best_biclusters = obj.final_biclusters
+                del obj            
+
+        case "CS":
+                obj = biclustering.CuckooSearch(METAHEURISTIC_PARAMS["CS"])
+                obj.optim(debug=True)
+                best_biclusters = obj.final_biclusters
+                del obj
+
+    print(
+        f"generating dynamic PPI data from biclustering results for {dataset_name} dataset"
+    )
+    dynamic_ppi_networks = generate_dynamic_ppi_data(
+        best_biclusters,
+        DGE_DF,
+        static_ppi_network,
+        (DYNAMIC_PPI_FOLDER_PATH + "/" + dataset_name + "_dynamic"),
+        dataset_name,
+        print_results=True,
+    )
+
+    return dynamic_ppi_networks
+
+
+
+
+
+    
