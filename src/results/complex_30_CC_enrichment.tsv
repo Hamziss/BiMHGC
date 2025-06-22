@@ -1,2 +1,0 @@
-# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
-GO:0000148	CC	e	1,3-beta-D-glucan synthase complex	2/5	4/6920	2.504843897806241e-06	4	2	0.002367077483426898	FKS1, GSC2

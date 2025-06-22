@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0004591	MF	e	oxoglutarate dehydrogenase (succinyl-transferring) activity	2/3	4/6920	7.517429508108881e-07	5	2	0.0019447590137477678	KGD1, LPD1
+GO:0016624	MF	e	oxidoreductase activity, acting on the aldehyde or oxo group of donors, disulfide as acceptor	2/3	6/6920	1.8789950912677927e-06	4	2	0.00243048015055489	KGD1, LPD1

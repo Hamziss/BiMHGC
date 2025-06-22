@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006260	BP	e	DNA replication	4/5	98/6920	1.871400766535732e-07	7	4	0.0006671976870010558	POL1, POL12, PRI1, PRI2
+GO:0141187	BP	e	nucleic acid biosynthetic process	5/5	343/6920	2.9097151635458166e-07	6	5	0.0006671976870010558	POL1, POL12, POP2, PRI1, PRI2
+GO:0006270	BP	e	DNA replication initiation	3/5	35/6920	1.1773676546621023e-06	7	3	0.001384979504026676	POL1, POL12, PRI2
+GO:0006269	BP	e	DNA replication, synthesis of primer	2/5	3/6920	1.2527841560983376e-06	8	2	0.001384979504026676	PRI1, PRI2
+GO:0034654	BP	e	nucleobase-containing compound biosynthetic process	5/5	476/6920	1.5100081814508024e-06	5	5	0.001384979504026676	POL1, POL12, POP2, PRI1, PRI2

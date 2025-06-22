@@ -1,0 +1,7 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016791	MF	e	phosphatase activity	5/6	126/6920	1.0935439948700402e-08	5	5	2.779793053580549e-05	OCA1, OCA2, OCA4, OCA6, SIW14
+GO:0042578	MF	e	phosphoric ester hydrolase activity	5/6	144/6920	2.149047586842326e-08	4	5	2.779793053580549e-05	OCA1, OCA2, OCA4, OCA6, SIW14
+GO:0052840	MF	e	inositol diphosphate tetrakisphosphate diphosphatase activity	2/6	2/6920	6.265732209288822e-07	7	2	0.0005403149741810061	OCA2, SIW14
+GO:0016788	MF	e	hydrolase activity, acting on ester bonds	5/6	342/6920	1.6505112975219768e-06	3	5	0.0010674681816723384	OCA1, OCA2, OCA4, OCA6, SIW14
+GO:0008486	MF	e	diphosphoinositol-polyphosphate diphosphatase activity	2/6	4/6920	3.7565415108831364e-06	6	2	0.0019436345777309348	OCA2, SIW14
+GO:0004725	MF	e	protein tyrosine phosphatase activity	2/6	17/6920	8.472237018612113e-05	7	2	0.036529461945249225	OCA1, OCA6

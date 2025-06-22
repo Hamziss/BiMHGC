@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0017056	MF	e	structural constituent of nuclear pore	5/6	29/6920	5.3805137239034665e-12	2	5	1.391938900373827e-08	NIC96, NSP1, NUP116, NUP159, NUP82
+GO:0005198	MF	e	structural molecule activity	5/6	380/6920	2.7900278239171328e-06	1	5	0.0036089009902368113	NIC96, NSP1, NUP116, NUP159, NUP82

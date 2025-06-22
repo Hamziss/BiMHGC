@@ -423,10 +423,10 @@ if __name__ == "__main__":
 
     # Training parameters
     parser.add_argument('--lr', type=float, default=0.001, help="Initial learning rate.")
-    parser.add_argument('--hidden1', type=int, default=200, help="Number of units in hidden layer 1.")
+    parser.add_argument('--hidden1', type=int, default=100, help="Number of units in hidden layer 1.")
     parser.add_argument('--hidden2', type=int, default=100, help="Number of units in hidden layer 2.")
     parser.add_argument('--droprate', type=float, default=0.5, help="Dropout rate (1 - keep probability).")
-    parser.add_argument('--epochs', type=int, default=100, help="Number of epochs to HGVAE.")
+    parser.add_argument('--epochs', type=int, default=40, help="Number of epochs to HGVAE.")
     parser.add_argument('--dataset_name', type=str, default="collins_csa2", help="Dataset name.")
 
     args = parser.parse_args()

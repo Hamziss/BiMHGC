@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003723	MF	e	RNA binding	9/9	1124/6920	7.660501967455285e-08	3	9	0.00019817718589806824	CFT1, CFT2, FIP1, MPE1, PAP1, PFS2, PTA1, YSH1, YTH1
+GO:0003676	MF	e	nucleic acid binding	9/9	1751/6920	4.187330947290043e-06	2	9	0.005416312580319671	CFT1, CFT2, FIP1, MPE1, PAP1, PFS2, PTA1, YSH1, YTH1

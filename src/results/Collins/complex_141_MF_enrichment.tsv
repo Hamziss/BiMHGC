@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016779	MF	e	nucleotidyltransferase activity	4/5	143/6920	8.607046650597356e-07	4	4	0.002226642968509536	POL1, POL12, PRI1, PRI2
+GO:0140640	MF	e	catalytic activity, acting on a nucleic acid	5/5	545/6920	2.979127155254399e-06	2	5	0.0038535009753215654	POL1, POL12, POP2, PRI1, PRI2
+GO:0003697	MF	e	single-stranded DNA binding	3/5	77/6920	1.3038861466422905e-05	4	3	0.011243844871212019	POL1, PRI1, PRI2
+GO:0016772	MF	e	transferase activity, transferring phosphorus-containing groups	4/5	421/6920	6.4324026518251e-05	3	4	0.04160156415067884	POL1, POL12, PRI1, PRI2

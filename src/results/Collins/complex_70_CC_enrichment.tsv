@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0032300	CC	e	mismatch repair complex	3/3	9/6920	1.521600189593123e-09	2	3	1.437912179165501e-06	MSH2, MSH3, PMS1
+GO:0032302	CC	e	MutSbeta complex	2/3	2/6920	1.2531464418577647e-07	3	2	5.921116937777938e-05	MSH2, MSH3

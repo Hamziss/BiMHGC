@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0042393	MF	e	histone binding	4/13	44/6920	9.751935775929776e-07	3	4	0.0025228257852330334	ARP4, SWR1, VPS72, YAF9
+GO:0031491	MF	e	nucleosome binding	3/13	33/6920	2.7360133682759828e-05	3	3	0.03539033291864984	ARP6, SWR1, VPS71

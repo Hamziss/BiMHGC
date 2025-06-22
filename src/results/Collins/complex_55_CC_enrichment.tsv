@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0071513	CC	e	phosphopantothenoylcysteine decarboxylase complex	3/3	3/6920	1.8114287971346702e-11	3	3	1.7118002132922633e-08	CAB3, SIS2, VHS3
+GO:1990143	CC	e	CoA-synthesizing protein complex	3/3	6/6920	3.6228575942693396e-10	3	3	1.7118002132922627e-07	CAB3, SIS2, VHS3

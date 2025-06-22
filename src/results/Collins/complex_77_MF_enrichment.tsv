@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0030291	MF	e	protein serine/threonine kinase inhibitor activity	2/4	12/6920	1.6509667441406465e-05	6	2	0.02930822327651341	CKB1, CKB2
+GO:0004860	MF	e	protein kinase inhibitor activity	2/4	16/6920	2.9994419789219436e-05	5	2	0.02930822327651341	CKB1, CKB2
+GO:0019210	MF	e	kinase inhibitor activity	2/4	17/6920	3.398711628509479e-05	4	2	0.02930822327651341	CKB1, CKB2

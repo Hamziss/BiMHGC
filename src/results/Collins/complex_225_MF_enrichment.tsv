@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0034511	MF	e	U3 snoRNA binding	5/7	17/6920	9.812757080339919e-13	5	5	2.538560256683937e-09	NAN1, UTP10, UTP15, UTP8, UTP9
+GO:0030515	MF	e	snoRNA binding	5/7	32/6920	3.181812949956351e-11	4	5	4.1156750507685405e-08	NAN1, UTP10, UTP15, UTP8, UTP9

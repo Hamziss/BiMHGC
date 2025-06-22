@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0042147	BP	e	retrograde transport, endosome to Golgi	3/3	46/6920	2.7497489140504283e-07	6	3	0.0012610348519835263	VPS29, VPS35, VPS5
+GO:0016482	BP	e	cytosolic transport	3/3	67/6920	8.677649652673635e-07	5	3	0.0019897850653580644	VPS29, VPS35, VPS5
+GO:0016197	BP	e	endosomal transport	3/3	117/6920	4.712069729986416e-06	5	3	0.007203183927239235	VPS29, VPS35, VPS5
+GO:0045053	BP	e	protein retention in Golgi apparatus	2/3	16/6920	1.5017469299765263e-05	5	2	0.017217528552180873	VPS35, VPS5

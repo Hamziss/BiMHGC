@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000417	CC	e	HIR complex	4/4	4/6920	1.0475227972442794e-14	2	4	9.899090433958439e-12	HIR1, HIR2, HIR3, HPC2
+GO:0005694	CC	e	chromosome	4/4	196/6920	6.245999760476433e-07	5	4	0.00029512348868251145	HIR1, HIR2, HIR3, HPC2

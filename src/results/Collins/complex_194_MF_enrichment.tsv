@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0140691	MF	e	RNA folding chaperone	2/3	4/6920	7.517429508108881e-07	1	2	0.0019447590137477678	IMP3, IMP4

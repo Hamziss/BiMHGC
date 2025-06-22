@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0015631	MF	e	tubulin binding	3/3	53/6920	4.2434531001676775e-07	4	3	0.0010977813170133782	GIM3, PAC10, YKE2
+GO:0008092	MF	e	cytoskeletal protein binding	3/3	122/6920	5.348062380660399e-06	3	3	0.0069177186893842274	GIM3, PAC10, YKE2

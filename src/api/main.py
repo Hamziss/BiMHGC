@@ -251,9 +251,7 @@ async def extract_complexes(
                 complex_genes.append(id_to_gene[protein_id])
             else:
                 complex_genes.append(str(protein_id))  # Keep ID if no gene symbol found
-        predicted_complexes_genes.append(complex_genes)
-
-    # Calculate overlap scores for each predicted complex
+        predicted_complexes_genes.append(complex_genes)    # Calculate overlap scores for each predicted complex
     overlap_scores = calculate_overlap_scores(predicted_complexes, PC)
     
     print("Precision:", Precision, precision)
@@ -261,13 +259,29 @@ async def extract_complexes(
     print("F1 Score:", F1_score, f1)
     print(f"Calculated overlap scores for {len(overlap_scores)} predicted complexes")
 
+    # Save predicted complexes to local file
+    embeddings_filename = embeddings_weights.filename.rsplit('.', 1)[0]  # Remove .pt extension
+    output_filename = f"{embeddings_filename}_predicted_complexes.txt"
+    output_path = os.path.join(os.path.dirname(__file__), "..", "predicted_complexes", output_filename)
+    
+    # Create directory if it doesn't exist
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    
+    try:
+        with open(output_path, 'w') as f:
+            for complex_genes in predicted_complexes_genes:
+                f.write(' '.join(complex_genes) + '\n')
+        print(f"Saved {len(predicted_complexes_genes)} predicted complexes to {output_path}")
+    except Exception as e:
+        print(f"Warning: Could not save predicted complexes to file: {e}")
+
     response_data = {
         "embeddings_file": embeddings_weights.filename,
-        # "results": results,
         "predicted_complexes": predicted_complexes_genes,
         "overlap_scores": overlap_scores,
         "threshold": threshold,
         "model_source": "custom_weights" if dnn_weights is not None else "pretrained",
+        "output_file": output_filename,
         "metrics": {
             "F1_score": F1_score,
             "Precision": precision,

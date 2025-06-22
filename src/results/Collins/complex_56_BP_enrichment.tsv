@@ -1,0 +1,10 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0007021	BP	e	tubulin complex assembly	5/5	10/6920	1.9084423431575935e-15	6	5	8.752116585720725e-12	GIM3, GIM4, GIM5, PAC10, YKE2
+GO:0006457	BP	e	protein folding	5/5	138/6920	2.935447961454356e-09	2	5	6.730982175614837e-06	GIM3, GIM4, GIM5, PAC10, YKE2
+GO:0065003	BP	e	protein-containing complex assembly	5/5	488/6920	1.7110764329893703e-06	5	5	0.002615665507229751	GIM3, GIM4, GIM5, PAC10, YKE2
+GO:0032968	BP	e	positive regulation of transcription elongation by RNA polymerase II	3/5	47/6920	2.9092752848071385e-06	12	3	0.003078419382172568	GIM3, GIM5, YKE2
+GO:0034243	BP	e	regulation of transcription elongation by RNA polymerase II	3/5	51/6920	3.733140817158501e-06	11	3	0.003078419382172568	GIM3, GIM5, YKE2
+GO:0043933	BP	e	protein-containing complex organization	5/5	583/6920	4.178029345814353e-06	4	5	0.003078419382172568	GIM3, GIM4, GIM5, PAC10, YKE2
+GO:0032786	BP	e	positive regulation of DNA-templated transcription, elongation	3/5	55/6920	4.698852087921495e-06	11	3	0.003078419382172568	GIM3, GIM5, YKE2
+GO:0032784	BP	e	regulation of DNA-templated transcription elongation	3/5	59/6920	5.817488133203463e-06	10	3	0.003334875072358885	GIM3, GIM5, YKE2
+GO:0022607	BP	e	cellular component assembly	5/5	737/6920	1.3537233899470189e-05	4	5	0.006897972740330032	GIM3, GIM4, GIM5, PAC10, YKE2

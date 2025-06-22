@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0034337	BP	e	RNA folding	2/3	5/6920	1.2527841560983376e-06	2	2	0.005745268139866976	IMP3, IMP4

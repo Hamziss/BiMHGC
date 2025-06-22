@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:1990071	CC	e	TRAPPII protein complex	2/5	10/6920	1.875375532606958e-05	4	2	0.010827160842709635	BET3, TRS65
+GO:0030008	CC	e	TRAPP complex	2/5	11/6920	2.2914626122136795e-05	3	2	0.010827160842709635	BET3, TRS65

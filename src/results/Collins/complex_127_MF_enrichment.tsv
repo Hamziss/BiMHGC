@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0030515	MF	e	snoRNA binding	3/3	32/6920	8.984686833787961e-08	4	3	0.00023243384839009457	BUD21, NOP56, RRP9
+GO:0034511	MF	e	U3 snoRNA binding	2/3	17/6920	1.7018156177624566e-05	5	2	0.022012985015757377	BUD21, RRP9

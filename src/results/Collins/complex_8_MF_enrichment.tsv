@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0043021	MF	e	ribonucleoprotein complex binding	3/3	140/6920	8.107593010215352e-06	3	3	0.020974343117427116	ERB1, NOP7, YTM1

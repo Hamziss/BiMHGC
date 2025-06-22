@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003735	MF	e	structural constituent of ribosome	7/7	235/6920	4.773958300051803e-11	2	7	1.2350230122234014e-07	IMG1, MHR1, MRP49, MRPL35, MRPL8, MRPL9, YML6
+GO:0005198	MF	e	structural molecule activity	7/7	380/6920	1.4286385630933268e-09	1	7	1.8479439813612184e-06	IMG1, MHR1, MRP49, MRPL35, MRPL8, MRPL9, YML6

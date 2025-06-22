@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003743	MF	e	translation initiation factor activity	9/9	38/6920	1.6341317216599979e-21	2	9	4.227498763934415e-18	FUN12, HCR1, NIP1, PRT1, RLI1, RPG1, TIF34, TIF35, TIF5
+GO:0180051	MF	e	translation factor activity	9/9	61/6920	1.7384479938393463e-19	1	9	2.2486824800311947e-16	FUN12, HCR1, NIP1, PRT1, RLI1, RPG1, TIF34, TIF35, TIF5
+GO:0031369	MF	e	translation initiation factor binding	4/9	25/6920	1.6494650023922656e-08	3	4	1.4223886537295971e-05	FUN12, NIP1, PRT1, TIF5

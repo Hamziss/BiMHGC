@@ -1,0 +1,14 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000112	CC	e	nucleotide-excision repair factor 3 complex	3/3	7/6920	6.340000789971344e-10	4	3	2.99565037326146e-07	SSL1, TFB1, TFB4
+GO:0000439	CC	e	transcription factor TFIIH core complex	3/3	7/6920	6.340000789971344e-10	4	3	2.99565037326146e-07	SSL1, TFB1, TFB4
+GO:0005675	CC	e	transcription factor TFIIH holo complex	3/3	11/6920	2.9888575152722046e-09	9	3	9.414901173107445e-07	SSL1, TFB1, TFB4
+GO:0019908	CC	e	nuclear cyclin-dependent protein kinase holoenzyme complex	3/3	15/6920	8.242001026962748e-09	8	3	1.5577381940959595e-06	SSL1, TFB1, TFB4
+GO:0032806	CC	e	carboxy-terminal domain protein kinase complex	3/3	15/6920	8.242001026962748e-09	7	3	1.5577381940959595e-06	SSL1, TFB1, TFB4
+GO:0000109	CC	e	nucleotide-excision repair complex	3/3	18/6920	1.4781258984618909e-08	3	3	2.328048290077478e-06	SSL1, TFB1, TFB4
+GO:0000307	CC	e	cyclin-dependent protein kinase holoenzyme complex	3/3	40/6920	1.7896916515690535e-07	7	3	2.416083729618222e-05	SSL1, TFB1, TFB4
+GO:1902554	CC	e	serine/threonine protein kinase complex	3/3	56/6920	5.021280625657305e-07	6	3	5.931387739057691e-05	SSL1, TFB1, TFB4
+GO:1902911	CC	e	protein kinase complex	3/3	64/6920	7.54713694038189e-07	5	3	7.924493787400983e-05	SSL1, TFB1, TFB4
+GO:0090575	CC	e	RNA polymerase II transcription regulator complex	3/3	74/6920	1.1742406034545784e-06	3	3	0.00011096573702645767	SSL1, TFB1, TFB4
+GO:0005667	CC	e	transcription regulator complex	3/3	104/6920	3.2986842967341193e-06	2	3	0.00028338696912852206	SSL1, TFB1, TFB4
+GO:0061695	CC	e	transferase complex, transferring phosphorus-containing groups	3/3	135/6920	7.2637389050701695e-06	4	3	0.0005720194387742758	SSL1, TFB1, TFB4
+GO:1990234	CC	e	transferase complex	3/3	410/6920	0.00020655577659422868	3	3	0.015015016067811238	SSL1, TFB1, TFB4

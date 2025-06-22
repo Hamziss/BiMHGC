@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0035649	CC	e	Nrd1 complex	3/5	3/6920	1.8114287971346698e-10	2	3	1.7118002132922627e-07	NAB3, NRD1, SEN1

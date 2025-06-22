@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016272	CC	e	prefoldin complex	6/6	7/6920	4.599764625590729e-20	2	6	4.3467775711832385e-17	GIM3, GIM4, GIM5, PAC10, PFD1, YKE2

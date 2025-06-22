@@ -1,0 +1,8 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006446	BP	e	regulation of translational initiation	5/7	30/6920	2.2527348941519765e-11	10	5	1.0331042224580964e-07	GCD1, GCD2, GCD6, GCD7, GCN3
+GO:0006413	BP	e	translational initiation	5/7	71/6920	2.037839498698847e-09	3	5	4.672765970516456e-06	GCD1, GCD2, GCD6, GCD7, GCN3
+GO:0006417	BP	e	regulation of translation	5/7	178/6920	2.1454290036187638e-07	9	5	0.00032796458035318834	GCD1, GCD2, GCD6, GCD7, GCN3
+GO:0010608	BP	e	post-transcriptional regulation of gene expression	5/7	214/6920	5.39258809919474e-07	8	5	0.0006182602255726769	GCD1, GCD2, GCD6, GCD7, GCN3
+GO:0051246	BP	e	regulation of protein metabolic process	5/7	259/6920	1.3962308712629382e-06	6	5	0.001280622955122367	GCD1, GCD2, GCD6, GCD7, GCN3
+GO:1903832	BP	e	regulation of cellular response to amino acid starvation	2/7	7/6920	1.837691117288464e-05	6	2	0.014046085773141492	GCD1, GCN3
+GO:0006412	BP	e	translation	5/7	556/6920	6.028892529883196e-05	5	5	0.039497858774349054	GCD1, GCD2, GCD6, GCD7, GCN3

@@ -1,3 +1,0 @@
-# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
-GO:0008301	MF	e	DNA binding, bending	3/4	28/6920	2.367261886983198e-07	4	3	0.0006124106501625533	CBF2, CEP3, CTF13
-GO:0019237	MF	e	centromeric DNA binding	2/4	14/6920	2.275454789234835e-05	6	2	0.02943300769875259	CBF2, CEP3
