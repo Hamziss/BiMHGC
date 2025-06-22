@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005741	CC	e	mitochondrial outer membrane	3/3	110/6920	3.9094256299760444e-06	6	3	0.001602473239669997	FZO1, MGM1, UGO1
+GO:0031968	CC	e	organelle outer membrane	3/3	119/6920	4.960036218026183e-06	5	3	0.001602473239669997	FZO1, MGM1, UGO1
+GO:0019867	CC	e	outer membrane	3/3	120/6920	5.087216633873006e-06	3	3	0.001602473239669997	FZO1, MGM1, UGO1

@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0001731	BP	e	formation of translation preinitiation complex	3/3	15/6920	8.242001026962748e-09	7	3	3.7797816709651165e-05	GCD11, SUI2, SUI3
+GO:0006413	BP	e	translational initiation	3/3	71/6920	1.0353221290023202e-06	3	3	0.00237399364180232	GCD11, SUI2, SUI3
+GO:0022618	BP	e	protein-RNA complex assembly	3/3	172/6920	1.5095360738042055e-05	6	3	0.020524214473340577	GCD11, SUI2, SUI3
+GO:0071826	BP	e	protein-RNA complex organization	3/3	182/6920	1.7901626230563086e-05	5	3	0.020524214473340577	GCD11, SUI2, SUI3

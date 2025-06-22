@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0008553	MF	e	P-type proton-exporting transporter activity	2/4	2/6920	2.5062928837155293e-07	8	2	0.0006483779690172075	PMA1, PMA2
+GO:0140358	MF	e	P-type transmembrane transporter activity	2/4	13/6920	1.950766147146669e-05	6	2	0.01682210674222811	PMA1, PMA2
+GO:0015662	MF	e	P-type ion transporter activity	2/4	13/6920	1.950766147146669e-05	7	2	0.01682210674222811	PMA1, PMA2

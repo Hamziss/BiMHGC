@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0008092	MF	e	cytoskeletal protein binding	4/5	122/6920	4.537607424049711e-07	3	4	0.0011738790406016603	BNI1, BUD6, PEA2, SPH1
+GO:0003779	MF	e	actin binding	3/5	59/6920	5.817488133203463e-06	4	3	0.005396903552378517	BNI1, BUD6, SPH1
+GO:0005078	MF	e	MAP-kinase scaffold activity	2/5	6/6920	6.258488850844821e-06	4	2	0.005396903552378517	SPA2, SPH1
+GO:0035591	MF	e	signaling adaptor activity	2/5	9/6920	1.5007345092865297e-05	3	2	0.009706000438810631	SPA2, SPH1

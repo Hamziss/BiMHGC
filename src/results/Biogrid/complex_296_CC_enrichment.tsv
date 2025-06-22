@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0031201	CC	e	SNARE complex	3/3	27/6920	5.2984292316189075e-08	3	3	5.007015623879867e-05	SEC9, SNC1, SSO1
+GO:0098796	CC	e	membrane protein complex	3/3	336/6920	0.00011350123014238301	2	3	0.04813211309731629	SEC9, SNC1, SSO1
+GO:0012505	CC	e	endomembrane system	2/3	50/6920	0.00015280035903909934	2	2	0.04813211309731629	SNC1, SSO1

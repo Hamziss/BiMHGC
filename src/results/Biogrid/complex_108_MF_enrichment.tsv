@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0004298	MF	e	threonine-type endopeptidase activity	3/14	4/6920	2.6342946176679554e-08	5	3	6.814920175907001e-05	PRE2, PRE3, PUP1
+GO:0070003	MF	e	threonine-type peptidase activity	3/14	8/6920	3.6704473708210736e-07	4	3	0.0004747723674157059	PRE2, PRE3, PUP1
+GO:0061133	MF	e	endopeptidase activator activity	2/14	2/6920	3.8012108736352197e-06	5	2	0.003277910843364771	PRE1, PUP3
+GO:0016504	MF	e	peptidase activator activity	2/14	4/6920	2.275454789234835e-05	4	2	0.014716503849376296	PRE1, PUP3
+GO:0061135	MF	e	endopeptidase regulator activity	2/14	7/6920	7.936497601478903e-05	4	2	0.04106343859005184	PRE1, PUP3

@@ -1,0 +1,10 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0070478	BP	e	nuclear-transcribed mRNA catabolic process, 3'-5' exonucleolytic nonsense-mediated decay	3/3	8/6920	1.014400126395415e-09	12	3	4.652038979649373e-06	NAM7, NMD2, UPF3
+GO:0000184	BP	e	nuclear-transcribed mRNA catabolic process, nonsense-mediated decay	3/3	30/6920	7.354400916366758e-08	11	3	0.00016863641301228974	NAM7, NMD2, UPF3
+GO:0000956	BP	e	nuclear-transcribed mRNA catabolic process	3/3	122/6920	5.348062380660399e-06	10	3	0.006923542387681295	NAM7, NMD2, UPF3
+GO:0006402	BP	e	mRNA catabolic process	3/3	127/6920	6.038850752447706e-06	9	3	0.006923542387681295	NAM7, NMD2, UPF3
+GO:0006401	BP	e	RNA catabolic process	3/3	162/6920	1.2598849569831055e-05	7	3	0.01036546280507232	NAM7, NMD2, UPF3
+GO:0141188	BP	e	nucleic acid catabolic process	3/3	166/6920	1.3561442832628417e-05	6	3	0.01036546280507232	NAM7, NMD2, UPF3
+GO:0034655	BP	e	nucleobase-containing compound catabolic process	3/3	215/6920	2.958706282943898e-05	5	3	0.019383752876543883	NAM7, NMD2, UPF3
+GO:0006310	BP	e	DNA recombination	3/3	247/6920	4.4943631600027866e-05	7	3	0.025763936814715973	NAM7, NMD2, UPF3
+GO:0010629	BP	e	negative regulation of gene expression	3/3	287/6920	7.062570680004378e-05	8	3	0.035987721265000085	NAM7, NMD2, UPF3

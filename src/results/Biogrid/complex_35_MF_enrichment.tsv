@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016642	MF	e	oxidoreductase activity, acting on the CH-NH2 group of donors, disulfide as acceptor	2/4	3/6920	7.517429508108881e-07	4	2	0.0009723795068738839	GCV2, LPD1
+GO:0004375	MF	e	glycine dehydrogenase (decarboxylating) activity	2/4	3/6920	7.517429508108881e-07	5	2	0.0009723795068738839	GCV2, LPD1
+GO:0043177	MF	e	organic acid binding	2/4	8/6920	7.009507073190193e-06	3	2	0.0045333986995857575	GCV2, GCV3
+GO:0031406	MF	e	carboxylic acid binding	2/4	8/6920	7.009507073190193e-06	5	2	0.0045333986995857575	GCV2, GCV3
+GO:0016638	MF	e	oxidoreductase activity, acting on the CH-NH2 group of donors	2/4	9/6920	9.010485539495334e-06	3	2	0.004662025218134885	GCV2, LPD1

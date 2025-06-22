@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0017176	MF	e	phosphatidylinositol N-acetylglucosaminyltransferase activity	4/4	5/6920	5.237613986221396e-14	6	4	1.3549707382354751e-10	GPI1, GPI15, GPI2, SPT14
+GO:0008375	MF	e	acetylglucosaminyltransferase activity	4/4	12/6920	5.185237846359181e-12	5	4	6.7071051542656006e-09	GPI1, GPI15, GPI2, SPT14
+GO:0008194	MF	e	UDP-glycosyltransferase activity	4/4	26/6920	1.5660465818801975e-10	4	4	1.3504541691080235e-07	GPI1, GPI15, GPI2, SPT14
+GO:0016758	MF	e	hexosyltransferase activity	4/4	89/6920	2.55765889734436e-08	4	4	1.654165891857465e-05	GPI1, GPI15, GPI2, SPT14
+GO:0016757	MF	e	glycosyltransferase activity	4/4	111/6920	6.273619270309972e-08	3	4	3.2459706104583795e-05	GPI1, GPI15, GPI2, SPT14

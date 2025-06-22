@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0042162	MF	e	telomeric DNA binding	3/3	33/6920	9.883155517166758e-08	5	3	0.00025567723322910405	EST1, EST2, EST3
+GO:0070034	MF	e	telomerase RNA binding	2/3	9/6920	4.508283990308767e-06	4	2	0.00583146534146439	EST1, EST2

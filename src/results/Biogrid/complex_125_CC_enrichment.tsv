@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005697	CC	e	telomerase holoenzyme complex	3/3	10/6920	2.1737145565616033e-09	3	3	2.054160255950715e-06	EST1, EST2, EST3
+GO:0000781	CC	e	chromosome, telomeric region	3/3	111/6920	4.0180207863642675e-06	3	3	0.0018985148215571162	EST1, EST2, EST3
+GO:0098687	CC	e	chromosomal region	3/3	190/6920	2.038183453959988e-05	2	3	0.005288521168955782	EST1, EST2, EST3
+GO:0005694	CC	e	chromosome	3/3	196/6920	2.2385274789230822e-05	5	3	0.005288521168955782	EST1, EST2, EST3

@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005759	CC	e	mitochondrial matrix	3/3	139/6920	7.93385887428217e-06	5	3	0.00749749663619665	ACO1, MDH1, YHB1
+GO:0031974	CC	e	membrane-enclosed lumen	3/3	281/6920	6.627329625772845e-05	2	3	0.015657066240888345	ACO1, MDH1, YHB1
+GO:0070013	CC	e	intracellular organelle lumen	3/3	281/6920	6.627329625772845e-05	4	3	0.015657066240888345	ACO1, MDH1, YHB1
+GO:0043233	CC	e	organelle lumen	3/3	281/6920	6.627329625772845e-05	3	3	0.015657066240888345	ACO1, MDH1, YHB1

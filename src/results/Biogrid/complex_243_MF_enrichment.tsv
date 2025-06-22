@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0022884	MF	e	macromolecule transmembrane transporter activity	3/10	31/6920	9.565132474764044e-06	3	3	0.012372498856107292	TIM17, TIM23, TIM50
+GO:0008320	MF	e	protein transmembrane transporter activity	3/10	31/6920	9.565132474764044e-06	4	3	0.012372498856107292	TIM17, TIM23, TIM50
+GO:0060590	MF	e	ATPase regulator activity	3/10	38/6920	1.785603137842318e-05	2	3	0.015397851058660254	MDJ2, MGE1, PAM18
+GO:0140318	MF	e	protein transporter activity	3/10	42/6920	2.4225241620200013e-05	2	3	0.015667675017864358	TIM17, TIM23, TIM50
+GO:0030943	MF	e	mitochondrion targeting sequence binding	2/10	7/6920	3.932218371807621e-05	4	2	0.02034529785573263	TIM23, TIM50

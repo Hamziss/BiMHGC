@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0022884	MF	e	macromolecule transmembrane transporter activity	4/4	31/6920	3.296030481529124e-10	3	4	4.263415427857922e-07	SEC62, SEC63, SEC66, SEC72
+GO:0008320	MF	e	protein transmembrane transporter activity	4/4	31/6920	3.296030481529124e-10	4	4	4.263415427857922e-07	SEC62, SEC63, SEC66, SEC72
+GO:0140318	MF	e	protein transporter activity	4/4	42/6920	1.1724922669555216e-09	2	4	1.0110791648713114e-06	SEC62, SEC63, SEC66, SEC72
+GO:0022857	MF	e	transmembrane transporter activity	4/4	416/6920	1.2883802587265107e-05	2	4	0.008332599323313709	SEC62, SEC63, SEC66, SEC72
+GO:0005215	MF	e	transporter activity	4/4	464/6920	1.9970737999378656e-05	1	4	0.010332859840878516	SEC62, SEC63, SEC66, SEC72

@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000506	CC	e	glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex	4/4	6/6920	1.5712841958664185e-13	4	4	1.4848635650937654e-10	GPI1, GPI15, GPI2, SPT14
+GO:0140534	CC	e	endoplasmic reticulum protein-containing complex	4/4	79/6920	1.5739040503823273e-08	2	4	7.436696638056496e-06	GPI1, GPI15, GPI2, SPT14
+GO:0098796	CC	e	membrane protein complex	4/4	336/6920	5.46420552803434e-06	2	4	0.0017212247413308172	GPI1, GPI15, GPI2, SPT14
+GO:1990234	CC	e	transferase complex	4/4	410/6920	1.2153852981617907e-05	3	4	0.0028713477669072302	GPI1, GPI15, GPI2, SPT14
+GO:1902494	CC	e	catalytic complex	4/4	851/6920	0.00022730253010368705	2	4	0.042960178189596854	GPI1, GPI15, GPI2, SPT14

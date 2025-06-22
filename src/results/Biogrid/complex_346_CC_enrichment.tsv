@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016035	CC	e	zeta DNA polymerase complex	2/3	4/6920	7.517429508108881e-07	6	2	0.0007103970885162892	REV3, REV7
+GO:0042575	CC	e	DNA polymerase complex	2/3	14/6920	1.1390445419262522e-05	5	2	0.005381985460601541	REV3, REV7

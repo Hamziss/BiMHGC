@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0007265	BP	e	Ras protein signal transduction	2/3	13/6920	9.764180873770952e-06	8	2	0.04477853348711359	CYR1, SRV2

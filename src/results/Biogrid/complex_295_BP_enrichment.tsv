@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006325	BP	e	chromatin organization	5/8	324/6920	1.087732400185673e-05	4	5	0.04988340787251497	GCN5, SPT20, SPT3, SPT5, SPT8

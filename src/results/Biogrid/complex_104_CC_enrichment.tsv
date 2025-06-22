@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000126	CC	e	transcription factor TFIIIB complex	3/3	3/6920	1.8114287971346702e-11	4	3	1.7118002132922633e-08	BDP1, BRF1, SPT15
+GO:0090576	CC	e	RNA polymerase III transcription regulator complex	3/3	9/6920	1.521600189593123e-09	3	3	7.189560895827505e-07	BDP1, BRF1, SPT15
+GO:0005667	CC	e	transcription regulator complex	3/3	104/6920	3.2986842967341193e-06	2	3	0.0010390855534712475	BDP1, BRF1, SPT15

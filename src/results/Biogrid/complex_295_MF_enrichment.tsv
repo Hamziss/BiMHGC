@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003712	MF	e	transcription coregulator activity	4/8	92/6920	1.966737676367629e-06	3	4	0.0050879503687630565	GCN5, SPT20, SPT3, SPT8

@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0008623	CC	e	CHRAC	2/3	5/6920	1.2527841560983376e-06	6	2	0.001183881027512929	ISW2, ITC1
+GO:0031010	CC	e	ISWI-type complex	2/3	9/6920	4.508283990308767e-06	5	2	0.002130164185420892	ISW2, ITC1

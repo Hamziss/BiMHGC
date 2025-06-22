@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005654	CC	e	nucleoplasm	3/4	65/6920	3.1436519493143065e-06	2	3	0.0029707510921020194	MLP1, MLP2, SRP1
+GO:0044615	CC	e	nuclear pore nuclear basket	2/4	10/6920	1.1260934859661011e-05	3	2	0.0053207917211898275	MLP1, MLP2

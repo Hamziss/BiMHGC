@@ -1,0 +1,8 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006751	BP	e	glutathione catabolic process	3/3	6/6920	3.6228575942693396e-10	5	3	1.6614424927319191e-06	DUG1, DUG2, DUG3
+GO:0042219	BP	e	modified amino acid catabolic process	3/3	9/6920	1.521600189593123e-09	4	3	3.489029234737031e-06	DUG1, DUG2, DUG3
+GO:0044273	BP	e	sulfur compound catabolic process	3/3	15/6920	8.242001026962748e-09	4	3	1.2599272236550388e-05	DUG1, DUG2, DUG3
+GO:0006749	BP	e	glutathione metabolic process	3/3	20/6920	2.065028828733523e-08	4	3	2.367555552142984e-05	DUG1, DUG2, DUG3
+GO:0006575	BP	e	modified amino acid metabolic process	3/3	60/6920	6.198709343794839e-07	3	3	0.0005685456210128627	DUG1, DUG2, DUG3
+GO:0043603	BP	e	amide metabolic process	3/3	116/6920	4.591247429217533e-06	3	3	0.003509243451731934	DUG1, DUG2, DUG3
+GO:0006790	BP	e	sulfur compound metabolic process	3/3	131/6920	6.632455969268737e-06	3	3	0.004345206153580919	DUG1, DUG2, DUG3

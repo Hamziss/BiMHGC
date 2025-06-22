@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006338	BP	e	chromatin remodeling	5/5	259/6920	7.075057863591222e-08	5	5	0.00032446215362429343	EAF6, NTO1, SAS3, TAF14, YNG1
+GO:0006325	BP	e	chromatin organization	5/5	324/6920	2.1845182232203205e-07	4	5	0.0005009100285844195	EAF6, NTO1, SAS3, TAF14, YNG1

@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0007021	BP	e	tubulin complex assembly	3/3	10/6920	2.1737145565616033e-09	6	3	9.968654956391512e-06	GIM3, PAC10, YKE2
+GO:0006457	BP	e	protein folding	3/3	138/6920	7.762624510089031e-06	2	3	0.017799698001634147	GIM3, PAC10, YKE2

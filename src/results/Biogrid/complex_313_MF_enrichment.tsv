@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0043139	MF	e	5'-3' DNA helicase activity	2/7	7/6920	1.837691117288464e-05	7	2	0.047541069204252565	RVB1, RVB2

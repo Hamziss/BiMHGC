@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0097525	CC	e	spliceosomal snRNP complex	3/3	62/6920	6.85082371076332e-07	4	3	0.0002733459640592195	AAR2, BUD31, LIN1
+GO:0030532	CC	e	small nuclear ribonucleoprotein complex	3/3	64/6920	7.54713694038189e-07	3	3	0.0002733459640592195	AAR2, BUD31, LIN1
+GO:0120114	CC	e	Sm-like protein family complex	3/3	67/6920	8.677649652673635e-07	2	3	0.0002733459640592195	AAR2, BUD31, LIN1
+GO:0005682	CC	e	U5 snRNP	2/3	17/6920	1.7018156177624566e-05	5	2	0.004020539396963804	AAR2, LIN1

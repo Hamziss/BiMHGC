@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003779	MF	e	actin binding	3/3	59/6920	5.888773876605098e-07	4	3	0.001523425801877739	END3, LSB3, SLA2
+GO:0008092	MF	e	cytoskeletal protein binding	3/3	122/6920	5.348062380660399e-06	3	3	0.0069177186893842274	END3, LSB3, SLA2

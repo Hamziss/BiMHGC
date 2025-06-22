@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0045275	CC	e	respiratory chain complex III	2/4	10/6920	1.1260934859661011e-05	4	2	0.010641583442379655	COR1, QCR2
+GO:0070069	CC	e	cytochrome complex	2/4	27/6920	8.754755740063831e-05	3	2	0.0413662208718016	COR1, QCR2

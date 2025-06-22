@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016251	MF	e	RNA polymerase II general transcription initiation factor activity	4/5	21/6920	3.1285477019851064e-10	2	4	8.093552905035471e-07	TAF1, TAF11, TAF4, TAF5
+GO:0140223	MF	e	general transcription initiation factor activity	4/5	34/6920	2.420566726811341e-09	1	4	3.1310030611304695e-06	TAF1, TAF11, TAF4, TAF5
+GO:0003682	MF	e	chromatin binding	5/5	157/6920	5.645018344340952e-09	2	5	4.867887485603347e-06	TAF1, TAF11, TAF3, TAF4, TAF5
+GO:0005515	MF	e	protein binding	5/5	807/6920	2.1334049965789382e-05	2	5	0.013797796815374283	TAF1, TAF11, TAF3, TAF4, TAF5

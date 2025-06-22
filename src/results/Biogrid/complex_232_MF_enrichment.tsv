@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0033558	MF	e	protein lysine deacetylase activity	3/4	16/6920	4.051881031108707e-08	4	3	5.241108113739113e-05	HDA1, HDA2, HDA3
+GO:0004407	MF	e	histone deacetylase activity	3/4	16/6920	4.051881031108707e-08	5	3	5.241108113739113e-05	HDA1, HDA2, HDA3
+GO:0019213	MF	e	deacetylase activity	3/4	20/6920	8.24488957107615e-08	3	3	7.109843106791333e-05	HDA1, HDA2, HDA3
+GO:0160215	MF	e	deacylase activity	3/4	26/6920	1.8791878092744155e-07	2	3	0.00012153647156482283	HDA1, HDA2, HDA3
+GO:0003682	MF	e	chromatin binding	3/4	157/6920	4.507885580725677e-05	2	3	0.023323799994674654	HDA1, HDA2, HDA3

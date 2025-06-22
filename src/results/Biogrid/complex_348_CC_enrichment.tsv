@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0030134	CC	e	COPII-coated ER to Golgi transport vesicle	2/3	27/6920	4.387947152457517e-05	8	2	0.04146610059072353	ERV41, ERV46

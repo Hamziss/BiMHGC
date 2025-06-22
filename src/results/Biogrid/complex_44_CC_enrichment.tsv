@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005643	CC	e	nuclear pore	3/3	48/6920	3.1330472475241255e-07	3	3	0.00029607296489102985	ASM4, NUP170, NUP53
+GO:0031965	CC	e	nuclear membrane	3/3	94/6920	2.4281116168311975e-06	4	3	0.0011472827389527407	ASM4, NUP170, NUP53
+GO:0044615	CC	e	nuclear pore nuclear basket	2/3	10/6920	5.634811559246817e-06	3	2	0.0017749656411627473	ASM4, NUP53
+GO:0044613	CC	e	nuclear pore central transport channel	2/3	14/6920	1.1390445419262522e-05	3	2	0.0026909927303007705	ASM4, NUP53

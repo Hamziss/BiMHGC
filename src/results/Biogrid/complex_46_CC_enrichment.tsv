@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:1990726	CC	e	Lsm1-7-Pat1 complex	3/4	8/6920	4.0554007077074465e-09	3	3	3.832353668783537e-06	LSM1, LSM5, PAT1
+GO:0120114	CC	e	Sm-like protein family complex	3/4	67/6920	3.4469727028605004e-06	2	3	0.0016286946021015862	LSM1, LSM5, PAT1

@@ -411,23 +411,23 @@ if __name__ == "__main__":
     parser.add_argument('--feature_path', type=str, default="protein_feature", help="feature path data")
     parser.add_argument('--PPI_path', type=str, default="PPI", help="Default PPI data path")
     parser.add_argument('--ppi_paths', type=str, nargs='+', default=[
-        "collins_csa2_1", "collins_csa2_2", "collins_csa2_3", "collins_csa2_4", "collins_csa2_5",
-        "collins_csa2_6", "collins_csa2_7", "collins_csa2_8", "collins_csa2_9", "collins_csa2_10",
-        "collins_csa2_11", "collins_csa2_12", "collins_csa2_13", "collins_csa2_14", "collins_csa2_15",
-        "collins_csa2_16", "collins_csa2_17", "collins_csa2_18", "collins_csa2_19", "collins_csa2_20",
-        "collins_csa2_21", "collins_csa2_22", "collins_csa2_23", "collins_csa2_24", "collins_csa2_25",
-        "collins_csa2_26", "collins_csa2_27", "collins_csa2_28", "collins_csa2_29", "collins_csa2_30"
+        "krogan14cssa_1", "krogan14cssa_2", "krogan14cssa_3", "krogan14cssa_4", "krogan14cssa_5",
+        "krogan14cssa_6", "krogan14cssa_7", "krogan14cssa_8", "krogan14cssa_9", "krogan14cssa_10",
+        "krogan14cssa_11", "krogan14cssa_12", "krogan14cssa_13", "krogan14cssa_14", "krogan14cssa_15",
+        "krogan14cssa_16", "krogan14cssa_17", "krogan14cssa_18", "krogan14cssa_19", "krogan14cssa_20",
+        "krogan14cssa_21", "krogan14cssa_22", "krogan14cssa_23", "krogan14cssa_24", "krogan14cssa_25",
+        "krogan14cssa_26", "krogan14cssa_27", "krogan14cssa_28", "krogan14cssa_29", "krogan14cssa_30"
     ], help="Multiple PPI network paths")
     parser.add_argument('--PC_path', type=str, default="Protein_complex", help="Protein complex data path")
     parser.add_argument('--model', type=str, default="ParallelHGVAE", help="Feature coding")
 
     # Training parameters
     parser.add_argument('--lr', type=float, default=0.001, help="Initial learning rate.")
-    parser.add_argument('--hidden1', type=int, default=100, help="Number of units in hidden layer 1.")
+    parser.add_argument('--hidden1', type=int, default=200, help="Number of units in hidden layer 1.")
     parser.add_argument('--hidden2', type=int, default=100, help="Number of units in hidden layer 2.")
     parser.add_argument('--droprate', type=float, default=0.5, help="Dropout rate (1 - keep probability).")
-    parser.add_argument('--epochs', type=int, default=40, help="Number of epochs to HGVAE.")
-    parser.add_argument('--dataset_name', type=str, default="collins_csa2", help="Dataset name.")
+    parser.add_argument('--epochs', type=int, default=160, help="Number of epochs to HGVAE.")
+    parser.add_argument('--dataset_name', type=str, default="krogan14cssa", help="Dataset name.")
 
     args = parser.parse_args()
     print("Arguments:", args)

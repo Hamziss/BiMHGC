@@ -1,0 +1,7 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0019914	MF	e	cyclin-dependent protein kinase regulator activity	8/9	32/6920	7.265662809621457e-19	5	8	9.398134844245356e-16	CLB1, CLB2, CLB3, CLB4, CLB5, CLN1, CLN2, CLN3
+GO:0016538	MF	e	cyclin-dependent protein serine/threonine kinase regulator activity	8/9	32/6920	7.265662809621457e-19	6	8	9.398134844245356e-16	CLB1, CLB2, CLB3, CLB4, CLB5, CLN1, CLN2, CLN3
+GO:0019887	MF	e	protein kinase regulator activity	8/9	64/6920	3.0448146287799286e-16	4	8	2.6256451482178917e-13	CLB1, CLB2, CLB3, CLB4, CLB5, CLN1, CLN2, CLN3
+GO:0019207	MF	e	kinase regulator activity	8/9	67/6920	4.485070679739893e-16	3	8	2.900719462121776e-13	CLB1, CLB2, CLB3, CLB4, CLB5, CLN1, CLN2, CLN3
+GO:0030234	MF	e	enzyme regulator activity	8/9	328/6920	2.0255002045175257e-10	2	8	1.0479938058173678e-07	CLB1, CLB2, CLB3, CLB4, CLB5, CLN1, CLN2, CLN3
+GO:0098772	MF	e	molecular function regulator activity	8/9	396/6920	9.195606344754454e-10	1	8	3.9648389356466287e-07	CLB1, CLB2, CLB3, CLB4, CLB5, CLN1, CLN2, CLN3

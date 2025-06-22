@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003682	MF	e	chromatin binding	5/9	157/6920	6.60601863789351e-07	2	5	0.0017089770216230512	IRR1, MCD1, REC8, SCC2, SRC1

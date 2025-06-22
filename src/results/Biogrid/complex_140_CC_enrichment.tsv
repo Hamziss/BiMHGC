@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005847	CC	e	mRNA cleavage and polyadenylation specificity factor complex	4/4	16/6920	1.9064914909845883e-11	4	4	1.801634458980436e-08	CFT1, CFT2, PTA1, YSH1
+GO:0005849	CC	e	mRNA cleavage factor complex	4/4	20/6920	5.0752479526485314e-11	3	4	2.398054657626431e-08	CFT1, CFT2, PTA1, YSH1
+GO:0140513	CC	e	nuclear protein-containing complex	4/4	707/6920	0.0001081279906560431	2	4	0.03406031705665358	CFT1, CFT2, PTA1, YSH1

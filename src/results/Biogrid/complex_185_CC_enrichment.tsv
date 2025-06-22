@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005850	CC	e	eukaryotic translation initiation factor 2 complex	3/3	3/6920	1.8114287971346702e-11	2	3	1.7118002132922633e-08	GCD11, SUI2, SUI3
+GO:0043614	CC	e	multi-eIF complex	3/3	10/6920	2.1737145565616033e-09	3	3	1.0270801279753575e-06	GCD11, SUI2, SUI3
+GO:0070993	CC	e	cytosolic translation preinitiation complex	3/3	18/6920	1.4781258984618909e-08	3	3	4.656096580154956e-06	GCD11, SUI2, SUI3
+GO:0016282	CC	e	eukaryotic 43S preinitiation complex	2/3	15/6920	1.31415536374526e-05	4	2	0.0028383016976556348	GCD11, SUI3
+GO:0033290	CC	e	eukaryotic 48S preinitiation complex	2/3	16/6920	1.5017469299765263e-05	4	2	0.0028383016976556348	GCD11, SUI2

@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005730	CC	e	nucleolus	4/4	365/6920	7.620117801289757e-06	5	4	0.0072010113222188196	FPR4, NOP13, PUF6, RIX7
+GO:0030684	CC	e	preribosome	3/4	163/6920	5.044963143617572e-05	3	3	0.023837450853593026	NOP13, PUF6, RIX7

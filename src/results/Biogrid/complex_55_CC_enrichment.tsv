@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:1990526	CC	e	Ste12p-Dig1p-Dig2p complex	3/3	3/6920	1.8114287971346702e-11	2	3	1.7118002132922633e-08	DIG1, DIG2, STE12
+GO:1990527	CC	e	Tec1p-Ste12p-Dig1p complex	2/3	3/6920	3.7590770398138673e-07	2	2	0.00017761639013120522	DIG1, STE12

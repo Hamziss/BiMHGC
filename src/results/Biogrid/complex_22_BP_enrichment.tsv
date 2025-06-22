@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0120029	BP	e	proton export across plasma membrane	2/4	3/6920	7.517429508108881e-07	8	2	0.0017237465862093664	PMA1, PMA2
+GO:0032781	BP	e	positive regulation of ATP-dependent activity	2/4	3/6920	7.517429508108881e-07	4	2	0.0017237465862093664	PMP1, PMP2
+GO:0043462	BP	e	regulation of ATP-dependent activity	2/4	7/6920	5.258144155069571e-06	3	2	0.008037949698383017	PMP1, PMP2
+GO:0140115	BP	e	export across plasma membrane	2/4	15/6920	2.6250182166855894e-05	5	2	0.030095833854300282	PMA1, PMA2

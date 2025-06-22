@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0030896	CC	e	checkpoint clamp complex	3/3	3/6920	1.8114287971346702e-11	3	3	1.7118002132922633e-08	DDC1, MEC3, RAD17
