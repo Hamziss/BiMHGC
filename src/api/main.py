@@ -228,7 +228,8 @@ async def extract_complexes(
         # auprc = auc(recall_curve, precision_curve)
         # auroc = roc_auc_score(y_true, y_pred)
         
-
+        all_predicted_complexes = [all_complexes[i] for i in range(len(y_pred))] 
+        print(f"Total predicted complexes: {len(all_predicted_complexes)}")
         predicted_complexes = [all_complexes[i] for i in range(len(y_pred)) if y_pred[i] >= threshold]
         print(f"Predicted complexes: {len(predicted_complexes)} complexes above threshold {threshold}")
           # Calculate evaluation scores
@@ -242,6 +243,15 @@ async def extract_complexes(
 
     # create reverse protein dictionary for complex conversion
     id_to_gene = {v: k for k, v in protein_dict.items()}
+    all_predicted_complexes_genes = []
+    for complex_ids in all_predicted_complexes:
+        complex_genes = []
+        for protein_id in complex_ids:
+            if protein_id in id_to_gene:
+                complex_genes.append(id_to_gene[protein_id])
+            else:
+                complex_genes.append(str(protein_id))
+        all_predicted_complexes_genes.append(complex_genes)
 
     predicted_complexes_genes = []
     for complex_ids in predicted_complexes:
@@ -262,16 +272,23 @@ async def extract_complexes(
     # Save predicted complexes to local file
     embeddings_filename = embeddings_weights.filename.rsplit('.', 1)[0]  # Remove .pt extension
     output_filename = f"{embeddings_filename}_predicted_complexes.txt"
+    output_all_filename = f"{embeddings_filename}_all_predicted_complexes.txt"
     output_path = os.path.join(os.path.dirname(__file__), "..", "predicted_complexes", output_filename)
-    
+    output_all_path = os.path.join(os.path.dirname(__file__), "..", "predicted_complexes", output_all_filename)
+
     # Create directory if it doesn't exist
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    os.makedirs(os.path.dirname(output_all_path), exist_ok=True)
     
     try:
         with open(output_path, 'w') as f:
             for complex_genes in predicted_complexes_genes:
                 f.write(' '.join(complex_genes) + '\n')
         print(f"Saved {len(predicted_complexes_genes)} predicted complexes to {output_path}")
+        with open(output_all_path, 'w') as f:
+            for complex_genes in all_predicted_complexes_genes:
+                f.write(' '.join(complex_genes) + '\n')
+        print(f"Saved all predicted complexes to {output_all_path}")
     except Exception as e:
         print(f"Warning: Could not save predicted complexes to file: {e}")
 

@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006325	BP	e	chromatin organization	6/8	324/6920	2.603691125800941e-07	4	6	0.0011940527502923115	ADA2, ESC8, HHF2, RVB1, RVB2, SNF12
+GO:0006338	BP	e	chromatin remodeling	5/8	259/6920	3.609491719800359e-06	5	5	0.008276564513502224	ADA2, ESC8, RVB1, RVB2, SNF12

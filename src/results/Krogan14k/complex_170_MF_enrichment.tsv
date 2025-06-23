@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0061630	MF	e	ubiquitin protein ligase activity	3/4	78/6920	5.467423905650909e-06	7	3	0.00984372325778591	CDC34, CDC53, SKP1
+GO:0061659	MF	e	ubiquitin-like protein ligase activity	3/4	87/6920	7.6101455413884105e-06	6	3	0.00984372325778591	CDC34, CDC53, SKP1
+GO:0004842	MF	e	ubiquitin-protein transferase activity	3/4	115/6920	1.76727766486084e-05	6	3	0.015239824396649978	CDC34, CDC53, SKP1
+GO:0019787	MF	e	ubiquitin-like protein transferase activity	3/4	134/6920	2.800576055764287e-05	5	3	0.015487928689389944	CDC34, CDC53, SKP1
+GO:0016755	MF	e	aminoacyltransferase activity	3/4	137/6920	2.9934148993795795e-05	4	3	0.015487928689389944	CDC34, CDC53, SKP1

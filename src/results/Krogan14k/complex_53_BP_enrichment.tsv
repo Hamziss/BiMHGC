@@ -1,0 +1,13 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0007189	BP	e	adenylate cyclase-activating G protein-coupled receptor signaling pathway	3/3	9/6920	1.521600189593123e-09	7	3	6.853450282519165e-06	BCY1, TPK1, TPK2
+GO:0010603	BP	e	regulation of cytoplasmic mRNA processing body assembly	3/3	11/6920	2.9888575152722046e-09	7	3	6.853450282519165e-06	BCY1, TPK1, TPK2
+GO:0007188	BP	e	adenylate cyclase-modulating G protein-coupled receptor signaling pathway	3/3	13/6920	5.180686359805156e-09	6	3	7.919542548688815e-06	BCY1, TPK1, TPK2
+GO:0007186	BP	e	G protein-coupled receptor signaling pathway	3/3	19/6920	1.7552745044234952e-08	5	3	2.012422219321537e-05	BCY1, TPK1, TPK2
+GO:1902115	BP	e	regulation of organelle assembly	3/3	34/6920	1.0839589922053864e-07	6	3	9.942071876507805e-05	BCY1, TPK1, TPK2
+GO:0010737	BP	e	protein kinase A signaling	2/3	3/6920	3.7590770398138673e-07	6	2	0.00028731878840977323	TPK1, TPK2
+GO:0010607	BP	e	negative regulation of cytoplasmic mRNA processing body assembly	2/3	4/6920	7.517429508108881e-07	8	2	0.0004924990246312475	TPK1, TPK2
+GO:1902116	BP	e	negative regulation of organelle assembly	2/3	6/6920	1.8789950912677927e-06	7	2	0.0010771339360692621	TPK1, TPK2
+GO:0007265	BP	e	Ras protein signal transduction	2/3	13/6920	9.764180873770952e-06	8	2	0.0049753926096792874	TPK1, TPK2
+GO:0044087	BP	e	regulation of cellular component biogenesis	3/3	168/6920	1.4060600151966849e-05	4	3	0.006448191229691998	BCY1, TPK1, TPK2
+GO:0033043	BP	e	regulation of organelle organization	3/3	254/6920	4.8890535691816624e-05	5	3	0.02038290878933373	BCY1, TPK1, TPK2
+GO:0007165	BP	e	signal transduction	3/3	351/6920	0.00012944062612844993	4	3	0.04946789261875595	BCY1, TPK1, TPK2

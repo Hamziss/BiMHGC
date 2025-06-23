@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003684	MF	e	damaged DNA binding	3/3	25/6920	4.1662862334097405e-08	4	3	0.00010778182485831	RAD1, RAD10, RAD14
+GO:0000014	MF	e	single-stranded DNA endodeoxyribonuclease activity	2/3	8/6920	3.50678123694895e-06	6	2	0.004536021529993467	RAD1, RAD10
+GO:0004520	MF	e	DNA endonuclease activity	2/3	30/6920	5.4364782202485424e-05	5	2	0.046880563852609934	RAD1, RAD10

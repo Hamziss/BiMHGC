@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005730	CC	e	nucleolus	5/5	365/6920	3.9775340171567415e-07	5	5	0.00037587696462131206	DBP6, NOP8, RSA3, URB1, URB2

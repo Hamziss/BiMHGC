@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0008017	MF	e	microtubule binding	3/4	44/6920	9.553564515526012e-07	5	3	0.002183659554834042	NDC80, NUF2, SPC24
+GO:0015631	MF	e	tubulin binding	3/4	53/6920	1.6881790141739792e-06	4	3	0.002183659554834042	NDC80, NUF2, SPC24
+GO:0008092	MF	e	cytoskeletal protein binding	3/4	122/6920	2.1116225484778973e-05	3	3	0.018209225109707735	NDC80, NUF2, SPC24

@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005200	MF	e	structural constituent of cytoskeleton	3/3	21/6920	2.4092003001891106e-08	2	3	6.23260117658923e-05	TUB1, TUB2, TUB3
+GO:0032561	MF	e	guanyl ribonucleotide binding	3/3	115/6920	4.4725082715653555e-06	7	3	0.002892594724634894	TUB1, TUB2, TUB3
+GO:0005525	MF	e	GTP binding	3/3	115/6920	4.4725082715653555e-06	8	3	0.002892594724634894	TUB1, TUB2, TUB3
+GO:0019001	MF	e	guanyl nucleotide binding	3/3	115/6920	4.4725082715653555e-06	6	3	0.002892594724634894	TUB1, TUB2, TUB3

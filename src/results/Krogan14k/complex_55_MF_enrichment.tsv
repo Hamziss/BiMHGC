@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0001069	MF	e	regulatory region RNA binding	2/5	2/6920	4.1771548061925486e-07	4	2	0.0005403149741810062	NAB3, NRD1
+GO:0001068	MF	e	transcription regulatory region RNA binding	2/5	2/6920	4.1771548061925486e-07	5	2	0.0005403149741810062	NAB3, NRD1
+GO:0003729	MF	e	mRNA binding	5/5	547/6920	3.0343974000674886e-06	4	5	0.002616662024658198	MTR4, NAB3, NRD1, SEN1, STO1
+GO:0019904	MF	e	protein domain specific binding	2/5	11/6920	2.2914626122136795e-05	3	2	0.014820034444491972	NRD1, SEN1

@@ -20,7 +20,7 @@ import pathlib
 from collections import defaultdict
 import pandas as pd
 
-ALPHA_EXTREME = 0.01   # seuil « extremely significant »
+ALPHA_EXTREME = 0.001   # seuil « extremely significant »
 ALPHA_SIGNIF  = 0.05   # seuil « significant »
 
 def collect_files(dataset_dir: pathlib.Path):

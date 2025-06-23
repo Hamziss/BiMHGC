@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0051015	MF	e	actin filament binding	4/4	37/6920	6.918364314399841e-10	5	4	1.789780848135239e-06	AIM21, CAP1, CAP2, TDA2
+GO:0003779	MF	e	actin binding	4/4	59/6920	4.767548606185998e-09	4	4	6.166824122101589e-06	AIM21, CAP1, CAP2, TDA2
+GO:0008092	MF	e	cytoskeletal protein binding	4/4	122/6920	9.200801262087429e-08	3	4	7.934157621673394e-05	AIM21, CAP1, CAP2, TDA2
+GO:0044877	MF	e	protein-containing complex binding	4/4	290/6920	3.0235869813397617e-06	2	4	0.001955504880181491	AIM21, CAP1, CAP2, TDA2

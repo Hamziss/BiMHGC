@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005946	CC	e	alpha,alpha-trehalose-phosphate synthase complex (UDP-forming)	3/4	4/6920	2.8979718185762987e-10	4	3	2.7385833685546023e-07	TPS1, TPS2, TPS3

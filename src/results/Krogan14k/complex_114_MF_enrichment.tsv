@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000049	MF	e	tRNA binding	4/5	55/6920	1.775776319349904e-08	4	4	4.593933338158201e-05	ELP3, ELP4, IKI1, IKI3

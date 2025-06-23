@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0070823	CC	e	HDA1 complex	3/3	3/6920	1.8114287971346702e-11	4	3	1.7118002132922633e-08	HDA1, HDA2, HDA3
+GO:0000118	CC	e	histone deacetylase complex	3/3	56/6920	5.021280625657305e-07	3	3	0.00023725550956230765	HDA1, HDA2, HDA3

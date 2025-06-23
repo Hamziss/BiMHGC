@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000110	CC	e	nucleotide-excision repair factor 1 complex	3/3	3/6920	1.8114287971346702e-11	4	3	1.7118002132922633e-08	RAD1, RAD10, RAD14
+GO:0000109	CC	e	nucleotide-excision repair complex	3/3	18/6920	1.4781258984618909e-08	3	3	6.984144870232434e-06	RAD1, RAD10, RAD14

@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0042030	MF	e	ATPase inhibitor activity	2/3	9/6920	4.508283990308767e-06	3	2	0.01166293068292878	INH1, STF1

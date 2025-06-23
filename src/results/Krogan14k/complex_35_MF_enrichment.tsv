@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0046982	MF	e	protein heterodimerization activity	3/5	30/6920	7.311404626427744e-07	4	3	0.0018914603768568575	SPT3, SPT7, TAF6
+GO:0046983	MF	e	protein dimerization activity	3/5	54/6920	4.443519670209061e-06	3	3	0.00574769269341542	SPT3, SPT7, TAF6
+GO:0003712	MF	e	transcription coregulator activity	3/5	92/6920	2.231111623979159e-05	3	3	0.019239619237446947	ADA2, SPT3, TAF6

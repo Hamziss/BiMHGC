@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0030527	MF	e	structural constituent of chromatin	2/3	12/6920	8.262796229553856e-06	2	2	0.021375853845855827	HTB1, HTZ1

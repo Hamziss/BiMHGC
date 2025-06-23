@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0032780	BP	e	negative regulation of ATP-dependent activity	2/3	3/6920	3.7590770398138673e-07	4	2	0.0017239127304586395	INH1, STF1
+GO:0043462	BP	e	regulation of ATP-dependent activity	2/3	7/6920	2.6303395277433116e-06	3	2	0.006031368537115413	INH1, STF1
+GO:0044092	BP	e	negative regulation of molecular function	2/3	10/6920	5.634811559246817e-06	3	2	0.008613748603568634	INH1, STF1

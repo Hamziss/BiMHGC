@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0043015	MF	e	gamma-tubulin binding	2/3	2/6920	1.2531464418577647e-07	5	2	0.00016209449225430188	SPC97, SPC98
+GO:0051011	MF	e	microtubule minus-end binding	2/3	2/6920	1.2531464418577647e-07	6	2	0.00016209449225430188	SPC97, SPC98

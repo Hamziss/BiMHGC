@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0019905	MF	e	syntaxin binding	2/4	11/6920	1.3760710370788921e-05	4	2	0.03559895772923094	VPS52, VPS54

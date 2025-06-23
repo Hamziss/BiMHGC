@@ -1,0 +1,14 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006661	BP	e	phosphatidylinositol biosynthetic process	3/5	52/6920	3.960837144687221e-06	8	3	0.017291207700887132	FAB1, FIG4, VAC14
+GO:0046488	BP	e	phosphatidylinositol metabolic process	3/5	70/6920	9.772240923342991e-06	7	3	0.017291207700887132	FAB1, FIG4, VAC14
+GO:0046474	BP	e	glycerophospholipid biosynthetic process	3/5	83/6920	1.63561659014745e-05	7	3	0.017291207700887132	FAB1, FIG4, VAC14
+GO:1903778	BP	e	protein localization to vacuolar membrane	2/5	10/6920	1.875375532606958e-05	7	2	0.017291207700887132	VAC14, VAC7
+GO:0045017	BP	e	glycerolipid biosynthetic process	3/5	87/6920	1.8852167140086275e-05	6	3	0.017291207700887132	FAB1, FIG4, VAC14
+GO:0008654	BP	e	phospholipid biosynthetic process	3/5	111/6920	3.924498866247086e-05	6	3	0.02861851079589271	FAB1, FIG4, VAC14
+GO:0006650	BP	e	glycerophospholipid metabolic process	3/5	116/6920	4.479468426600307e-05	6	3	0.02861851079589271	FAB1, FIG4, VAC14
+GO:0046854	BP	e	phosphatidylinositol phosphate biosynthetic process	2/5	16/6920	4.992326349043648e-05	9	2	0.02861851079589271	FAB1, FIG4
+GO:0046486	BP	e	glycerolipid metabolic process	3/5	131/6920	6.449706536448237e-05	5	3	0.03165291513193337	FAB1, FIG4, VAC14
+GO:0072665	BP	e	protein localization to vacuole	3/5	134/6920	6.902074821616521e-05	6	3	0.03165291513193337	ATG18, VAC14, VAC7
+GO:0006644	BP	e	phospholipid metabolic process	3/5	149/6920	9.479420131871166e-05	5	3	0.03384309414362884	FAB1, FIG4, VAC14
+GO:0010562	BP	e	positive regulation of phosphorus metabolic process	2/5	22/6920	9.593550455019078e-05	6	2	0.03384309414362884	VAC14, VAC7
+GO:0045937	BP	e	positive regulation of phosphate metabolic process	2/5	22/6920	9.593550455019078e-05	7	2	0.03384309414362884	VAC14, VAC7

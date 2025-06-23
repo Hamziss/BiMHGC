@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005971	CC	e	ribonucleoside-diphosphate reductase complex	4/4	4/6920	1.0475227972442794e-14	4	4	9.899090433958439e-12	RNR1, RNR2, RNR3, RNR4
+GO:1990204	CC	e	oxidoreductase complex	4/4	29/6920	2.487971395734887e-10	3	4	1.175566484484734e-07	RNR1, RNR2, RNR3, RNR4

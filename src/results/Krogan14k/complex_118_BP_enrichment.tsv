@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0045943	BP	e	positive regulation of transcription by RNA polymerase I	3/4	26/6920	1.8791878092744155e-07	11	3	0.0008617955293332469	NAN1, UTP15, UTP4
+GO:0006356	BP	e	regulation of transcription by RNA polymerase I	3/4	39/6920	6.596011171526658e-07	10	3	0.0015124653616310625	NAN1, UTP15, UTP4
+GO:0000462	BP	e	maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)	3/4	70/6920	3.9374904417506935e-06	10	3	0.006019110388622894	NAN1, UTP15, UTP4
+GO:0030490	BP	e	maturation of SSU-rRNA	3/4	85/6920	7.092962638309106e-06	9	3	0.00813208166482139	NAN1, UTP15, UTP4

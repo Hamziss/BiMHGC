@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000159	CC	e	protein phosphatase type 2A complex	3/3	8/6920	1.014400126395415e-09	5	3	9.586081194436671e-07	PPH21, RRD2, TPD3
+GO:1903293	CC	e	phosphatase complex	3/3	27/6920	5.2984292316189075e-08	3	3	1.669005207959956e-05	PPH21, RRD2, TPD3
+GO:0008287	CC	e	protein serine/threonine phosphatase complex	3/3	27/6920	5.2984292316189075e-08	4	3	1.669005207959956e-05	PPH21, RRD2, TPD3

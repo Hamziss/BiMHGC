@@ -1,0 +1,26 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:2000220	BP	e	regulation of pseudohyphal growth	3/3	26/6920	4.7097148725501417e-08	7	3	0.00016136760210658764	DIG1, DIG2, STE12
+GO:0071444	BP	e	cellular response to pheromone	3/3	35/6920	1.1855801477246414e-07	4	3	0.00016136760210658764	DIG1, DIG2, STE12
+GO:0070784	BP	e	regulation of growth of unicellular organism as a thread of attached cells	3/3	37/6920	1.4074801753736384e-07	6	3	0.00016136760210658764	DIG1, DIG2, STE12
+GO:0001558	BP	e	regulation of cell growth	3/3	37/6920	1.4074801753736384e-07	5	3	0.00016136760210658764	DIG1, DIG2, STE12
+GO:1900428	BP	e	regulation of filamentous growth of a population of unicellular organisms	3/3	45/6920	2.570417463134096e-07	5	3	0.0002357586897186593	DIG1, DIG2, STE12
+GO:0010570	BP	e	regulation of filamentous growth	3/3	49/6920	3.3373764158409157e-07	4	3	0.000255086804050774	DIG1, DIG2, STE12
+GO:0019236	BP	e	response to pheromone	3/3	57/6920	5.300240660416044e-07	3	3	0.0003472414809809711	DIG1, DIG2, STE12
+GO:0040008	BP	e	regulation of growth	3/3	60/6920	6.198709343794839e-07	3	3	0.00035534101313303916	DIG1, DIG2, STE12
+GO:2000218	BP	e	negative regulation of invasive growth in response to glucose limitation	2/3	6/6920	1.8789950912677927e-06	8	2	0.0009574523876171219	DIG1, DIG2
+GO:0030308	BP	e	negative regulation of cell growth	2/3	10/6920	5.634811559246817e-06	6	2	0.0023492041646096273	DIG1, DIG2
+GO:2000221	BP	e	negative regulation of pseudohyphal growth	2/3	10/6920	5.634811559246817e-06	8	2	0.0023492041646096273	DIG1, DIG2
+GO:0070785	BP	e	negative regulation of growth of unicellular organism as a thread of attached cells	2/3	11/6920	6.886327715187159e-06	7	2	0.0026317249084873593	DIG1, DIG2
+GO:1900429	BP	e	negative regulation of filamentous growth of a population of unicellular organisms	2/3	13/6920	9.764180873770952e-06	6	2	0.0034047703654627687	DIG1, DIG2
+GO:0000122	BP	e	negative regulation of transcription by RNA polymerase II	3/3	152/6920	1.0393978437958735e-05	11	3	0.0034047703654627687	DIG1, DIG2, STE12
+GO:0060258	BP	e	negative regulation of filamentous growth	2/3	15/6920	1.31415536374526e-05	5	2	0.003766697811334851	DIG1, DIG2
+GO:0045926	BP	e	negative regulation of growth	2/3	15/6920	1.31415536374526e-05	4	2	0.003766697811334851	DIG1, DIG2
+GO:1902679	BP	e	negative regulation of RNA biosynthetic process	3/3	179/6920	1.7026144578619932e-05	9	3	0.004337883279863945	DIG1, DIG2, STE12
+GO:0045892	BP	e	negative regulation of DNA-templated transcription	3/3	179/6920	1.7026144578619932e-05	10	3	0.004337883279863945	DIG1, DIG2, STE12
+GO:0051253	BP	e	negative regulation of RNA metabolic process	3/3	189/6920	2.0060016099500928e-05	8	3	0.004841854412226908	DIG1, DIG2, STE12
+GO:2000217	BP	e	regulation of invasive growth in response to glucose limitation	2/3	19/6920	2.1393698665679306e-05	7	2	0.004905575104040266	DIG1, DIG2
+GO:0045934	BP	e	negative regulation of nucleobase-containing compound metabolic process	3/3	222/6920	3.258651720317442e-05	7	3	0.007116274661607519	DIG1, DIG2, STE12
+GO:0070887	BP	e	cellular response to chemical stimulus	3/3	253/6920	4.8313088419866037e-05	3	3	0.010071082886068438	DIG1, DIG2, STE12
+GO:0042221	BP	e	response to chemical	3/3	403/6920	0.0001961306596952472	2	3	0.03832262485704286	DIG1, DIG2, STE12
+GO:0051128	BP	e	regulation of cellular component organization	3/3	406/6920	0.00020055451298932154	4	3	0.03832262485704286	DIG1, DIG2, STE12
+GO:0010558	BP	e	negative regulation of macromolecule biosynthetic process	3/3	444/6920	0.00026246958401829584	7	3	0.04814742049231619	DIG1, DIG2, STE12
