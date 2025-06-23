@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0060962	BP	e	regulation of ribosomal protein gene transcription by RNA polymerase II	3/5	20/6920	2.057423001683143e-07	11	3	0.0009435341885718894	CKB2, FHL1, IFH1
+GO:0060963	BP	e	positive regulation of ribosomal protein gene transcription by RNA polymerase II	2/5	9/6920	1.5007345092865297e-05	12	2	0.03441184229794012	FHL1, IFH1

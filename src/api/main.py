@@ -143,7 +143,7 @@ async def extract_complexes(
     if not isinstance(embeddings, torch.Tensor):
         raise HTTPException(status_code=400, detail="The embeddings file does not contain valid embeddings")
     
-    data_path = "d:/code/ia/codesandbox/HGC-final-clean/data"
+    data_path = os.path.join(os.path.dirname(__file__), "..", "..","data")
     species = "Saccharomyces_cerevisiae"
     
     # Load protein complexes from the golden standard file

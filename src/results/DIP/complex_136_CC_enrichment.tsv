@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005886	CC	e	plasma membrane	4/4	564/6920	4.3695721748202796e-05	3	4	0.04129245705205164	PMA1, PMA2, PMP1, PMP2

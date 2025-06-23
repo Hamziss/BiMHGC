@@ -1,0 +1,15 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0061188	BP	e	negative regulation of rDNA heterochromatin formation	2/4	8/6920	7.009507073190193e-06	10	2	0.01032852945328108	RPD3, SIN3
+GO:0061187	BP	e	regulation of rDNA heterochromatin formation	2/4	9/6920	9.010485539495334e-06	9	2	0.01032852945328108	RPD3, SIN3
+GO:0044770	BP	e	cell cycle phase transition	3/4	94/6920	9.616613812793212e-06	3	3	0.01032852945328108	RPD3, SIN3, STB1
+GO:0044772	BP	e	mitotic cell cycle phase transition	3/4	94/6920	9.616613812793212e-06	4	3	0.01032852945328108	RPD3, SIN3, STB1
+GO:0016479	BP	e	negative regulation of transcription by RNA polymerase I	2/4	10/6920	1.1260934859661011e-05	11	2	0.01032852945328108	RPD3, SIN3
+GO:0061186	BP	e	negative regulation of silent mating-type cassette heterochromatin formation	2/4	11/6920	1.3760710370788921e-05	10	2	0.010517769626739665	RPD3, SIN3
+GO:0090054	BP	e	regulation of silent mating-type cassette heterochromatin formation	2/4	13/6920	1.950766147146669e-05	9	2	0.01159470629270106	RPD3, SIN3
+GO:0070550	BP	e	rDNA chromatin condensation	2/4	14/6920	2.275454789234835e-05	7	2	0.01159470629270106	RPD3, SIN3
+GO:0031452	BP	e	negative regulation of heterochromatin formation	2/4	14/6920	2.275454789234835e-05	9	2	0.01159470629270106	RPD3, SIN3
+GO:1905268	BP	e	negative regulation of chromatin organization	2/4	16/6920	2.9994419789219436e-05	6	2	0.013755440915336033	RPD3, SIN3
+GO:0031445	BP	e	regulation of heterochromatin formation	2/4	17/6920	3.398711628509479e-05	8	2	0.014169537753040428	RPD3, SIN3
+GO:0030261	BP	e	chromosome condensation	2/4	22/6920	5.767242746489958e-05	6	2	0.022040479362835787	RPD3, SIN3
+GO:0030174	BP	e	regulation of DNA-templated DNA replication initiation	2/4	23/6920	6.315284500045593e-05	10	2	0.022278380551699298	RPD3, SIN3
+GO:1902275	BP	e	regulation of chromatin organization	2/4	24/6920	6.888071096903385e-05	5	2	0.02256335289314209	RPD3, SIN3

@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0043332	CC	e	mating projection tip	3/4	121/6920	2.059923653054558e-05	4	3	0.008240910442336472	FUS3, STE5, STE7
+GO:0060187	CC	e	cell pole	3/4	131/6920	2.6161620451861816e-05	2	3	0.008240910442336472	FUS3, STE5, STE7
+GO:0051286	CC	e	cell tip	3/4	131/6920	2.6161620451861816e-05	3	3	0.008240910442336472	FUS3, STE5, STE7

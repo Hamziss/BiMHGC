@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0051082	MF	e	unfolded protein binding	3/4	85/6920	7.092962638309106e-06	3	3	0.018349494345305657	HSC82, SSA3, YDJ1

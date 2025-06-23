@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0044614	CC	e	nuclear pore cytoplasmic filaments	3/3	11/6920	2.9888575152722046e-09	3	3	2.824470351932233e-06	GLE1, NUP159, NUP82
+GO:0005643	CC	e	nuclear pore	3/3	48/6920	3.1330472475241255e-07	3	3	0.00014803648244551492	GLE1, NUP159, NUP82
+GO:0031965	CC	e	nuclear membrane	3/3	94/6920	2.4281116168311975e-06	4	3	0.0007648551593018272	GLE1, NUP159, NUP82

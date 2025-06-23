@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0045182	MF	e	translation regulator activity	6/11	60/6920	1.469665541063275e-10	1	6	3.802024754730693e-07	AEP1, MSS51, PET111, PET309, PET494, PET54

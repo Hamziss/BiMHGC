@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003779	MF	e	actin binding	3/3	59/6920	5.888773876605098e-07	4	3	0.001523425801877739	END3, PAN1, SLA1
+GO:0008092	MF	e	cytoskeletal protein binding	3/3	122/6920	5.348062380660399e-06	3	3	0.0069177186893842274	END3, PAN1, SLA1
+GO:0005509	MF	e	calcium ion binding	2/3	28/6920	4.725025068743524e-05	6	2	0.04074546617613165	END3, PAN1
+GO:0030674	MF	e	protein-macromolecule adaptor activity	3/3	278/6920	6.416580753799011e-05	2	3	0.041499236025195105	END3, PAN1, SLA1

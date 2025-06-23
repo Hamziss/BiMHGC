@@ -1,0 +1,19 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0043457	BP	e	regulation of cellular respiration	4/4	8/6920	7.332659580709954e-13	6	4	3.3627576837135844e-09	HAP2, HAP3, HAP4, HAP5
+GO:0043467	BP	e	regulation of generation of precursor metabolites and energy	4/4	33/6920	4.286463286323589e-10	5	4	9.82886031553999e-07	HAP2, HAP3, HAP4, HAP5
+GO:0045944	BP	e	positive regulation of transcription by RNA polymerase II	4/4	311/6920	4.004824788148437e-06	11	4	0.006122042159482911	HAP2, HAP3, HAP4, HAP5
+GO:1902680	BP	e	positive regulation of RNA biosynthetic process	4/4	355/6920	6.815554979959743e-06	9	4	0.006251227027619077	HAP2, HAP3, HAP4, HAP5
+GO:0045893	BP	e	positive regulation of DNA-templated transcription	4/4	355/6920	6.815554979959743e-06	10	4	0.006251227027619077	HAP2, HAP3, HAP4, HAP5
+GO:0051254	BP	e	positive regulation of RNA metabolic process	4/4	391/6920	1.0045578064594535e-05	8	4	0.007678170167371756	HAP2, HAP3, HAP4, HAP5
+GO:0045935	BP	e	positive regulation of nucleobase-containing compound metabolic process	4/4	417/6920	1.3008585178909325e-05	7	4	0.007897334066264357	HAP2, HAP3, HAP4, HAP5
+GO:0010557	BP	e	positive regulation of macromolecule biosynthetic process	4/4	423/6920	1.3776422269977074e-05	7	4	0.007897334066264357	HAP2, HAP3, HAP4, HAP5
+GO:0009891	BP	e	positive regulation of biosynthetic process	4/4	439/6920	1.5990380515462297e-05	6	4	0.008147987227101122	HAP2, HAP3, HAP4, HAP5
+GO:0006357	BP	e	regulation of transcription by RNA polymerase II	4/4	487/6920	2.424959961179198e-05	10	4	0.011120866381967803	HAP2, HAP3, HAP4, HAP5
+GO:0010604	BP	e	positive regulation of macromolecule metabolic process	4/4	500/6920	2.6953087614565946e-05	6	4	0.011236987254581766	HAP2, HAP3, HAP4, HAP5
+GO:0009893	BP	e	positive regulation of metabolic process	4/4	544/6920	3.780485028576041e-05	5	4	0.014447753617541437	HAP2, HAP3, HAP4, HAP5
+GO:0006355	BP	e	regulation of DNA-templated transcription	4/4	581/6920	4.9222398225692735e-05	9	4	0.016123851304501922	HAP2, HAP3, HAP4, HAP5
+GO:2001141	BP	e	regulation of RNA biosynthetic process	4/4	581/6920	4.9222398225692735e-05	8	4	0.016123851304501922	HAP2, HAP3, HAP4, HAP5
+GO:0051252	BP	e	regulation of RNA metabolic process	4/4	638/6920	7.163795726562486e-05	7	4	0.021902111468010372	HAP2, HAP3, HAP4, HAP5
+GO:0048522	BP	e	positive regulation of cellular process	4/4	717/6920	0.00011439016149732586	4	4	0.03226186267295754	HAP2, HAP3, HAP4, HAP5
+GO:0019219	BP	e	regulation of nucleobase-containing compound metabolic process	4/4	725/6920	0.00011959260040128177	6	4	0.03226186267295754	HAP2, HAP3, HAP4, HAP5
+GO:0048518	BP	e	positive regulation of biological process	4/4	740/6920	0.00012982318193848283	3	4	0.03307606179832679	HAP2, HAP3, HAP4, HAP5

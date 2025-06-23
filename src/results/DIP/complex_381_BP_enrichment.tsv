@@ -1,0 +1,14 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0032298	BP	e	positive regulation of DNA-templated DNA replication initiation	2/3	5/6920	1.2527841560983376e-06	11	2	0.005745268139866976	RFM1, SUM1
+GO:0051052	BP	e	regulation of DNA metabolic process	3/3	122/6920	5.348062380660399e-06	7	3	0.008613748603568634	HST1, RFM1, SUM1
+GO:2000105	BP	e	positive regulation of DNA-templated DNA replication	2/3	10/6920	5.634811559246817e-06	10	2	0.008613748603568634	RFM1, SUM1
+GO:0045740	BP	e	positive regulation of DNA replication	2/3	14/6920	1.1390445419262522e-05	9	2	0.013013649839591834	RFM1, SUM1
+GO:0045892	BP	e	negative regulation of DNA-templated transcription	3/3	179/6920	1.7026144578619932e-05	10	3	0.013013649839591834	HST1, RFM1, SUM1
+GO:1902679	BP	e	negative regulation of RNA biosynthetic process	3/3	179/6920	1.7026144578619932e-05	9	3	0.013013649839591834	HST1, RFM1, SUM1
+GO:0051253	BP	e	negative regulation of RNA metabolic process	3/3	189/6920	2.0060016099500928e-05	8	3	0.013142176261758752	HST1, RFM1, SUM1
+GO:0030174	BP	e	regulation of DNA-templated DNA replication initiation	2/3	23/6920	3.1640444171006936e-05	10	2	0.01660464087708421	RFM1, SUM1
+GO:0045934	BP	e	negative regulation of nucleobase-containing compound metabolic process	3/3	222/6920	3.258651720317442e-05	7	3	0.01660464087708421	HST1, RFM1, SUM1
+GO:0051054	BP	e	positive regulation of DNA metabolic process	2/3	29/6920	5.074536632293066e-05	8	2	0.023271824995696	RFM1, SUM1
+GO:0000278	BP	e	mitotic cell cycle	2/3	42/6920	0.00010748000459213144	3	2	0.03976133500821549	RFM1, SUM1
+GO:0030466	BP	e	silent mating-type cassette heterochromatin formation	2/3	43/6920	0.0001127120268440474	12	2	0.03976133500821549	HST1, SUM1
+GO:0090329	BP	e	regulation of DNA-templated DNA replication	2/3	43/6920	0.0001127120268440474	9	2	0.03976133500821549	RFM1, SUM1

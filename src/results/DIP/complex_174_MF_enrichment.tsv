@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000149	MF	e	SNARE binding	3/10	40/6920	2.088066311339759e-05	3	3	0.02089023335715248	SEC24, SFB2, SFB3
+GO:0005048	MF	e	signal sequence binding	3/10	41/6920	2.2511995899582153e-05	3	3	0.02089023335715248	SEC24, SFB2, SFB3
+GO:0042277	MF	e	peptide binding	3/10	42/6920	2.4225241620200013e-05	2	3	0.02089023335715248	SEC24, SFB2, SFB3

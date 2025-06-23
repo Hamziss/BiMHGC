@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0032807	CC	e	DNA ligase IV complex	3/3	3/6920	1.8114287971346702e-11	5	3	5.706000710974211e-09	DNL4, LIF1, NEJ1
+GO:0070419	CC	e	nonhomologous end joining complex	3/3	3/6920	1.8114287971346702e-11	4	3	5.706000710974211e-09	DNL4, LIF1, NEJ1
+GO:1990391	CC	e	DNA repair complex	3/3	3/6920	1.8114287971346702e-11	3	3	5.706000710974211e-09	DNL4, LIF1, NEJ1
+GO:0140535	CC	e	intracellular protein-containing complex	3/3	410/6920	0.00020655577659422868	2	3	0.048798802220386524	DNL4, LIF1, NEJ1

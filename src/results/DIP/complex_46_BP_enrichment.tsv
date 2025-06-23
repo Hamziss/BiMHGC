@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006457	BP	e	protein folding	8/8	138/6920	2.0425991039885353e-14	2	8	9.367359490891423e-11	CCT2, CCT3, CCT4, CCT5, CCT6, CCT7, CCT8, TCP1

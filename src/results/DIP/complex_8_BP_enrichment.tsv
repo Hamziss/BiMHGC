@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0007059	BP	e	chromosome segregation	4/4	113/6920	6.744726935528628e-08	3	4	0.00030931317726334286	DSN1, MTW1, NNF1, NSL1
+GO:0051301	BP	e	cell division	4/4	224/6920	1.069671367863741e-06	2	4	0.002452756446511558	DSN1, MTW1, NNF1, NSL1

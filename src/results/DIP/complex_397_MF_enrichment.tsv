@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005484	MF	e	SNAP receptor activity	3/6	24/6920	7.282690165380117e-07	3	3	0.0018840319457838364	SEC20, UFE1, USE1

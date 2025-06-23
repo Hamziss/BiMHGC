@@ -1,0 +1,7 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006613	BP	e	cotranslational protein targeting to membrane	3/3	14/6920	6.593600821570199e-09	8	3	3.0238253367720932e-05	BTT1, EGD1, EGD2
+GO:0006612	BP	e	protein targeting to membrane	3/3	45/6920	2.570417463134096e-07	7	3	0.0005893967242966482	BTT1, EGD1, EGD2
+GO:0090150	BP	e	establishment of protein localization to membrane	3/3	105/6920	3.395704423108652e-06	6	3	0.005190900161458759	BTT1, EGD1, EGD2
+GO:0072657	BP	e	protein localization to membrane	3/3	135/6920	7.2637389050701695e-06	5	3	0.008327876654662949	BTT1, EGD1, EGD2
+GO:0006605	BP	e	protein targeting	3/3	161/6920	1.2365537540760108e-05	6	3	0.011341671032385172	BTT1, EGD1, EGD2
+GO:0051668	BP	e	localization within membrane	3/3	174/6920	1.563125383338638e-05	3	3	0.011947488346651656	BTT1, EGD1, EGD2

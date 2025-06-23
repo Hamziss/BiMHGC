@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0030907	CC	e	MBF transcription complex	3/3	7/6920	6.340000789971344e-10	4	3	4.793040597218336e-07	STB1, SWI4, SWI6
+GO:0033309	CC	e	SBF transcription complex	3/3	8/6920	1.014400126395415e-09	4	3	4.793040597218336e-07	STB1, SWI4, SWI6
+GO:0090575	CC	e	RNA polymerase II transcription regulator complex	3/3	74/6920	1.1742406034545784e-06	3	3	0.00036988579008819216	STB1, SWI4, SWI6
+GO:0005667	CC	e	transcription regulator complex	3/3	104/6920	3.2986842967341193e-06	2	3	0.0007793141651034356	STB1, SWI4, SWI6

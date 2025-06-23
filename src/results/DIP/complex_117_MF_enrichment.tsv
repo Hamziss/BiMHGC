@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005085	MF	e	guanyl-nucleotide exchange factor activity	4/7	58/6920	1.5265505032217683e-07	5	4	0.00039491861518347145	BET3, BET5, TRS23, TRS31
+GO:0030695	MF	e	GTPase regulator activity	4/7	116/6920	2.524509232148369e-06	4	4	0.002176968461189277	BET3, BET5, TRS23, TRS31
+GO:0060589	MF	e	nucleoside-triphosphatase regulator activity	4/7	116/6920	2.524509232148369e-06	3	4	0.002176968461189277	BET3, BET5, TRS23, TRS31

@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0070822	CC	e	Sin3-type complex	3/3	21/6920	2.4092003001891106e-08	4	3	2.2766942836787093e-05	SIN3, STB1, STB2
+GO:0000118	CC	e	histone deacetylase complex	3/3	56/6920	5.021280625657305e-07	3	3	0.00023725550956230765	SIN3, STB1, STB2

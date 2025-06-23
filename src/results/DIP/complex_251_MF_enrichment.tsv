@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0031593	MF	e	polyubiquitin modification-dependent protein binding	4/5	16/6920	9.519225588010382e-11	4	4	1.231311829809143e-07	CDC48, NPL4, SHP1, UFD1
+GO:0140030	MF	e	modification-dependent protein binding	4/5	16/6920	9.519225588010382e-11	3	4	1.231311829809143e-07	CDC48, NPL4, SHP1, UFD1
+GO:0043130	MF	e	ubiquitin binding	4/5	54/6920	1.6468205528284716e-08	4	4	1.4201082567224188e-05	CDC48, NPL4, SHP1, UFD1
+GO:0032182	MF	e	ubiquitin-like protein binding	4/5	61/6920	2.7152534530645358e-08	3	4	1.7560901707694885e-05	CDC48, NPL4, SHP1, UFD1
+GO:0036435	MF	e	K48-linked polyubiquitin modification-dependent protein binding	2/5	9/6920	1.5007345092865297e-05	5	2	0.007764800351048504	NPL4, SHP1

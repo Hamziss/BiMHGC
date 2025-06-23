@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006303	BP	e	double-strand break repair via nonhomologous end joining	3/3	35/6920	1.1855801477246414e-07	9	3	0.0005437070557465205	DNL4, LIF1, NEJ1
+GO:0006302	BP	e	double-strand break repair	3/3	137/6920	7.593871803347963e-06	8	3	0.01741274804507688	DNL4, LIF1, NEJ1

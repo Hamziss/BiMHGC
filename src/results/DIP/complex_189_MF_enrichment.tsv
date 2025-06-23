@@ -1,0 +1,8 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003714	MF	e	transcription corepressor activity	3/5	30/6920	7.311404626427744e-07	4	3	0.0018914603768568575	RPD3, SAP30, SIN3
+GO:0141221	MF	e	histone deacetylase activity, hydrolytic mechanism	2/5	5/6920	4.173532734210084e-06	6	2	0.005398464591700744	HDA1, RPD3
+GO:0003712	MF	e	transcription coregulator activity	3/5	92/6920	2.231111623979159e-05	3	3	0.019239619237446947	RPD3, SAP30, SIN3
+GO:0004407	MF	e	histone deacetylase activity	2/5	16/6920	4.992326349043648e-05	5	2	0.02583029652995183	HDA1, RPD3
+GO:0033558	MF	e	protein lysine deacetylase activity	2/5	16/6920	4.992326349043648e-05	4	2	0.02583029652995183	HDA1, RPD3
+GO:0019213	MF	e	deacetylase activity	2/5	20/6920	7.895369636944604e-05	3	2	0.03404220208462615	HDA1, RPD3
+GO:0160215	MF	e	deacylase activity	2/5	26/6920	0.00013481793530396443	2	2	0.049824856947336564	HDA1, RPD3

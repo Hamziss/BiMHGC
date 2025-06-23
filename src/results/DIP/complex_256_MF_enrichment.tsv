@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0140567	MF	e	membrane protein dislocase activity	2/3	4/6920	7.517429508108881e-07	3	2	0.0009723795068738839	AFG3, YTA12
+GO:0004176	MF	e	ATP-dependent peptidase activity	2/3	4/6920	7.517429508108881e-07	4	2	0.0009723795068738839	AFG3, YTA12
+GO:0004222	MF	e	metalloendopeptidase activity	2/3	20/6920	2.3768481818722852e-05	5	2	0.020496354155012008	AFG3, YTA12

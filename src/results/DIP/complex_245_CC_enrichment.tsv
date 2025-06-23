@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0031298	CC	e	replication fork protection complex	3/3	11/6920	2.9888575152722046e-09	3	3	2.824470351932233e-06	CSM3, MRC1, TOF1
+GO:0043596	CC	e	nuclear replication fork	2/3	20/6920	2.3768481818722852e-05	3	2	0.011230607659346546	MRC1, TOF1
+GO:0005657	CC	e	replication fork	2/3	29/6920	5.074536632293066e-05	2	2	0.015984790391723156	MRC1, TOF1

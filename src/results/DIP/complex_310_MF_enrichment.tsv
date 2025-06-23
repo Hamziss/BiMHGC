@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0106310	MF	e	protein serine kinase activity	3/4	120/6920	2.0090718055155262e-05	6	3	0.04848746861352905	FUS3, STE11, STE7
+GO:0004674	MF	e	protein serine/threonine kinase activity	3/4	161/6920	4.86147792227021e-05	6	3	0.04848746861352905	FUS3, STE11, STE7
+GO:0004672	MF	e	protein kinase activity	3/4	169/6920	5.622822027081065e-05	5	3	0.04848746861352905	FUS3, STE11, STE7

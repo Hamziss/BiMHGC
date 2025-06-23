@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006289	BP	e	nucleotide-excision repair	3/3	56/6920	5.021280625657305e-07	8	3	0.0018142952020632555	SSL1, TFB1, TFB4
+GO:0006366	BP	e	transcription by RNA polymerase II	3/3	65/6920	7.912320985884237e-07	9	3	0.0018142952020632555	SSL1, TFB1, TFB4
+GO:0006351	BP	e	DNA-templated transcription	3/3	166/6920	1.3561442832628417e-05	8	3	0.02073092561014464	SSL1, TFB1, TFB4

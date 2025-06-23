@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0050567	MF	e	glutaminyl-tRNA synthase (glutamine-hydrolyzing) activity	3/3	4/6920	7.245715188538681e-11	5	3	1.8744665192749568e-07	GTF1, HER2, PET112
+GO:0016884	MF	e	carbon-nitrogen ligase activity, with glutamine as amido-N-donor	3/3	17/6920	1.2317715820515755e-08	4	3	1.593296541383713e-05	GTF1, HER2, PET112
+GO:0016879	MF	e	ligase activity, forming carbon-nitrogen bonds	3/3	46/6920	2.7497489140504283e-07	3	3	0.00023712001468828193	GTF1, HER2, PET112
+GO:0140101	MF	e	catalytic activity, acting on a tRNA	3/3	120/6920	5.087216633873006e-06	4	3	0.003290157357957367	GTF1, HER2, PET112
+GO:0016874	MF	e	ligase activity	3/3	132/6920	6.786699131344753e-06	2	3	0.003511438130557775	GTF1, HER2, PET112

@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000386	MF	e	second spliceosomal transesterification activity	4/10	12/6920	1.0828667403001538e-09	4	4	2.801376257156498e-06	CDC40, CEF1, PRP45, SYF1

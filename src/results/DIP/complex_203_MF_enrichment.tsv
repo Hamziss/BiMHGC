@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0019905	MF	e	syntaxin binding	2/3	11/6920	6.886327715187159e-06	4	2	0.01781492979918918	SEC9, SRO7

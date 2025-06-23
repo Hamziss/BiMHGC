@@ -1,0 +1,11 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0009263	BP	e	deoxyribonucleotide biosynthetic process	3/3	11/6920	2.9888575152722046e-09	9	3	6.853450282519165e-06	RNR1, RNR2, RNR4
+GO:0009262	BP	e	deoxyribonucleotide metabolic process	3/3	11/6920	2.9888575152722046e-09	8	3	6.853450282519165e-06	RNR1, RNR2, RNR4
+GO:0009165	BP	e	nucleotide biosynthetic process	3/3	105/6920	3.395704423108652e-06	8	3	0.005190900161458759	RNR1, RNR2, RNR4
+GO:1901293	BP	e	nucleoside phosphate biosynthetic process	3/3	131/6920	6.632455969268737e-06	7	3	0.007604110768766607	RNR1, RNR2, RNR4
+GO:0009117	BP	e	nucleotide metabolic process	3/3	174/6920	1.563125383338638e-05	7	3	0.013682809648893719	RNR1, RNR2, RNR4
+GO:1901137	BP	e	carbohydrate derivative biosynthetic process	3/3	182/6920	1.7901626230563086e-05	4	3	0.013682809648893719	RNR1, RNR2, RNR4
+GO:0006753	BP	e	nucleoside phosphate metabolic process	3/3	228/6920	3.531336965722908e-05	6	3	0.02313530189257894	RNR1, RNR2, RNR4
+GO:0055086	BP	e	nucleobase-containing small molecule metabolic process	3/3	242/6920	4.2258460122595286e-05	5	3	0.02422466226527775	RNR1, RNR2, RNR4
+GO:0090407	BP	e	organophosphate biosynthetic process	3/3	266/6920	5.618255100041006e-05	5	3	0.028628130987542282	RNR1, RNR2, RNR4
+GO:1901135	BP	e	carbohydrate derivative metabolic process	3/3	290/6920	7.287160679417118e-05	3	3	0.033418918875806905	RNR1, RNR2, RNR4

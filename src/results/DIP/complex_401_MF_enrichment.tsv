@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000384	MF	e	first spliceosomal transesterification activity	5/10	9/6920	2.398845958891004e-13	4	5	6.205814495651027e-10	ISY1, NTC20, SNT309, SYF1, SYF2
+GO:0000386	MF	e	second spliceosomal transesterification activity	3/10	12/6920	4.749595587772941e-07	4	3	0.0006143601892784299	CEF1, SYF1, SYF2
+GO:0140098	MF	e	catalytic activity, acting on RNA	6/10	351/6920	2.8831597653409967e-06	3	6	0.0024862447709790526	CEF1, ISY1, NTC20, SNT309, SYF1, SYF2
+GO:0140640	MF	e	catalytic activity, acting on a nucleic acid	6/10	545/6920	3.707040952699975e-05	2	6	0.02397528736158709	CEF1, ISY1, NTC20, SNT309, SYF1, SYF2

@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0017102	CC	e	methionyl glutamyl tRNA synthetase complex	3/3	3/6920	1.8114287971346702e-11	2	3	1.7118002132922633e-08	ARC1, GUS1, MES1
+GO:0010494	CC	e	cytoplasmic stress granule	3/3	101/6920	3.018746090424927e-06	7	3	0.0014263575277257778	ARC1, GUS1, MES1
+GO:0036464	CC	e	cytoplasmic ribonucleoprotein granule	3/3	141/6920	8.283845032176557e-06	6	3	0.002042139138952871	ARC1, GUS1, MES1
+GO:0035770	CC	e	ribonucleoprotein granule	3/3	143/6920	8.643975191334904e-06	5	3	0.002042139138952871	ARC1, GUS1, MES1
+GO:0099080	CC	e	supramolecular complex	3/3	275/6920	6.210347773816431e-05	2	3	0.011737557292513055	ARC1, GUS1, MES1

@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003712	MF	e	transcription coregulator activity	4/6	92/6920	4.3014975719200404e-07	3	4	0.0011127974218557144	SPT20, SPT8, SRB8, SSN2
+GO:0140110	MF	e	transcription regulator activity	4/6	273/6920	3.339400018005497e-05	1	4	0.030940504592391685	SPT20, SPT8, SRB8, SSN2
+GO:0030674	MF	e	protein-macromolecule adaptor activity	4/6	278/6920	3.5879982132653673e-05	2	4	0.030940504592391685	SPT20, SPT8, SRB8, SSN2

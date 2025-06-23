@@ -1,0 +1,9 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000981	MF	e	DNA-binding transcription factor activity, RNA polymerase II-specific	3/3	164/6920	1.3074240943351078e-05	3	3	0.012362575311248155	MET28, MET31, MET4
+GO:0000976	MF	e	transcription cis-regulatory region binding	3/3	174/6920	1.563125383338638e-05	6	3	0.012362575311248155	MET28, MET31, MET4
+GO:0001067	MF	e	transcription regulatory region nucleic acid binding	3/3	176/6920	1.617968201600687e-05	3	3	0.012362575311248155	MET28, MET31, MET4
+GO:0003700	MF	e	DNA-binding transcription factor activity	3/3	186/6920	1.9114921238883887e-05	2	3	0.012362575311248155	MET28, MET31, MET4
+GO:1990837	MF	e	sequence-specific double-stranded DNA binding	3/3	235/6920	3.8682065676972446e-05	5	3	0.020014100781265542	MET28, MET31, MET4
+GO:0140110	MF	e	transcription regulator activity	3/3	273/6920	6.0753437969947804e-05	1	3	0.026194857338042495	MET28, MET31, MET4
+GO:0003690	MF	e	double-stranded DNA binding	3/3	302/6920	8.233125025856788e-05	4	3	0.030427277774130727	MET28, MET31, MET4
+GO:0043565	MF	e	sequence-specific DNA binding	3/3	317/6920	9.526358386995142e-05	4	3	0.030805861433945543	MET28, MET31, MET4

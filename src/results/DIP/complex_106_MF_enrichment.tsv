@@ -1,0 +1,8 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016635	MF	e	oxidoreductase activity, acting on the CH-CH group of donors, quinone or related compound as acceptor	4/4	7/6920	3.666329790354977e-13	4	4	4.742397583824162e-10	SDH1, SDH2, SDH3, SDH4
+GO:0008177	MF	e	succinate dehydrogenase (quinone) activity	4/4	7/6920	3.666329790354977e-13	5	4	4.742397583824162e-10	SDH1, SDH2, SDH3, SDH4
+GO:0000104	MF	e	succinate dehydrogenase activity	4/4	9/6920	1.3198787245277916e-12	4	4	1.138175420117799e-09	SDH1, SDH2, SDH3, SDH4
+GO:0016627	MF	e	oxidoreductase activity, acting on the CH-CH group of donors	4/4	28/6920	2.1448029273576615e-10	3	4	1.3871512932685675e-07	SDH1, SDH2, SDH3, SDH4
+GO:0009055	MF	e	electron transfer activity	3/4	49/6920	1.3282922181306982e-06	1	3	0.0006872583936608233	SDH1, SDH2, SDH3
+GO:0016491	MF	e	oxidoreductase activity	4/4	333/6920	5.270799456061955e-06	2	4	0.002272593032138713	SDH1, SDH2, SDH3, SDH4
+GO:0048038	MF	e	quinone binding	2/4	8/6920	7.009507073190193e-06	3	2	0.0025905135426204325	SDH3, SDH4

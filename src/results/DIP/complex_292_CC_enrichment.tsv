@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005851	CC	e	eukaryotic translation initiation factor 2B complex	5/5	5/6920	7.57318390141902e-18	4	5	7.156658786840973e-15	GCD1, GCD2, GCD6, GCD7, GCN3
+GO:0032045	CC	e	guanyl-nucleotide exchange factor complex	5/5	15/6920	2.2742271255961317e-14	3	5	1.0745723168441722e-11	GCD1, GCD2, GCD6, GCD7, GCN3
+GO:0140535	CC	e	intracellular protein-containing complex	5/5	410/6920	7.134852964917395e-07	2	5	0.00022474786839489795	GCD1, GCD2, GCD6, GCD7, GCN3
+GO:0005829	CC	e	cytosol	5/5	1178/6920	0.00014194898632881377	2	5	0.03353544802018225	GCD1, GCD2, GCD6, GCD7, GCN3

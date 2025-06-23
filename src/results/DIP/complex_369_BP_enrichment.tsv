@@ -1,0 +1,15 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0009606	BP	e	tropism	3/4	4/6920	2.8979718185762987e-10	3	3	6.645049379995453e-07	CDC24, FAR1, STE4
+GO:0043577	BP	e	chemotropism	3/4	4/6920	2.8979718185762987e-10	4	3	6.645049379995453e-07	CDC24, FAR1, STE4
+GO:0019236	BP	e	response to pheromone	4/4	57/6920	4.137819801394626e-09	3	4	6.325347203065251e-06	CDC24, FAR1, STE18, STE4
+GO:0009605	BP	e	response to external stimulus	3/4	11/6920	1.1945059585396103e-08	2	3	1.3695010814656632e-05	CDC24, FAR1, STE4
+GO:0000749	BP	e	response to pheromone triggering conjugation with cellular fusion	3/4	13/6920	2.0700276075219737e-08	5	3	1.8986293216191545e-05	CDC24, FAR1, STE4
+GO:0032005	BP	e	signal transduction involved in positive regulation of conjugation with cellular fusion	3/4	26/6920	1.8791878092744155e-07	6	3	0.0001231136470476067	CDC24, STE18, STE4
+GO:0000750	BP	e	pheromone-dependent signal transduction involved in conjugation with cellular fusion	3/4	26/6920	1.8791878092744155e-07	7	3	0.0001231136470476067	CDC24, STE18, STE4
+GO:0031139	BP	e	positive regulation of conjugation with cellular fusion	3/4	28/6920	2.367261886983198e-07	5	3	0.0001357032876713118	CDC24, STE18, STE4
+GO:0031137	BP	e	regulation of conjugation with cellular fusion	3/4	34/6920	4.3212619936480457e-07	4	3	0.0002167282194743829	CDC24, STE18, STE4
+GO:0071444	BP	e	cellular response to pheromone	3/4	35/6920	4.7258661027994525e-07	4	3	0.0002167282194743829	CDC24, FAR1, STE4
+GO:2000243	BP	e	positive regulation of reproductive process	3/4	45/6920	1.0234847154783762e-06	4	3	0.0004267000822894394	CDC24, STE18, STE4
+GO:0042221	BP	e	response to chemical	4/4	403/6920	1.1341949382405507e-05	2	4	0.0042144195797203425	CDC24, FAR1, STE18, STE4
+GO:2000241	BP	e	regulation of reproductive process	3/4	101/6920	1.194667565119155e-05	3	3	0.0042144195797203425	CDC24, STE18, STE4
+GO:0007186	BP	e	G protein-coupled receptor signaling pathway	2/4	19/6920	4.2717308157132533e-05	5	2	0.013992969657757844	STE18, STE4

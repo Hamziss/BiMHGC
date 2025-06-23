@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0004748	MF	e	ribonucleoside-diphosphate reductase activity, thioredoxin disulfide as acceptor	4/4	6/6920	1.5712841958664185e-13	6	4	1.354970738235475e-10	RNR1, RNR2, RNR3, RNR4
+GO:0061731	MF	e	ribonucleoside-diphosphate reductase activity	4/4	6/6920	1.5712841958664185e-13	5	4	1.354970738235475e-10	RNR1, RNR2, RNR3, RNR4
+GO:0016728	MF	e	oxidoreductase activity, acting on CH or CH2 groups, disulfide as acceptor	4/4	6/6920	1.5712841958664185e-13	4	4	1.354970738235475e-10	RNR1, RNR2, RNR3, RNR4
+GO:0016725	MF	e	oxidoreductase activity, acting on CH or CH2 groups	4/4	7/6920	3.666329790354977e-13	3	4	2.371198791912081e-10	RNR1, RNR2, RNR3, RNR4
+GO:0016491	MF	e	oxidoreductase activity	4/4	333/6920	5.270799456061955e-06	2	4	0.0027271116385664553	RNR1, RNR2, RNR3, RNR4

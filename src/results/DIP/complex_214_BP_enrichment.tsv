@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006369	BP	e	termination of RNA polymerase II transcription	3/4	25/6920	1.6625391443483543e-07	9	3	0.0007624404515981553	CFT1, PTA1, YSH1
+GO:0006353	BP	e	DNA-templated transcription termination	3/4	41/6920	7.692107600879152e-07	8	3	0.001755968410236221	CFT1, PTA1, YSH1
+GO:0006397	BP	e	mRNA processing	4/4	228/6920	1.148692810882831e-06	8	4	0.001755968410236221	CFT1, CFT2, PTA1, YSH1
+GO:0016071	BP	e	mRNA metabolic process	4/4	340/6920	5.7303013019531005e-06	7	4	0.00656979044268923	CFT1, CFT2, PTA1, YSH1

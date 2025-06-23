@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000159	CC	e	protein phosphatase type 2A complex	6/6	8/6920	1.8399058502362915e-19	5	6	1.7387110284732954e-16	CDC55, PPH21, PPH22, RRD2, RTS1, TPD3
+GO:1903293	CC	e	phosphatase complex	6/6	27/6920	1.9451090383158734e-15	3	6	6.127093470695001e-13	CDC55, PPH21, PPH22, RRD2, RTS1, TPD3
+GO:0008287	CC	e	protein serine/threonine phosphatase complex	6/6	27/6920	1.9451090383158734e-15	4	6	6.127093470695001e-13	CDC55, PPH21, PPH22, RRD2, RTS1, TPD3
+GO:1902494	CC	e	catalytic complex	6/6	851/6920	3.4057351700659586e-06	2	6	0.0008046049339280827	CDC55, PPH21, PPH22, RRD2, RTS1, TPD3

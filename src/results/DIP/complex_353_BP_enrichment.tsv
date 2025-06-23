@@ -1,0 +1,9 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0007186	BP	e	G protein-coupled receptor signaling pathway	3/3	19/6920	1.7552745044234952e-08	5	3	6.803607007737207e-05	GPA1, STE18, STE4
+GO:0032005	BP	e	signal transduction involved in positive regulation of conjugation with cellular fusion	3/3	26/6920	4.7097148725501417e-08	6	3	6.803607007737207e-05	GPA1, STE18, STE4
+GO:0000750	BP	e	pheromone-dependent signal transduction involved in conjugation with cellular fusion	3/3	26/6920	4.7097148725501417e-08	7	3	6.803607007737207e-05	GPA1, STE18, STE4
+GO:0031139	BP	e	positive regulation of conjugation with cellular fusion	3/3	28/6920	5.934240739413177e-08	5	3	6.803607007737207e-05	GPA1, STE18, STE4
+GO:0031137	BP	e	regulation of conjugation with cellular fusion	3/3	34/6920	1.0839589922053864e-07	4	3	9.942071876507805e-05	GPA1, STE18, STE4
+GO:2000243	BP	e	positive regulation of reproductive process	3/3	45/6920	2.570417463134096e-07	4	3	0.00019646557476554941	GPA1, STE18, STE4
+GO:0019236	BP	e	response to pheromone	3/3	57/6920	5.300240660416044e-07	3	3	0.0003472414809809711	GPA1, STE18, STE4
+GO:2000241	BP	e	regulation of reproductive process	3/3	101/6920	3.018746090424927e-06	3	3	0.0017304961963360893	GPA1, STE18, STE4

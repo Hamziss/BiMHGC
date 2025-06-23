@@ -1,0 +1,12 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0070985	CC	e	transcription factor TFIIK complex	3/3	3/6920	1.8114287971346702e-11	4	3	1.7118002132922633e-08	CCL1, KIN28, TFB3
+GO:0005675	CC	e	transcription factor TFIIH holo complex	3/3	11/6920	2.9888575152722046e-09	9	3	1.4122351759661165e-06	CCL1, KIN28, TFB3
+GO:0019908	CC	e	nuclear cyclin-dependent protein kinase holoenzyme complex	3/3	15/6920	8.242001026962748e-09	8	3	1.947172742619949e-06	CCL1, KIN28, TFB3
+GO:0032806	CC	e	carboxy-terminal domain protein kinase complex	3/3	15/6920	8.242001026962748e-09	7	3	1.947172742619949e-06	CCL1, KIN28, TFB3
+GO:0000307	CC	e	cyclin-dependent protein kinase holoenzyme complex	3/3	40/6920	1.7896916515690535e-07	7	3	3.382517221465511e-05	CCL1, KIN28, TFB3
+GO:1902554	CC	e	serine/threonine protein kinase complex	3/3	56/6920	5.021280625657305e-07	6	3	7.908516985410256e-05	CCL1, KIN28, TFB3
+GO:1902911	CC	e	protein kinase complex	3/3	64/6920	7.54713694038189e-07	5	3	0.0001018863486951555	CCL1, KIN28, TFB3
+GO:0090575	CC	e	RNA polymerase II transcription regulator complex	3/3	74/6920	1.1742406034545784e-06	3	3	0.00013870717128307205	CCL1, KIN28, TFB3
+GO:0005667	CC	e	transcription regulator complex	3/3	104/6920	3.2986842967341193e-06	2	3	0.0003463618511570825	CCL1, KIN28, TFB3
+GO:0061695	CC	e	transferase complex, transferring phosphorus-containing groups	3/3	135/6920	7.2637389050701695e-06	4	3	0.000686423326529131	CCL1, KIN28, TFB3
+GO:1990234	CC	e	transferase complex	3/3	410/6920	0.00020655577659422868	3	3	0.017745018989231465	CCL1, KIN28, TFB3

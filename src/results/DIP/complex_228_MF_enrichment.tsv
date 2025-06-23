@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003712	MF	e	transcription coregulator activity	6/9	92/6920	3.811395363464646e-10	3	6	9.860079805283039e-07	ADA2, HFI1, NGG1, SPT20, SPT3, SPT8
+GO:0030674	MF	e	protein-macromolecule adaptor activity	7/9	278/6920	5.270073293021275e-09	2	7	6.81683980452302e-06	ADA2, HFI1, NGG1, SGF29, SPT20, SPT3, SPT8
+GO:0140110	MF	e	transcription regulator activity	6/9	273/6920	2.7146025980016064e-07	1	6	0.0002340892307010052	ADA2, HFI1, NGG1, SPT20, SPT3, SPT8
+GO:0060090	MF	e	molecular adaptor activity	7/9	607/6920	1.1900325132080674e-06	1	7	0.0007696535279173176	ADA2, HFI1, NGG1, SGF29, SPT20, SPT3, SPT8
+GO:0003713	MF	e	transcription coactivator activity	3/9	45/6920	2.1008490872753014e-05	4	3	0.01086979317756241	ADA2, HFI1, NGG1

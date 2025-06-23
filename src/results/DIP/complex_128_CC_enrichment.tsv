@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000164	CC	e	protein phosphatase type 1 complex	7/7	11/6920	2.1954329280372295e-21	5	7	2.0746841169951816e-18	GAC1, GIP1, GIP2, GLC7, PIG1, REG1, REG2
+GO:1903293	CC	e	phosphatase complex	7/7	27/6920	5.907910009348183e-18	3	7	1.8609916529446777e-15	GAC1, GIP1, GIP2, GLC7, PIG1, REG1, REG2
+GO:0008287	CC	e	protein serine/threonine phosphatase complex	7/7	27/6920	5.907910009348183e-18	4	7	1.8609916529446777e-15	GAC1, GIP1, GIP2, GLC7, PIG1, REG1, REG2
+GO:1902494	CC	e	catalytic complex	7/7	851/6920	4.162346281032303e-07	2	7	9.833543088938815e-05	GAC1, GIP1, GIP2, GLC7, PIG1, REG1, REG2

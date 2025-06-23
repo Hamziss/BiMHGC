@@ -1,0 +1,8 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0031588	CC	e	nucleotide-activated protein kinase complex	3/3	7/6920	6.340000789971344e-10	6	3	5.99130074652292e-07	SIP1, SNF1, SNF4
+GO:1902911	CC	e	protein kinase complex	3/3	64/6920	7.54713694038189e-07	5	3	0.0003566022204330443	SIP1, SNF1, SNF4
+GO:0005641	CC	e	nuclear envelope lumen	2/3	5/6920	1.2527841560983376e-06	6	2	0.00039462700917097636	SNF1, SNF4
+GO:0061695	CC	e	transferase complex, transferring phosphorus-containing groups	3/3	135/6920	7.2637389050701695e-06	4	3	0.0017160583163228274	SIP1, SNF1, SNF4
+GO:1990234	CC	e	transferase complex	3/3	410/6920	0.00020655577659422868	3	3	0.032532534813591016	SIP1, SNF1, SNF4
+GO:0140535	CC	e	intracellular protein-containing complex	3/3	410/6920	0.00020655577659422868	2	3	0.032532534813591016	SIP1, SNF1, SNF4
+GO:0031970	CC	e	organelle envelope lumen	2/3	76/6920	0.00035459986704069156	5	2	0.04787098205049336	SNF1, SNF4

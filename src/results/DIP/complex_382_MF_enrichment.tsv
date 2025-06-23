@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016624	MF	e	oxidoreductase activity, acting on the aldehyde or oxo group of donors, disulfide as acceptor	3/7	6/6920	1.2663508820753143e-08	4	3	3.276049731928838e-05	LPD1, PDA1, PDB1
+GO:0004739	MF	e	pyruvate dehydrogenase (acetyl-transferring) activity	2/7	2/6920	8.772025093004354e-07	5	2	0.0011346614457801133	PDA1, PDB1
+GO:0016903	MF	e	oxidoreductase activity, acting on the aldehyde or oxo group of donors	3/7	31/6920	2.8153838293000295e-06	3	3	0.002427799322133059	LPD1, PDA1, PDB1

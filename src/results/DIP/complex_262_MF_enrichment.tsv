@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003682	MF	e	chromatin binding	6/10	157/6920	2.4161381915103502e-08	2	6	6.250549501437277e-05	ARP7, RSC1, RSC2, RSC4, SFH1, STH1
+GO:0042393	MF	e	histone binding	3/10	44/6920	2.7905139853019967e-05	3	3	0.03609529839988133	RSC8, SAS5, STH1

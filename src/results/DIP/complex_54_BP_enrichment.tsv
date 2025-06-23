@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0016560	BP	e	protein import into peroxisome matrix, docking	3/3	7/6920	6.340000789971344e-10	5	3	2.9075243622808585e-06	PEX13, PEX14, PEX17

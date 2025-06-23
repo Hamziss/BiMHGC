@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0061672	CC	e	glutathione hydrolase complex	2/3	2/6920	1.2531464418577647e-07	4	2	0.00011842233875555876	DUG2, DUG3

@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0019237	MF	e	centromeric DNA binding	3/3	14/6920	6.593600821570199e-09	6	3	1.7057645325402107e-05	CBF1, CSE4, MIF2

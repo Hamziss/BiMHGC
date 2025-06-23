@@ -1,0 +1,8 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0032977	MF	e	membrane insertase activity	2/3	4/6920	7.517429508108881e-07	3	2	0.0019447590137477678	GET1, GET2
+GO:0140597	MF	e	protein carrier chaperone	2/3	10/6920	5.634811559246817e-06	2	2	0.007288628751885758	GET1, GET2
+GO:0043495	MF	e	membrane-membrane adaptor activity	2/3	25/6920	3.751106753106474e-05	3	2	0.03006531828925873	GET1, GET2
+GO:0022884	MF	e	macromolecule transmembrane transporter activity	2/3	31/6920	5.810846209752364e-05	3	2	0.03006531828925873	GET1, GET2
+GO:0008320	MF	e	protein transmembrane transporter activity	2/3	31/6920	5.810846209752364e-05	4	2	0.03006531828925873	GET1, GET2
+GO:0140104	MF	e	molecular carrier activity	2/3	38/6920	8.77905705959483e-05	1	2	0.03785236768861971	GET1, GET2
+GO:0140318	MF	e	protein transporter activity	2/3	42/6920	0.00010748000459213144	2	2	0.03972153883997772	GET1, GET2

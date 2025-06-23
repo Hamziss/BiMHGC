@@ -1,0 +1,8 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0140296	MF	e	general transcription initiation factor binding	3/3	30/6920	7.354400916366758e-08	4	3	8.104724612715094e-05	BDP1, BRF1, SPT15
+GO:0140223	MF	e	general transcription initiation factor activity	3/3	34/6920	1.0839589922053864e-07	1	3	8.104724612715094e-05	BDP1, BRF1, SPT15
+GO:0001025	MF	e	RNA polymerase III general transcription initiation factor binding	2/3	2/6920	1.2531464418577647e-07	5	2	8.104724612715094e-05	BDP1, BRF1
+GO:0001156	MF	e	TFIIIC-class transcription factor complex binding	2/3	2/6920	1.2531464418577647e-07	6	2	8.104724612715094e-05	BDP1, BRF1
+GO:0008134	MF	e	transcription factor binding	3/3	73/6920	1.1266362546658792e-06	3	3	0.0005401587686377332	BDP1, BRF1, SPT15
+GO:0000995	MF	e	RNA polymerase III general transcription initiation factor activity	2/3	5/6920	1.2527841560983376e-06	2	2	0.0005401587686377332	BDP1, BRF1
+GO:0001016	MF	e	RNA polymerase III transcription regulatory region sequence-specific DNA binding	2/3	10/6920	5.634811559246817e-06	7	2	0.002082465357681645	BRF1, SPT15

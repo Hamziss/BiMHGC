@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005955	CC	e	calcineurin complex	3/3	3/6920	1.8114287971346702e-11	5	3	1.7118002132922633e-08	CMP2, CNA1, CNB1
+GO:1903293	CC	e	phosphatase complex	3/3	27/6920	5.2984292316189075e-08	3	3	1.669005207959956e-05	CMP2, CNA1, CNB1
+GO:0008287	CC	e	protein serine/threonine phosphatase complex	3/3	27/6920	5.2984292316189075e-08	4	3	1.669005207959956e-05	CMP2, CNA1, CNB1
+GO:0140535	CC	e	intracellular protein-containing complex	3/3	410/6920	0.00020655577659422868	2	3	0.048798802220386524	CMP2, CNA1, CNB1

@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0033065	CC	e	Rad51C-XRCC3 complex	2/5	2/6920	4.1771548061925486e-07	3	2	0.0001973705645925979	RAD55, RAD57
+GO:0033061	CC	e	DNA recombinase mediator complex	2/5	2/6920	4.1771548061925486e-07	2	2	0.0001973705645925979	RAD55, RAD57

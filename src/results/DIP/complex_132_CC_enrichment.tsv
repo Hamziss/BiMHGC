@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0031074	CC	e	nucleocytoplasmic transport complex	2/4	3/6920	7.517429508108881e-07	2	2	0.0003551985442581446	KAP95, SRP1
+GO:0042564	CC	e	NLS-dependent protein nuclear import complex	2/4	3/6920	7.517429508108881e-07	3	2	0.0003551985442581446	KAP95, SRP1
+GO:0005643	CC	e	nuclear pore	3/4	48/6920	1.2471040894330166e-06	3	3	0.0003928377881714002	KAP95, NUP2, NUP60
+GO:0044615	CC	e	nuclear pore nuclear basket	2/4	10/6920	1.1260934859661011e-05	3	2	0.0026603958605949138	NUP2, NUP60

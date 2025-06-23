@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0001181	MF	e	RNA polymerase I general transcription initiation factor activity	3/3	8/6920	1.014400126395415e-09	2	3	2.624253126984939e-06	RRN10, RRN5, RRN9
+GO:0140223	MF	e	general transcription initiation factor activity	3/3	34/6920	1.0839589922053864e-07	1	3	0.00014021009564176674	RRN10, RRN5, RRN9

@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0140101	MF	e	catalytic activity, acting on a tRNA	3/3	120/6920	5.087216633873006e-06	4	3	0.013160629431829468	ARC1, GUS1, MES1
+GO:1990825	MF	e	sequence-specific mRNA binding	2/3	22/6920	2.889189079996262e-05	5	2	0.03737166074975165	GUS1, MES1

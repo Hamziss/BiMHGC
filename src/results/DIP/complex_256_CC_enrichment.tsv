@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005745	CC	e	m-AAA complex	2/3	2/6920	1.2531464418577647e-07	4	2	0.00011842233875555876	AFG3, YTA12
+GO:0097002	CC	e	mitochondrial inner boundary membrane	2/3	4/6920	7.517429508108881e-07	2	2	0.0003551985442581446	AFG3, YTA12
+GO:1905368	CC	e	peptidase complex	3/3	80/6920	1.4882698997258447e-06	3	3	0.0004688050184136411	AFG3, HMG2, YTA12
+GO:0098800	CC	e	inner mitochondrial membrane protein complex	2/3	35/6920	7.432509726099207e-05	3	2	0.017559304227909377	AFG3, YTA12

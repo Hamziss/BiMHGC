@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0004663	MF	e	Rab geranylgeranyltransferase activity	3/3	5/6920	1.8114287971346698e-10	7	3	4.686166298187391e-07	BET2, BET4, MRS6
+GO:0004661	MF	e	protein geranylgeranyltransferase activity	3/3	7/6920	6.340000789971344e-10	6	3	8.200791021827934e-07	BET2, BET4, MRS6
+GO:0008318	MF	e	protein prenyltransferase activity	3/3	9/6920	1.521600189593123e-09	5	3	1.3121265634924696e-06	BET2, BET4, MRS6
+GO:0004659	MF	e	prenyltransferase activity	3/3	21/6920	2.4092003001891106e-08	4	3	1.5581502941473074e-05	BET2, BET4, MRS6
+GO:0016765	MF	e	transferase activity, transferring alkyl or aryl (other than methyl) groups	3/3	54/6920	4.493067988412835e-07	3	3	0.0002324713377204801	BET2, BET4, MRS6

@@ -1,0 +1,8 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003774	MF	e	cytoskeletal motor activity	4/4	17/6920	2.493104257441384e-11	1	4	6.44966071400086e-08	DYN1, DYN2, DYN3, PAC11
+GO:0003777	MF	e	microtubule motor activity	3/4	10/6920	8.688258832623776e-09	5	3	1.1238262799998856e-05	DYN1, DYN2, PAC11
+GO:0120544	MF	e	polypeptide conformation or assembly isomerase activity	3/4	24/6920	1.4631934609871728e-07	4	3	0.00012617604945246052	DYN1, DYN2, PAC11
+GO:0045505	MF	e	dynein intermediate chain binding	2/4	2/6920	2.5062928837155293e-07	3	2	0.00016209449225430188	DYN1, DYN2
+GO:0008574	MF	e	plus-end-directed microtubule motor activity	2/4	7/6920	5.258144155069571e-06	6	2	0.002720563785832996	DYN2, PAC11
+GO:0120543	MF	e	macromolecular conformation isomerase activity	3/4	144/6920	3.4771700301200956e-05	3	3	0.014992398113201145	DYN1, DYN2, PAC11
+GO:0016853	MF	e	isomerase activity	3/4	214/6920	0.00011402704065272496	2	3	0.042141136309799924	DYN1, DYN2, PAC11

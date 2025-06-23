@@ -1,0 +1,9 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0004723	MF	e	calcium-dependent protein serine/threonine phosphatase activity	3/3	3/6920	1.8114287971346702e-11	8	3	4.686166298187392e-08	CMP2, CNA1, CNB1
+GO:0033192	MF	e	calmodulin-dependent protein phosphatase activity	2/3	2/6920	1.2531464418577647e-07	9	2	0.00011153075789685989	CMP2, CNA1
+GO:0004722	MF	e	protein serine/threonine phosphatase activity	3/3	36/6920	1.293360161154154e-07	7	3	0.00011153075789685989	CMP2, CNA1, CNB1
+GO:0004721	MF	e	phosphoprotein phosphatase activity	3/3	58/6920	5.589344696438738e-07	6	3	0.00036149086824217543	CMP2, CNA1, CNB1
+GO:0016791	MF	e	phosphatase activity	3/3	126/6920	5.8962007346733496e-06	5	3	0.003050694260119991	CMP2, CNA1, CNB1
+GO:0042578	MF	e	phosphoric ester hydrolase activity	3/3	144/6920	8.827889557107986e-06	4	3	0.003806291714039727	CMP2, CNA1, CNB1
+GO:0005516	MF	e	calmodulin binding	2/3	23/6920	3.1640444171006936e-05	3	2	0.011693404152913563	CMP2, CNA1
+GO:0016788	MF	e	hydrolase activity, acting on ester bonds	3/3	342/6920	0.00011970972120168236	3	3	0.03871113109359404	CMP2, CNA1, CNB1

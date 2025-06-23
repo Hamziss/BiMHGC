@@ -1,0 +1,9 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0030474	BP	e	spindle pole body duplication	3/3	18/6920	1.4781258984618909e-08	6	3	5.604599342149006e-05	BBP1, MPS2, NBP1
+GO:0051300	BP	e	spindle pole body organization	3/3	23/6920	3.208040399725501e-08	5	3	5.604599342149006e-05	BBP1, MPS2, NBP1
+GO:0031023	BP	e	microtubule organizing center organization	3/3	24/6920	3.666331885400571e-08	4	3	5.604599342149006e-05	BBP1, MPS2, NBP1
+GO:1905508	BP	e	protein localization to microtubule organizing center	2/3	7/6920	2.6303395277433116e-06	8	2	0.002377247300017254	BBP1, MPS2
+GO:0071988	BP	e	protein localization to spindle pole body	2/3	7/6920	2.6303395277433116e-06	9	2	0.002377247300017254	BBP1, MPS2
+GO:0007017	BP	e	microtubule-based process	3/3	102/6920	3.110223244680228e-06	2	3	0.002377247300017254	BBP1, MPS2, NBP1
+GO:0072698	BP	e	protein localization to microtubule cytoskeleton	2/3	10/6920	5.634811559246817e-06	7	2	0.0036916065443865576	BBP1, MPS2
+GO:0044380	BP	e	protein localization to cytoskeleton	2/3	18/6920	1.9143578042454563e-05	6	2	0.010974056112837078	BBP1, MPS2

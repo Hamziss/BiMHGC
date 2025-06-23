@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005816	CC	e	spindle pole body	3/3	67/6920	8.677649652673635e-07	3	3	0.0005779465470128004	BBP1, MPS2, NBP1
+GO:0005815	CC	e	microtubule organizing center	3/3	75/6920	1.223167295265186e-06	2	3	0.0005779465470128004	BBP1, MPS2, NBP1
+GO:0005823	CC	e	central plaque of spindle pole body	2/3	6/6920	1.8789950912677927e-06	2	2	0.0005918834537493547	BBP1, NBP1

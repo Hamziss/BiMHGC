@@ -1,0 +1,29 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0070873	BP	e	regulation of glycogen metabolic process	4/7	17/6920	8.686556997790152e-10	8	4	3.983655039186564e-06	GAC1, GIP2, GLC7, PIG1
+GO:0032881	BP	e	regulation of polysaccharide metabolic process	4/7	23/6920	3.2251757045152527e-09	7	4	7.395327890453475e-06	GAC1, GIP2, GLC7, PIG1
+GO:0043467	BP	e	regulation of generation of precursor metabolites and energy	4/7	33/6920	1.4852149698267436e-08	5	4	1.929167064506859e-05	GAC1, GIP2, GLC7, PIG1
+GO:0005977	BP	e	glycogen metabolic process	4/7	34/6920	1.6826577099928993e-08	7	4	1.929167064506859e-05	GAC1, GIP2, GLC7, PIG1
+GO:0006112	BP	e	energy reserve metabolic process	4/7	36/6920	2.1357587959235973e-08	5	4	1.9589179676211235e-05	GAC1, GIP2, GLC7, PIG1
+GO:0006109	BP	e	regulation of carbohydrate metabolic process	4/7	53/6920	1.0554429868825611e-07	6	4	8.067102563072375e-05	GAC1, GIP2, GLC7, PIG1
+GO:0005979	BP	e	regulation of glycogen biosynthetic process	3/7	12/6920	1.389363227237305e-07	10	3	9.102313943014687e-05	GAC1, GIP2, PIG1
+GO:0044042	BP	e	glucan metabolic process	4/7	62/6920	2.0043607417866364e-07	6	4	0.00011489997952291892	GAC1, GIP2, GLC7, PIG1
+GO:0010962	BP	e	regulation of glucan biosynthetic process	3/7	15/6920	2.86971537119184e-07	9	3	0.00013160514692285778	GAC1, GIP2, PIG1
+GO:0032885	BP	e	regulation of polysaccharide biosynthetic process	3/7	15/6920	2.86971537119184e-07	8	3	0.00013160514692285778	GAC1, GIP2, PIG1
+GO:0005976	BP	e	polysaccharide metabolic process	4/7	78/6920	5.096624752643522e-07	5	4	0.0002124829192329381	GAC1, GIP2, GLC7, PIG1
+GO:0043255	BP	e	regulation of carbohydrate biosynthetic process	3/7	35/6920	4.09224883347238e-06	7	3	0.0015401863589783581	GAC1, GIP2, PIG1
+GO:0015980	BP	e	energy derivation by oxidation of organic compounds	4/7	133/6920	4.365988370414011e-06	4	4	0.0015401863589783581	GAC1, GIP2, GLC7, PIG1
+GO:0006091	BP	e	generation of precursor metabolites and energy	4/7	177/6920	1.3638790218909722e-05	3	4	0.004467677995994285	GAC1, GIP2, GLC7, PIG1
+GO:0005975	BP	e	carbohydrate metabolic process	4/7	252/6920	5.512571405533817e-05	4	4	0.016853768310518723	GAC1, GIP2, GLC7, PIG1
+GO:0005978	BP	e	glycogen biosynthetic process	2/7	13/6920	6.805993328966045e-05	8	2	0.019507678379148925	GAC1, PIG1
+GO:0006986	BP	e	response to unfolded protein	2/7	21/6920	0.00018253265670560868	4	2	0.0461565204100713	GLC7, REG1
+GO:0045839	BP	e	negative regulation of mitotic nuclear division	2/7	25/6920	0.0002602582323904959	8	2	0.0461565204100713	GAC1, GLC7
+GO:0033046	BP	e	negative regulation of sister chromatid segregation	2/7	25/6920	0.0002602582323904959	8	2	0.0461565204100713	GAC1, GLC7
+GO:2000816	BP	e	negative regulation of mitotic sister chromatid separation	2/7	25/6920	0.0002602582323904959	10	2	0.0461565204100713	GAC1, GLC7
+GO:0007094	BP	e	mitotic spindle assembly checkpoint signaling	2/7	25/6920	0.0002602582323904959	12	2	0.0461565204100713	GAC1, GLC7
+GO:0033048	BP	e	negative regulation of mitotic sister chromatid segregation	2/7	25/6920	0.0002602582323904959	9	2	0.0461565204100713	GAC1, GLC7
+GO:0045841	BP	e	negative regulation of mitotic metaphase/anaphase transition	2/7	25/6920	0.0002602582323904959	11	2	0.0461565204100713	GAC1, GLC7
+GO:0051985	BP	e	negative regulation of chromosome segregation	2/7	26/6920	0.0002818104168081109	7	2	0.0461565204100713	GAC1, GLC7
+GO:0071173	BP	e	spindle assembly checkpoint signaling	2/7	26/6920	0.0002818104168081109	10	2	0.0461565204100713	GAC1, GLC7
+GO:0035966	BP	e	response to topologically incorrect protein	2/7	26/6920	0.0002818104168081109	3	2	0.0461565204100713	GLC7, REG1
+GO:1905819	BP	e	negative regulation of chromosome separation	2/7	26/6920	0.0002818104168081109	8	2	0.0461565204100713	GAC1, GLC7
+GO:1902100	BP	e	negative regulation of metaphase/anaphase transition of cell cycle	2/7	26/6920	0.0002818104168081109	9	2	0.0461565204100713	GAC1, GLC7

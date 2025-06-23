@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0070939	CC	e	Dsl1/NZR complex	3/3	3/6920	1.8114287971346702e-11	3	3	1.7118002132922633e-08	DSL1, SEC39, TIP20
+GO:0099023	CC	e	vesicle tethering complex	3/3	43/6920	2.2354842785438959e-07	2	3	0.00010562663216119907	DSL1, SEC39, TIP20
+GO:0140534	CC	e	endoplasmic reticulum protein-containing complex	3/3	79/6920	1.4324597784861258e-06	2	3	0.0004512248302231296	DSL1, SEC39, TIP20
+GO:0005789	CC	e	endoplasmic reticulum membrane	3/3	406/6920	0.00020055451298932154	4	3	0.04738100369372721	DSL1, SEC39, TIP20

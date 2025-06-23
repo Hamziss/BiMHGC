@@ -1,0 +1,6 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0005968	CC	e	Rab-protein geranylgeranyltransferase complex	3/6	4/6920	1.4486716524489758e-09	4	3	1.368994711564282e-06	BET2, BET4, MRS6
+GO:1990234	CC	e	transferase complex	6/6	410/6920	4.178764209387629e-08	3	6	1.9744660889356546e-05	BET2, BET4, CDC43, MRS6, RAM1, RAM2
+GO:0005965	CC	e	protein farnesyltransferase complex	2/6	2/6920	6.265732209288822e-07	4	2	0.00014802792344444842	RAM1, RAM2
+GO:0005953	CC	e	CAAX-protein geranylgeranyltransferase complex	2/6	2/6920	6.265732209288822e-07	4	2	0.00014802792344444842	CDC43, RAM2
+GO:1902494	CC	e	catalytic complex	6/6	851/6920	3.4057351700659586e-06	2	6	0.0006436839471424662	BET2, BET4, CDC43, MRS6, RAM1, RAM2

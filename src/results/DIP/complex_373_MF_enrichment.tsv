@@ -1,0 +1,17 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0044769	MF	e	ATPase activity, coupled to transmembrane movement of ions, rotational mechanism	5/5	20/6920	1.1741464320760053e-13	7	5	1.012505606593542e-10	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0046961	MF	e	proton-transporting ATPase activity, rotational mechanism	5/5	20/6920	1.1741464320760053e-13	8	5	1.012505606593542e-10	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0042625	MF	e	ATPase-coupled ion transmembrane transporter activity	5/5	20/6920	1.1741464320760053e-13	6	5	1.012505606593542e-10	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0019829	MF	e	ATPase-coupled monoatomic cation transmembrane transporter activity	5/5	33/6920	1.7973891744271847e-12	6	5	1.1624614485607818e-09	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0042626	MF	e	ATPase-coupled transmembrane transporter activity	5/5	60/6920	4.1361034755806806e-11	5	5	2.140019938265444e-08	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0022853	MF	e	active monoatomic ion transmembrane transporter activity	5/5	63/6920	5.323075094593739e-11	5	5	2.295132544952334e-08	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0015399	MF	e	primary active transmembrane transporter activity	5/5	90/6920	3.328358888967501e-10	4	5	1.230066349394132e-07	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0015078	MF	e	proton transmembrane transporter activity	5/5	107/6920	8.050943206141415e-10	5	5	2.60347375928598e-07	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0022890	MF	e	inorganic cation transmembrane transporter activity	5/5	168/6920	7.95351107509789e-09	4	5	2.286192572364249e-06	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0008324	MF	e	monoatomic cation transmembrane transporter activity	5/5	172/6920	8.959148227991149e-09	4	5	2.31773164658131e-06	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0022804	MF	e	active transmembrane transporter activity	5/5	177/6920	1.0356585413197417e-08	3	5	2.430770248908314e-06	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0015075	MF	e	monoatomic ion transmembrane transporter activity	5/5	180/6920	1.1275316191302576e-08	3	5	2.430770248908314e-06	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0015318	MF	e	inorganic molecular entity transmembrane transporter activity	5/5	195/6920	1.6897618596347992e-08	3	5	3.36262610067325e-06	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0140657	MF	e	ATP-dependent activity	5/5	294/6920	1.3396336441885267e-07	1	5	2.4754515982255133e-05	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0022857	MF	e	transmembrane transporter activity	5/5	416/6920	7.675139771476611e-07	2	5	0.00013237057725873328	VMA13, VMA4, VMA5, VMA7, VMA8
+GO:0005215	MF	e	transporter activity	5/5	464/6920	1.3283024117574008e-06	1	5	0.00021476989620102476	VMA13, VMA4, VMA5, VMA7, VMA8

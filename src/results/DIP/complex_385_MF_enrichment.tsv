@@ -1,0 +1,4 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0035091	MF	e	phosphatidylinositol binding	6/6	86/6920	3.0894324167521226e-12	4	6	7.992361662137742e-09	PEP3, PEP5, VAM6, VPS16, VPS33, VPS41
+GO:0005543	MF	e	phospholipid binding	6/6	120/6920	2.4002527647421615e-11	3	6	3.104726951193986e-08	PEP3, PEP5, VAM6, VPS16, VPS33, VPS41
+GO:0008289	MF	e	lipid binding	6/6	157/6920	1.2408427886331522e-10	2	6	1.070020098064655e-07	PEP3, PEP5, VAM6, VPS16, VPS33, VPS41

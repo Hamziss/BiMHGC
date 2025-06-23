@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0031047	BP	e	regulatory ncRNA-mediated gene silencing	2/4	2/6920	2.5062928837155293e-07	9	2	0.0011493859164719417	HDA2, HDA3

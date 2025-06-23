@@ -1,0 +1,3 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0003713	MF	e	transcription coactivator activity	3/4	45/6920	1.0234847154783762e-06	4	3	0.0026477549589425595	RPD3, SIN3, STB1
+GO:0003712	MF	e	transcription coregulator activity	3/4	92/6920	9.011360901920849e-06	3	3	0.011656195326634618	RPD3, SIN3, STB1

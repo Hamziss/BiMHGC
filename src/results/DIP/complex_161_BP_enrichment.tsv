@@ -1,0 +1,5 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0042254	BP	e	ribosome biogenesis	4/5	201/6920	3.37796754993709e-06	5	4	0.015491359184011493	BMS1, BUD21, ESF1, NOP6
+GO:0022613	BP	e	ribonucleoprotein complex biogenesis	4/5	242/6920	7.099697532822453e-06	4	4	0.016279606442761885	BMS1, BUD21, ESF1, NOP6
+GO:0044085	BP	e	cellular component biogenesis	4/5	270/6920	1.0992881293836738e-05	3	4	0.01680445120451176	BMS1, BUD21, ESF1, NOP6
+GO:0006364	BP	e	rRNA processing	4/5	368/6920	3.771619441555801e-05	8	4	0.04324161689743726	BMS1, BUD21, ESF1, NOP6

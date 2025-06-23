@@ -1,0 +1,2 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006325	BP	e	chromatin organization	6/7	324/6920	6.776170757103762e-08	4	6	0.0003107551909207785	ASA1, RVB1, RVB2, TRA1, TTI1, TTI2

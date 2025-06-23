@@ -1,0 +1,13 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0006616	BP	e	SRP-dependent cotranslational protein targeting to membrane, translocation	3/3	13/6920	5.180686359805156e-09	9	3	2.3260194898246868e-05	SBH2, SSH1, SSS1
+GO:0031204	BP	e	post-translational protein targeting to membrane, translocation	3/3	16/6920	1.014400126395415e-08	9	3	2.3260194898246868e-05	SBH2, SSH1, SSS1
+GO:0065002	BP	e	intracellular protein transmembrane transport	3/3	42/6920	2.0795202591106005e-07	8	3	0.0003178893302760405	SBH2, SSH1, SSS1
+GO:0071806	BP	e	protein transmembrane transport	3/3	84/6920	1.7260018150617989e-06	7	3	0.0019788610809683524	SBH2, SSH1, SSS1
+GO:0006614	BP	e	SRP-dependent cotranslational protein targeting to membrane	2/3	11/6920	6.886327715187159e-06	9	2	0.006316139780369663	SBH2, SSH1
+GO:0006613	BP	e	cotranslational protein targeting to membrane	2/3	14/6920	1.1390445419262522e-05	8	2	0.008101193594560836	SBH2, SSH1
+GO:0006605	BP	e	protein targeting	3/3	161/6920	1.2365537540760108e-05	6	3	0.008101193594560836	SBH2, SSH1, SSS1
+GO:0045047	BP	e	protein targeting to ER	2/3	25/6920	3.751106753106474e-05	8	2	0.021503219462182862	SBH2, SSH1
+GO:0072599	BP	e	establishment of protein localization to endoplasmic reticulum	2/3	28/6920	4.725025068743524e-05	7	2	0.024076627739175335	SBH2, SSH1
+GO:0070972	BP	e	protein localization to endoplasmic reticulum	2/3	33/6920	6.596846901974664e-05	6	2	0.030253139892455812	SBH2, SSH1
+GO:0006612	BP	e	protein targeting to membrane	2/3	45/6920	0.00012354741425129185	7	2	0.04862470363101746	SBH2, SSH1
+GO:0006886	BP	e	intracellular protein transport	3/3	349/6920	0.00012723428773925196	7	3	0.04862470363101746	SBH2, SSH1, SSS1
