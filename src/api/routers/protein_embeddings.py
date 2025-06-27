@@ -320,6 +320,9 @@ async def generate_embeddings(
             PPI['protein1'] = PPI['protein1'].map(unified_protein_dict)
             PPI['protein2'] = PPI['protein2'].map(unified_protein_dict)
             PPI = PPI.dropna()
+
+            save_path = os.path.join("./data", species, "dynamic_ppi", dataset_name, dataset_name + "_" + str(i+1), f"ID_Change_PPI_{len(PPI_networks)}.txt")
+            PPI.to_csv(save_path, index=False, header=False, sep='\t')
             
             PPI_list = PPI.values.tolist()
             PPI_list = Nested_list_dup(PPI_list)
@@ -529,6 +532,12 @@ async def generate_embeddings(
             
             args = Args()
             generate_tsne_visualization(Embedding, args)
+            embedding_filename = f"Embeddings_{dataset_name}.pt"
+            print(f"Saving embeddings to {embedding_filename}...")
+            Embedding_path = os.path.join("./data", "results", "embeddings", embedding_filename)
+            if not os.path.exists(os.path.dirname(Embedding_path)):
+                os.makedirs(os.path.dirname(Embedding_path))
+            torch.save(Embedding, Embedding_path)
             
             # Train DNN for protein complex prediction
             print("\nRunning protein complex prediction using DNN...")

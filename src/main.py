@@ -82,19 +82,9 @@ def main(args):
         
         print("unified_protein_dict length:", len(unified_protein_dict), unified_protein_dict)
         # Save the unified protein dictionary
-        # Create directory if it doesn't exist
-        DATASETS = ["biogrid", "krogan14k", "dip", "collins"]
-
-        # find the one prefix that matches the start of args.dataset_name
-        dataset_base = next((d for d in DATASETS if args.dataset_name.startswith(d)), None)
-        if dataset_base is None:
-            raise ValueError(f"Unknown dataset prefix in '{args.dataset_name}'")
-
-        protein_list_dir = os.path.join(args.data_path, args.species, "Gene_Entry_ID_list", dataset_base)
-        os.makedirs(protein_list_dir, exist_ok=True)
-        
-        Protein_dict.to_csv(os.path.join(protein_list_dir, "Protein_list.csv"),
-            index=False, header=False, sep="\t")
+        Protein_dict.to_csv(os.path.join(args.data_path, args.species,
+                            "Gene_Entry_ID_list/Protein_list.csv"),
+                index=False, header=False, sep="\t")
         
         # Process multiple PPI networks using the unified protein dictionary
         print(f"Processing {len(args.ppi_paths)} PPI networks with unified protein mapping...")

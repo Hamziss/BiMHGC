@@ -58,12 +58,12 @@ async def extract_complexes(
     # Load protein dictionary from the protein list file
     embeddings_filename = embeddings_weights.filename.rsplit('.', 1)[0]
 
-    DATASETS = ["biogrid", "krogan14k", "dip", "collins"]
+    # DATASETS = ["biogrid", "krogan14k", "dip", "collins"]
 
     
-    dataset_base = next((d for d in DATASETS if embeddings_filename.startswith(d)), None)
-    if dataset_base is None:
-        raise ValueError(f"Unknown dataset prefix in '{dataset_base}'")
+    # dataset_base = next((d for d in DATASETS if embeddings_filename.startswith(d)), None)
+    # if dataset_base is None:
+    #     raise ValueError(f"Unknown dataset prefix in '{dataset_base}'")
 
     print ("embeddings_filename", embeddings_filename)
         
@@ -78,6 +78,8 @@ async def extract_complexes(
     # Load PPI data
     ppi_name = embeddings_weights.filename.rsplit('.', 1)[0]
     ppi_list, ppi_dict = load_ppi_data(data_path, species, ppi_name + "_1", ppi_name)
+    print("ppi_dict",ppi_dict)
+    
     if ppi_list is None or ppi_dict is None:
         raise HTTPException(status_code=500, detail="Could not load PPI data") 
   
@@ -106,15 +108,20 @@ async def extract_complexes(
 
     PC = [sorted(i) for i in PCs]
     print(f"Converted {len(PC)} protein complexes to ID format")
-
+    
+    
     # Generate negative examples
     print("Generating negative protein complexes...")
     PC_negative = negative_on_distribution(PC, list(ppi_dict.keys()), 5)
+    
+    
 
     # create labels
     postive_labels = torch.ones(len(PC), 1, dtype=torch.float)
     negative_labels = torch.zeros(len(PC_negative), 1, dtype=torch.float) 
     all_labels = torch.cat((postive_labels, negative_labels), dim=0)
+
+
 
     # Combine positive and negative complexes
     all_complexes = PC + PC_negative
@@ -130,6 +137,21 @@ async def extract_complexes(
 
     # Predict using pretrained model
     try:
+        print(f"About to predict with embeddings shape: {embeddings.shape}")
+        print(f"Number of complexes to evaluate: {len(all_complexes)}")
+        print(f"Sample complex (first 3): {all_complexes[:3]}")
+        
+         
+    
+        # # Check if protein IDs in complexes are within valid range
+        # max_protein_id = max([max(complex_ids) for complex_ids in all_complexes if complex_ids])
+        # min_protein_id = min([min(complex_ids) for complex_ids in all_complexes if complex_ids])
+        # print(f"Protein ID range in complexes: {min_protein_id} to {max_protein_id}")
+        # print(f"Embeddings tensor covers indices 0 to {embeddings.shape[0]-1}")
+        
+        # if max_protein_id >= embeddings.shape[0]:
+        #     raise HTTPException(status_code=400, detail=f"Protein ID {max_protein_id} exceeds embeddings size {embeddings.shape[0]}")
+        
         predictions = predict_with_pretrained_dnn(model, embeddings, all_complexes)
         print("Predictions completed successfully.")
 
@@ -180,8 +202,7 @@ async def extract_complexes(
             else:
                 complex_genes.append(str(protein_id))  # Keep ID if no gene symbol found
         predicted_complexes_genes.append(complex_genes)    # Calculate overlap scores for each predicted complex
-    print("fjkdlqmfjdklfjqlkjfqlkd",predicted_complexes[:5])  # Show first 5 predicted complexes for debugging
-    print("rsjeklflm", PC[:5])  # Show first 5 ground truth complexes for debugging
+    
     overlap_scores = calculate_overlap_scores(predicted_complexes, PC)
     
     print("Precision:", Precision, precision)

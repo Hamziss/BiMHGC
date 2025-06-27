@@ -231,7 +231,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
             # Create model save path for this fold
             current_date = datetime.now().strftime("%Y-%m-%d")
             current_time = datetime.now().strftime("%H-%M-%S")
-            models_dir = os.path.join("../trained_models", current_date, f"run_{current_time}")
+            models_dir = os.path.join("./trained_models", current_date, f"run_{current_time}")
             if not os.path.exists(models_dir):
                 os.makedirs(models_dir)
             fold_model_path = os.path.join(models_dir, f"dnn_model_fold_{len(trained_models)+1}.pt")
@@ -256,7 +256,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
         if save_predictions and dataset_info:
             current_date = datetime.now().strftime("%Y-%m-%d")
             current_time = datetime.now().strftime("%H-%M-%S")
-            plots_dir = os.path.join("../data/results/validation_plots", current_date, f"run_{current_time}")
+            plots_dir = os.path.join("./data/results/validation_plots", current_date, f"run_{current_time}")
             if not os.path.exists(plots_dir):
                 os.makedirs(plots_dir)
             plot_path = os.path.join(plots_dir, f"validation_curves_fold_{len(trained_models)}.png")
@@ -309,7 +309,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
     if save_predictions and dataset_info and trained_models:
         current_date = datetime.now().strftime("%Y-%m-%d")
         current_time = datetime.now().strftime("%H-%M-%S")
-        models_dir = os.path.join("../trained_models", current_date, f"run_{current_time}")
+        models_dir = os.path.join("./trained_models", current_date, f"run_{current_time}")
         if not os.path.exists(models_dir):
             os.makedirs(models_dir)
         ensemble_path = os.path.join(models_dir, "dnn_ensemble_model.pt")
@@ -336,7 +336,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
         current_date = datetime.now().strftime("%Y-%m-%d")
         current_time = datetime.now().strftime("%H-%M-%S")
         
-        save_dir = os.path.join("../../data/results/predicted_complexes", current_date, f"run_{current_time}")
+        save_dir = os.path.join("./data/results/predicted_complexes", current_date, f"run_{current_time}")
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
         
