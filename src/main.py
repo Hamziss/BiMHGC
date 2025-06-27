@@ -1,14 +1,15 @@
+from src.utils.helpers import *
 import torch.optim as optim
 from dhg import Hypergraph
-from models import ParallelHGVAE
-from Train_PC import HGC_DNN
+from src.models.wrappers import ParallelHGVAE
+# from Train_PC import HGC_DNN
+from src.training.train_dnn import HGC_DNN
 import argparse
 from torch.optim import Adam
 import time
-from utils import *
 import scipy.sparse as sp
-from layers import loss_function, multi_network_loss_function
-from utils import load_txt_list, count_unique_elements
+from src.models.layers import loss_function, multi_network_loss_function
+# from utils import load_txt_list, count_unique_elements
 import networkx as nx
 import pandas as pd
 import numpy as np
@@ -81,9 +82,19 @@ def main(args):
         
         print("unified_protein_dict length:", len(unified_protein_dict), unified_protein_dict)
         # Save the unified protein dictionary
-        Protein_dict.to_csv(os.path.join(args.data_path, args.species,
-                            "Gene_Entry_ID_list/Protein_list.csv"),
-                index=False, header=False, sep="\t")
+        # Create directory if it doesn't exist
+        DATASETS = ["biogrid", "krogan14k", "dip", "collins"]
+
+        # find the one prefix that matches the start of args.dataset_name
+        dataset_base = next((d for d in DATASETS if args.dataset_name.startswith(d)), None)
+        if dataset_base is None:
+            raise ValueError(f"Unknown dataset prefix in '{args.dataset_name}'")
+
+        protein_list_dir = os.path.join(args.data_path, args.species, "Gene_Entry_ID_list", dataset_base)
+        os.makedirs(protein_list_dir, exist_ok=True)
+        
+        Protein_dict.to_csv(os.path.join(protein_list_dir, "Protein_list.csv"),
+            index=False, header=False, sep="\t")
         
         # Process multiple PPI networks using the unified protein dictionary
         print(f"Processing {len(args.ppi_paths)} PPI networks with unified protein mapping...")
@@ -407,16 +418,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     # Global parameters
     parser.add_argument('--species', type=str, default="Saccharomyces_cerevisiae", help="which species to use.")
-    parser.add_argument('--data_path', type=str, default="../data", help="path storing data.")
+    parser.add_argument('--data_path', type=str, default="./data", help="path storing data.")
     parser.add_argument('--feature_path', type=str, default="protein_feature", help="feature path data")
     parser.add_argument('--PPI_path', type=str, default="PPI", help="Default PPI data path")
     parser.add_argument('--ppi_paths', type=str, nargs='+', default=[
-        "collins_csa2_1", "collins_csa2_2", "collins_csa2_3", "collins_csa2_4", "collins_csa2_5",
-        "collins_csa2_6", "collins_csa2_7", "collins_csa2_8", "collins_csa2_9", "collins_csa2_10",
-        "collins_csa2_11", "collins_csa2_12", "collins_csa2_13", "collins_csa2_14", "collins_csa2_15",
-        "collins_csa2_16", "collins_csa2_17", "collins_csa2_18", "collins_csa2_19", "collins_csa2_20",
-        "collins_csa2_21", "collins_csa2_22", "collins_csa2_23", "collins_csa2_24", "collins_csa2_25",
-        "collins_csa2_26", "collins_csa2_27", "collins_csa2_28", "collins_csa2_29", "collins_csa2_30"
+        "biogridcssa_1", "biogridcssa_2", "biogridcssa_3", "biogridcssa_4", "biogridcssa_5",
+        "biogridcssa_6", "biogridcssa_7", "biogridcssa_8", "biogridcssa_9", "biogridcssa_10",
+        "biogridcssa_11", "biogridcssa_12", "biogridcssa_13", "biogridcssa_14", "biogridcssa_15",
+        "biogridcssa_16", "biogridcssa_17", "biogridcssa_18", "biogridcssa_19", "biogridcssa_20",
+        "biogridcssa_21", "biogridcssa_22", "biogridcssa_23", "biogridcssa_24", "biogridcssa_25",
+        "biogridcssa_26", "biogridcssa_27", "biogridcssa_28", "biogridcssa_29", "biogridcssa_30"
     ], help="Multiple PPI network paths")
     parser.add_argument('--PC_path', type=str, default="Protein_complex", help="Protein complex data path")
     parser.add_argument('--model', type=str, default="ParallelHGVAE", help="Feature coding")
@@ -426,8 +437,8 @@ if __name__ == "__main__":
     parser.add_argument('--hidden1', type=int, default=200, help="Number of units in hidden layer 1.")
     parser.add_argument('--hidden2', type=int, default=100, help="Number of units in hidden layer 2.")
     parser.add_argument('--droprate', type=float, default=0.5, help="Dropout rate (1 - keep probability).")
-    parser.add_argument('--epochs', type=int, default=160, help="Number of epochs to HGVAE.")
-    parser.add_argument('--dataset_name', type=str, default="collins_csa2", help="Dataset name.")
+    parser.add_argument('--epochs', type=int, default=10, help="Number of epochs to HGVAE.")
+    parser.add_argument('--dataset_name', type=str, default="biogridcssa", help="Dataset name.")
 
     args = parser.parse_args()
     print("Arguments:", args)

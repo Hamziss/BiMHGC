@@ -1,0 +1,946 @@
+# GO	NS	enrichment	name	ratio_in_study	ratio_in_pop	p_uncorrected	depth	study_count	p_fdr_bh	study_items
+GO:0000776	CC	e	kinetochore	6/6	75/6920	1.3231521930212397e-12	5	6	1.1719134265953433e-09	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0000775	CC	e	chromosome, centromeric region	6/6	83/6920	2.480240056286441e-12	3	6	1.1719134265953433e-09	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0098687	CC	e	chromosomal region	6/6	190/6920	3.9646477390367184e-10	2	6	1.131517323360656e-07	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0005694	CC	e	chromosome	6/6	196/6920	4.789491315812301e-10	5	6	1.131517323360656e-07	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0000817	CC	e	COMA complex	3/6	4/6920	1.4486716524489758e-09	3	3	2.7379894231285644e-07	CTF19, MCM21, OKP1
+GO:0099080	CC	e	supramolecular complex	6/6	275/6920	3.736396316782982e-09	2	6	5.884824198933196e-07	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0043228	CC	e	membraneless organelle	6/6	1210/6920	2.8289502031080474e-05	3	6	0.0033416974274213807	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0043232	CC	e	intracellular membraneless organelle	6/6	1210/6920	2.8289502031080474e-05	4	6	0.0033416974274213807	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0005634	CC	e	nucleus	6/6	2331/6920	0.001454661100077083	5	6	0.1527394155080937	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0000940	CC	e	outer kinetochore	1/6	6/6920	0.005192920783772925	2	1	0.49073101406654146	CHL4
+GO:0140513	CC	e	nuclear protein-containing complex	3/6	707/6920	0.016766524176550744	2	3	1.0	CTF19, MCM21, OKP1
+GO:0032991	CC	e	protein-containing complex	4/6	2176/6920	0.08244774546672723	1	4	1.0	CHL4, CTF19, MCM21, OKP1
+GO:0043231	CC	e	intracellular membrane-bounded organelle	6/6	4449/6920	0.09495392506609868	4	6	1.0	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0043227	CC	e	membrane-bounded organelle	6/6	4451/6920	0.09505410436162243	3	6	1.0	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0043229	CC	e	intracellular organelle	6/6	4857/6920	0.18834940344588172	3	6	1.0	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0043226	CC	e	organelle	6/6	4859/6920	0.1884189539523861	2	6	1.0	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0110165	CC	e	cellular anatomical structure	6/6	6196/6920	1.0	1	6	1.0	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0005575	CC	e	cellular_component	6/6	6697/6920	1.0	0	6	1.0	CHL4, CTF19, CTF3, MCM21, MCM22, OKP1
+GO:0005737	CC	p	cytoplasm	0/6	2615/6920	0.08951132628770342	2	0	1.0	
+GO:0016020	CC	p	membrane	0/6	2112/6920	0.18698110163974668	2	0	1.0	
+GO:0005829	CC	p	cytosol	0/6	1178/6920	0.5980602024269177	2	0	1.0	
+GO:0005739	CC	p	mitochondrion	0/6	1249/6920	0.5995475282162948	5	0	1.0	
+GO:0031090	CC	p	organelle membrane	0/6	1298/6920	0.6015144986540928	3	0	1.0	
+GO:0044697	CC	p	HICS complex	0/6	4/6920	1.0	2	0	1.0	
+GO:0043626	CC	p	PCNA complex	0/6	1/6920	1.0	4	0	1.0	
+GO:0033254	CC	p	vacuolar transporter chaperone complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0043564	CC	p	Ku70:Ku80 complex	0/6	2/6920	1.0	3	0	1.0	
+GO:1990752	CC	p	microtubule end	0/6	6/6920	1.0	2	0	1.0	
+GO:0000118	CC	p	histone deacetylase complex	0/6	56/6920	1.0	3	0	1.0	
+GO:0000783	CC	p	nuclear telomere cap complex	0/6	6/6920	1.0	4	0	1.0	
+GO:0099086	CC	p	synaptonemal structure	0/6	6/6920	1.0	2	0	1.0	
+GO:0070971	CC	p	endoplasmic reticulum exit site	0/6	8/6920	1.0	2	0	1.0	
+GO:1990234	CC	p	transferase complex	0/6	410/6920	1.0	3	0	1.0	
+GO:0005816	CC	p	spindle pole body	0/6	67/6920	1.0	3	0	1.0	
+GO:0061673	CC	p	mitotic spindle astral microtubule	0/6	1/6920	1.0	9	0	1.0	
+GO:0034715	CC	p	pICln-Sm protein complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0030130	CC	p	clathrin coat of trans-Golgi network vesicle	0/6	2/6920	1.0	6	0	1.0	
+GO:0009337	CC	p	sulfite reductase complex (NADPH)	0/6	2/6920	1.0	3	0	1.0	
+GO:0090512	CC	p	eisosome membrane domain/MCC	0/6	1/6920	1.0	6	0	1.0	
+GO:1990334	CC	p	Bfa1-Bub2 complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0009986	CC	p	cell surface	0/6	14/6920	1.0	2	0	1.0	
+GO:0072379	CC	p	ER membrane insertion complex	0/6	6/6920	1.0	2	0	1.0	
+GO:0012506	CC	p	vesicle membrane	0/6	150/6920	1.0	4	0	1.0	
+GO:0033255	CC	p	SAS acetyltransferase complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0042709	CC	p	succinate-CoA ligase complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0032176	CC	p	split septin rings	0/6	6/6920	1.0	7	0	1.0	
+GO:0042645	CC	p	mitochondrial nucleoid	0/6	25/6920	1.0	5	0	1.0	
+GO:0031414	CC	p	N-terminal protein acetyltransferase complex	0/6	8/6920	1.0	6	0	1.0	
+GO:0009361	CC	p	succinate-CoA ligase complex (ADP-forming)	0/6	1/6920	1.0	5	0	1.0	
+GO:0032588	CC	p	trans-Golgi network membrane	0/6	1/6920	1.0	4	0	1.0	
+GO:1902493	CC	p	acetyltransferase complex	0/6	59/6920	1.0	4	0	1.0	
+GO:0031010	CC	p	ISWI-type complex	0/6	9/6920	1.0	5	0	1.0	
+GO:0030864	CC	p	cortical actin cytoskeleton	0/6	6/6920	1.0	7	0	1.0	
+GO:1902555	CC	p	endoribonuclease complex	0/6	24/6920	1.0	4	0	1.0	
+GO:0005951	CC	p	carbamoyl-phosphate synthase complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0005658	CC	p	alpha DNA polymerase:primase complex	0/6	4/6920	1.0	8	0	1.0	
+GO:0071256	CC	p	translocon complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0034703	CC	p	cation channel complex	0/6	19/6920	1.0	5	0	1.0	
+GO:0044853	CC	p	plasma membrane raft	0/6	1/6920	1.0	5	0	1.0	
+GO:0016607	CC	p	nuclear speck	0/6	2/6920	1.0	7	0	1.0	
+GO:0000314	CC	p	organellar small ribosomal subunit	0/6	37/6920	1.0	5	0	1.0	
+GO:0098554	CC	p	cytoplasmic side of endoplasmic reticulum membrane	0/6	2/6920	1.0	4	0	1.0	
+GO:0032541	CC	p	cortical endoplasmic reticulum	0/6	28/6920	1.0	5	0	1.0	
+GO:0000164	CC	p	protein phosphatase type 1 complex	0/6	11/6920	1.0	5	0	1.0	
+GO:0032390	CC	p	MutLbeta complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0030905	CC	p	retromer, tubulation complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0034719	CC	p	SMN-Sm protein complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0031902	CC	p	late endosome membrane	0/6	22/6920	1.0	7	0	1.0	
+GO:0005828	CC	p	kinetochore microtubule	0/6	3/6920	1.0	8	0	1.0	
+GO:0044232	CC	p	organelle membrane contact site	0/6	61/6920	1.0	2	0	1.0	
+GO:0005663	CC	p	DNA replication factor C complex	0/6	5/6920	1.0	2	0	1.0	
+GO:0032177	CC	p	cellular bud neck split septin rings	0/6	6/6920	1.0	8	0	1.0	
+GO:0031520	CC	p	plasma membrane of cell tip	0/6	5/6920	1.0	4	0	1.0	
+GO:0036387	CC	p	pre-replicative complex	0/6	16/6920	1.0	3	0	1.0	
+GO:0070419	CC	p	nonhomologous end joining complex	0/6	3/6920	1.0	4	0	1.0	
+GO:1904564	CC	p	cytosolic [4Fe-4S] assembly scaffold complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0044615	CC	p	nuclear pore nuclear basket	0/6	10/6920	1.0	3	0	1.0	
+GO:0032153	CC	p	cell division site	0/6	33/6920	1.0	2	0	1.0	
+GO:1990871	CC	p	Vma12-Vma22 assembly complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0005685	CC	p	U1 snRNP	0/6	19/6920	1.0	5	0	1.0	
+GO:0005876	CC	p	spindle microtubule	0/6	19/6920	1.0	7	0	1.0	
+GO:0000113	CC	p	nucleotide-excision repair factor 4 complex	0/6	4/6920	1.0	4	0	1.0	
+GO:1905368	CC	p	peptidase complex	0/6	80/6920	1.0	3	0	1.0	
+GO:0000178	CC	p	exosome (RNase complex)	0/6	13/6920	1.0	4	0	1.0	
+GO:1990130	CC	p	GATOR1 complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0008278	CC	p	cohesin complex	0/6	5/6920	1.0	2	0	1.0	
+GO:0005933	CC	p	cellular bud	0/6	69/6920	1.0	2	0	1.0	
+GO:0008024	CC	p	cyclin/CDK positive transcription elongation factor complex	0/6	4/6920	1.0	9	0	1.0	
+GO:0000445	CC	p	THO complex part of transcription export complex	0/6	5/6920	1.0	4	0	1.0	
+GO:0031502	CC	p	dolichyl-phosphate-mannose-protein mannosyltransferase complex	0/6	5/6920	1.0	5	0	1.0	
+GO:1990726	CC	p	Lsm1-7-Pat1 complex	0/6	8/6920	1.0	3	0	1.0	
+GO:0000428	CC	p	DNA-directed RNA polymerase complex	0/6	38/6920	1.0	6	0	1.0	
+GO:0098552	CC	p	side of membrane	0/6	93/6920	1.0	2	0	1.0	
+GO:0008290	CC	p	F-actin capping protein complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0070461	CC	p	SAGA-type complex	0/6	22/6920	1.0	7	0	1.0	
+GO:0089713	CC	p	Cbf1-Met4-Met28 complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0005576	CC	p	extracellular region	0/6	124/6920	1.0	2	0	1.0	
+GO:0035658	CC	p	Mon1-Ccz1 complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0030678	CC	p	mitochondrial ribonuclease P complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0140445	CC	p	chromosome, telomeric repeat region	0/6	1/6920	1.0	4	0	1.0	
+GO:0000781	CC	p	chromosome, telomeric region	0/6	111/6920	1.0	3	0	1.0	
+GO:0005946	CC	p	alpha,alpha-trehalose-phosphate synthase complex (UDP-forming)	0/6	4/6920	1.0	4	0	1.0	
+GO:0033110	CC	p	Cvt vesicle membrane	0/6	1/6920	1.0	6	0	1.0	
+GO:0000015	CC	p	phosphopyruvate hydratase complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0034707	CC	p	chloride channel complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0071597	CC	p	cellular birth scar	0/6	2/6920	1.0	2	0	1.0	
+GO:0005628	CC	p	prospore membrane	0/6	74/6920	1.0	3	0	1.0	
+GO:0030906	CC	p	retromer, cargo-selective complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0005948	CC	p	acetolactate synthase complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0090443	CC	p	FAR/SIN/STRIPAK complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0052718	CC	p	tRNA-specific adenosine-34 deaminase complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0034099	CC	p	luminal surveillance complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0005727	CC	p	extrachromosomal circular DNA	0/6	2/6920	1.0	3	0	1.0	
+GO:0009898	CC	p	cytoplasmic side of plasma membrane	0/6	8/6920	1.0	4	0	1.0	
+GO:0016035	CC	p	zeta DNA polymerase complex	0/6	4/6920	1.0	6	0	1.0	
+GO:1905862	CC	p	ferroxidase complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0140268	CC	p	endoplasmic reticulum-plasma membrane contact site	0/6	4/6920	1.0	3	0	1.0	
+GO:0035770	CC	p	ribonucleoprotein granule	0/6	143/6920	1.0	5	0	1.0	
+GO:0160189	CC	p	peroxisomal-mitochondrial contact site	0/6	2/6920	1.0	3	0	1.0	
+GO:0033178	CC	p	proton-transporting two-sector ATPase complex, catalytic domain	0/6	7/6920	1.0	3	0	1.0	
+GO:0033106	CC	p	cis-Golgi network membrane	0/6	3/6920	1.0	5	0	1.0	
+GO:0045275	CC	p	respiratory chain complex III	0/6	10/6920	1.0	4	0	1.0	
+GO:0042765	CC	p	GPI-anchor transamidase complex	0/6	5/6920	1.0	6	0	1.0	
+GO:0035657	CC	p	eRF1 methyltransferase complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0031934	CC	p	mating-type region heterochromatin	0/6	3/6920	1.0	4	0	1.0	
+GO:0000835	CC	p	ER ubiquitin ligase complex	0/6	11/6920	1.0	6	0	1.0	
+GO:0019773	CC	p	proteasome core complex, alpha-subunit complex	0/6	7/6920	1.0	2	0	1.0	
+GO:0032585	CC	p	multivesicular body membrane	0/6	3/6920	1.0	8	0	1.0	
+GO:0002178	CC	p	palmitoyltransferase complex	0/6	8/6920	1.0	4	0	1.0	
+GO:0034272	CC	p	phosphatidylinositol 3-kinase complex, class III, type II	0/6	4/6920	1.0	7	0	1.0	
+GO:0031942	CC	p	i-AAA complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0097525	CC	p	spliceosomal snRNP complex	0/6	62/6920	1.0	4	0	1.0	
+GO:0005827	CC	p	polar microtubule	0/6	2/6920	1.0	8	0	1.0	
+GO:0019898	CC	p	extrinsic component of membrane	0/6	7/6920	1.0	2	0	1.0	
+GO:0005657	CC	p	replication fork	0/6	29/6920	1.0	2	0	1.0	
+GO:0045240	CC	p	alpha-ketoacid dehydrogenase complex	0/6	9/6920	1.0	4	0	1.0	
+GO:0032580	CC	p	Golgi cisterna membrane	0/6	2/6920	1.0	4	0	1.0	
+GO:0043230	CC	p	extracellular organelle	0/6	2/6920	1.0	3	0	1.0	
+GO:0033100	CC	p	NuA3 histone acetyltransferase complex	0/6	6/6920	1.0	8	0	1.0	
+GO:0070545	CC	p	PeBoW complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0035097	CC	p	histone methyltransferase complex	0/6	8/6920	1.0	5	0	1.0	
+GO:0000421	CC	p	autophagosome membrane	0/6	8/6920	1.0	6	0	1.0	
+GO:0098800	CC	p	inner mitochondrial membrane protein complex	0/6	35/6920	1.0	3	0	1.0	
+GO:0030117	CC	p	membrane coat	0/6	36/6920	1.0	3	0	1.0	
+GO:0048188	CC	p	Set1C/COMPASS complex	0/6	8/6920	1.0	6	0	1.0	
+GO:0106068	CC	p	SUMO ligase complex	0/6	8/6920	1.0	4	0	1.0	
+GO:0005955	CC	p	calcineurin complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0005852	CC	p	eukaryotic translation initiation factor 3 complex	0/6	7/6920	1.0	2	0	1.0	
+GO:0030125	CC	p	clathrin vesicle coat	0/6	7/6920	1.0	5	0	1.0	
+GO:0000137	CC	p	Golgi cis cisterna	0/6	6/6920	1.0	5	0	1.0	
+GO:0034045	CC	p	phagophore assembly site membrane	0/6	27/6920	1.0	3	0	1.0	
+GO:0071006	CC	p	U2-type catalytic step 1 spliceosome	0/6	13/6920	1.0	5	0	1.0	
+GO:0031211	CC	p	endoplasmic reticulum palmitoyltransferase complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0005769	CC	p	early endosome	0/6	16/6920	1.0	8	0	1.0	
+GO:0097585	CC	p	dolichyl-phosphate-mannose-protein mannosyltransferase Pmt5p-Pmt3p dimer complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0033065	CC	p	Rad51C-XRCC3 complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0017054	CC	p	negative cofactor 2 complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0000974	CC	p	Prp19 complex	0/6	14/6920	1.0	2	0	1.0	
+GO:0033063	CC	p	Rad51B-Rad51C-Rad51D-XRCC2 complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0032160	CC	p	septin filament array	0/6	5/6920	1.0	7	0	1.0	
+GO:0005654	CC	p	nucleoplasm	0/6	65/6920	1.0	2	0	1.0	
+GO:0033179	CC	p	proton-transporting V-type ATPase, V0 domain	0/6	7/6920	1.0	4	0	1.0	
+GO:1990298	CC	p	bub1-bub3 complex	0/6	1/6920	1.0	2	0	1.0	
+GO:1990221	CC	p	L-cysteine desulfurase complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0005773	CC	p	vacuole	0/6	434/6920	1.0	5	0	1.0	
+GO:0031533	CC	p	mRNA capping enzyme complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0042575	CC	p	DNA polymerase complex	0/6	14/6920	1.0	5	0	1.0	
+GO:0000792	CC	p	heterochromatin	0/6	15/6920	1.0	3	0	1.0	
+GO:0022625	CC	p	cytosolic large ribosomal subunit	0/6	93/6920	1.0	5	0	1.0	
+GO:0005744	CC	p	TIM23 mitochondrial import inner membrane translocase complex	0/6	7/6920	1.0	4	0	1.0	
+GO:0070860	CC	p	RNA polymerase I core factor complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0030691	CC	p	Noc2p-Noc3p complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0099738	CC	p	cell cortex region	0/6	11/6920	1.0	4	0	1.0	
+GO:0005886	CC	p	plasma membrane	0/6	564/6920	1.0	3	0	1.0	
+GO:0031201	CC	p	SNARE complex	0/6	27/6920	1.0	3	0	1.0	
+GO:0030132	CC	p	clathrin coat of coated pit	0/6	2/6920	1.0	5	0	1.0	
+GO:0000235	CC	p	astral microtubule	0/6	4/6920	1.0	8	0	1.0	
+GO:0008023	CC	p	transcription elongation factor complex	0/6	22/6920	1.0	3	0	1.0	
+GO:0038037	CC	p	G protein-coupled receptor dimeric complex	0/6	1/6920	1.0	6	0	1.0	
+GO:0031422	CC	p	RecQ family helicase-topoisomerase III complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0061700	CC	p	GATOR2 complex	0/6	1/6920	1.0	2	0	1.0	
+GO:0089701	CC	p	U2AF complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0043291	CC	p	RAVE complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0034455	CC	p	t-UTP complex	0/6	7/6920	1.0	3	0	1.0	
+GO:0045239	CC	p	tricarboxylic acid cycle heteromeric enzyme complex	0/6	9/6920	1.0	3	0	1.0	
+GO:0015629	CC	p	actin cytoskeleton	0/6	18/6920	1.0	6	0	1.0	
+GO:0071004	CC	p	U2-type prespliceosome	0/6	31/6920	1.0	5	0	1.0	
+GO:0070916	CC	p	inositol phosphoceramide synthase complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0031410	CC	p	cytoplasmic vesicle	0/6	279/6920	1.0	6	0	1.0	
+GO:0031251	CC	p	PAN complex	0/6	2/6920	1.0	4	0	1.0	
+GO:1902554	CC	p	serine/threonine protein kinase complex	0/6	56/6920	1.0	6	0	1.0	
+GO:0000446	CC	p	nucleoplasmic THO complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0033655	CC	p	host cell cytoplasm part	0/6	1/6920	1.0	5	0	1.0	
+GO:0005788	CC	p	endoplasmic reticulum lumen	0/6	16/6920	1.0	5	0	1.0	
+GO:0031083	CC	p	BLOC-1 complex	0/6	6/6920	1.0	4	0	1.0	
+GO:0005655	CC	p	nucleolar ribonuclease P complex	0/6	11/6920	1.0	7	0	1.0	
+GO:0035267	CC	p	NuA4 histone acetyltransferase complex	0/6	17/6920	1.0	9	0	1.0	
+GO:0010008	CC	p	endosome membrane	0/6	101/6920	1.0	6	0	1.0	
+GO:0043332	CC	p	mating projection tip	0/6	121/6920	1.0	4	0	1.0	
+GO:0033647	CC	p	host intracellular organelle	0/6	1/6920	1.0	5	0	1.0	
+GO:0015935	CC	p	small ribosomal subunit	0/6	99/6920	1.0	4	0	1.0	
+GO:0097346	CC	p	INO80-type complex	0/6	27/6920	1.0	5	0	1.0	
+GO:0030126	CC	p	COPI vesicle coat	0/6	8/6920	1.0	5	0	1.0	
+GO:1990537	CC	p	mitotic spindle polar microtubule	0/6	1/6920	1.0	9	0	1.0	
+GO:1990112	CC	p	RQC complex	0/6	6/6920	1.0	2	0	1.0	
+GO:0097373	CC	p	MCM core complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0097505	CC	p	Rad6-Rad18 complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0005656	CC	p	nuclear pre-replicative complex	0/6	16/6920	1.0	4	0	1.0	
+GO:0031312	CC	p	extrinsic component of organelle membrane	0/6	7/6920	1.0	3	0	1.0	
+GO:1990879	CC	p	CST complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0031415	CC	p	NatA complex	0/6	3/6920	1.0	7	0	1.0	
+GO:0005796	CC	p	Golgi lumen	0/6	4/6920	1.0	5	0	1.0	
+GO:0031464	CC	p	Cul4A-RING E3 ubiquitin ligase complex	0/6	1/6920	1.0	7	0	1.0	
+GO:0044322	CC	p	endoplasmic reticulum quality control compartment	0/6	1/6920	1.0	2	0	1.0	
+GO:0000328	CC	p	fungal-type vacuole lumen	0/6	15/6920	1.0	6	0	1.0	
+GO:0034506	CC	p	chromosome, centromeric core domain	0/6	1/6920	1.0	3	0	1.0	
+GO:0030894	CC	p	replisome	0/6	4/6920	1.0	3	0	1.0	
+GO:1990530	CC	p	Cdc50p-Drs2p complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0000120	CC	p	RNA polymerase I transcription regulator complex	0/6	8/6920	1.0	3	0	1.0	
+GO:0005884	CC	p	actin filament	0/6	9/6920	1.0	6	0	1.0	
+GO:0030289	CC	p	protein phosphatase 4 complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0042764	CC	p	ascospore-type prospore	0/6	4/6920	1.0	3	0	1.0	
+GO:0000506	CC	p	glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex	0/6	6/6920	1.0	4	0	1.0	
+GO:0005762	CC	p	mitochondrial large ribosomal subunit	0/6	48/6920	1.0	6	0	1.0	
+GO:0062128	CC	p	MutSgamma complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0070847	CC	p	core mediator complex	0/6	20/6920	1.0	4	0	1.0	
+GO:0038038	CC	p	G protein-coupled receptor homodimeric complex	0/6	1/6920	1.0	7	0	1.0	
+GO:0005761	CC	p	mitochondrial ribosome	0/6	9/6920	1.0	7	0	1.0	
+GO:0030119	CC	p	AP-type membrane coat adaptor complex	0/6	13/6920	1.0	3	0	1.0	
+GO:0000228	CC	p	nuclear chromosome	0/6	43/6920	1.0	6	0	1.0	
+GO:1905370	CC	p	serine-type endopeptidase complex	0/6	7/6920	1.0	5	0	1.0	
+GO:0031931	CC	p	TORC1 complex	0/6	5/6920	1.0	4	0	1.0	
+GO:0044289	CC	p	mitochondrial inner-outer membrane contact site	0/6	3/6920	1.0	3	0	1.0	
+GO:0061695	CC	p	transferase complex, transferring phosphorus-containing groups	0/6	135/6920	1.0	4	0	1.0	
+GO:0005885	CC	p	Arp2/3 protein complex	0/6	7/6920	1.0	2	0	1.0	
+GO:1902687	CC	p	glucosidase complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0005687	CC	p	U4 snRNP	0/6	7/6920	1.0	5	0	1.0	
+GO:1905348	CC	p	endonuclease complex	0/6	26/6920	1.0	3	0	1.0	
+GO:0071986	CC	p	Ragulator complex	0/6	6/6920	1.0	4	0	1.0	
+GO:0000152	CC	p	nuclear ubiquitin ligase complex	0/6	23/6920	1.0	5	0	1.0	
+GO:0016587	CC	p	Isw1 complex	0/6	4/6920	1.0	6	0	1.0	
+GO:0030532	CC	p	small nuclear ribonucleoprotein complex	0/6	64/6920	1.0	3	0	1.0	
+GO:0016281	CC	p	eukaryotic translation initiation factor 4F complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0016514	CC	p	SWI/SNF complex	0/6	15/6920	1.0	5	0	1.0	
+GO:0042763	CC	p	intracellular immature spore	0/6	4/6920	1.0	2	0	1.0	
+GO:0032221	CC	p	Rpd3S complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0000836	CC	p	Hrd1p ubiquitin ligase complex	0/6	10/6920	1.0	7	0	1.0	
+GO:0031501	CC	p	mannosyltransferase complex	0/6	18/6920	1.0	4	0	1.0	
+GO:0005853	CC	p	eukaryotic translation elongation factor 1 complex	0/6	1/6920	1.0	2	0	1.0	
+GO:0009328	CC	p	phenylalanine-tRNA ligase complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0043625	CC	p	delta DNA polymerase complex	0/6	3/6920	1.0	6	0	1.0	
+GO:0000811	CC	p	GINS complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0072357	CC	p	PTW/PP1 phosphatase complex	0/6	1/6920	1.0	6	0	1.0	
+GO:0005850	CC	p	eukaryotic translation initiation factor 2 complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0000417	CC	p	HIR complex	0/6	4/6920	1.0	2	0	1.0	
+GO:1990527	CC	p	Tec1p-Ste12p-Dig1p complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0000243	CC	p	commitment complex	0/6	13/6920	1.0	5	0	1.0	
+GO:0005821	CC	p	intermediate layer of spindle pole body	0/6	1/6920	1.0	2	0	1.0	
+GO:0098533	CC	p	ATPase dependent transmembrane transport complex	0/6	5/6920	1.0	4	0	1.0	
+GO:0044611	CC	p	nuclear pore inner ring	0/6	4/6920	1.0	3	0	1.0	
+GO:0043505	CC	p	CENP-A containing nucleosome	0/6	2/6920	1.0	4	0	1.0	
+GO:0005633	CC	p	ascus lipid droplet	0/6	1/6920	1.0	6	0	1.0	
+GO:0005776	CC	p	autophagosome	0/6	7/6920	1.0	6	0	1.0	
+GO:0005868	CC	p	cytoplasmic dynein complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0005945	CC	p	6-phosphofructokinase complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0072588	CC	p	box H/ACA RNP complex	0/6	33/6920	1.0	4	0	1.0	
+GO:0031903	CC	p	microbody membrane	0/6	45/6920	1.0	6	0	1.0	
+GO:0031074	CC	p	nucleocytoplasmic transport complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0070993	CC	p	cytosolic translation preinitiation complex	0/6	18/6920	1.0	3	0	1.0	
+GO:0030690	CC	p	Noc1p-Noc2p complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0005641	CC	p	nuclear envelope lumen	0/6	5/6920	1.0	6	0	1.0	
+GO:0031429	CC	p	box H/ACA snoRNP complex	0/6	33/6920	1.0	5	0	1.0	
+GO:0033553	CC	p	rDNA heterochromatin	0/6	11/6920	1.0	4	0	1.0	
+GO:0000502	CC	p	proteasome complex	0/6	40/6920	1.0	5	0	1.0	
+GO:0001405	CC	p	PAM complex, Tim23 associated import motor	0/6	7/6920	1.0	4	0	1.0	
+GO:0005938	CC	p	cell cortex	0/6	63/6920	1.0	3	0	1.0	
+GO:0099023	CC	p	vesicle tethering complex	0/6	43/6920	1.0	2	0	1.0	
+GO:0022627	CC	p	cytosolic small ribosomal subunit	0/6	62/6920	1.0	5	0	1.0	
+GO:0017119	CC	p	Golgi transport complex	0/6	8/6920	1.0	3	0	1.0	
+GO:0110085	CC	p	mitotic actomyosin contractile ring	0/6	19/6920	1.0	4	0	1.0	
+GO:0000111	CC	p	nucleotide-excision repair factor 2 complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0000144	CC	p	cellular bud neck septin ring	0/6	14/6920	1.0	8	0	1.0	
+GO:0019867	CC	p	outer membrane	0/6	120/6920	1.0	3	0	1.0	
+GO:0005854	CC	p	nascent polypeptide-associated complex	0/6	4/6920	1.0	2	0	1.0	
+GO:0005637	CC	p	nuclear inner membrane	0/6	20/6920	1.0	5	0	1.0	
+GO:0005934	CC	p	cellular bud tip	0/6	106/6920	1.0	3	0	1.0	
+GO:0045254	CC	p	pyruvate dehydrogenase complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0032473	CC	p	cytoplasmic side of mitochondrial outer membrane	0/6	4/6920	1.0	4	0	1.0	
+GO:0000938	CC	p	GARP complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0030686	CC	p	90S preribosome	0/6	81/6920	1.0	4	0	1.0	
+GO:0005770	CC	p	late endosome	0/6	38/6920	1.0	8	0	1.0	
+GO:0000782	CC	p	telomere cap complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0034456	CC	p	UTP-C complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0018444	CC	p	translation release factor complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0031262	CC	p	Ndc80 complex	0/6	4/6920	1.0	2	0	1.0	
+GO:0032165	CC	p	prospore septin filament array	0/6	1/6920	1.0	8	0	1.0	
+GO:0070939	CC	p	Dsl1/NZR complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0000123	CC	p	histone acetyltransferase complex	0/6	46/6920	1.0	6	0	1.0	
+GO:0039713	CC	p	viral factory	0/6	1/6920	1.0	4	0	1.0	
+GO:0098799	CC	p	outer mitochondrial membrane protein complex	0/6	21/6920	1.0	3	0	1.0	
+GO:0005697	CC	p	telomerase holoenzyme complex	0/6	10/6920	1.0	3	0	1.0	
+GO:0016459	CC	p	myosin complex	0/6	8/6920	1.0	2	0	1.0	
+GO:0005622	CC	p	intracellular anatomical structure	0/6	3/6920	1.0	2	0	1.0	
+GO:0005783	CC	p	endoplasmic reticulum	0/6	675/6920	1.0	5	0	1.0	
+GO:0000133	CC	p	polarisome	0/6	6/6920	1.0	2	0	1.0	
+GO:0051285	CC	p	cell cortex of cell tip	0/6	9/6920	1.0	5	0	1.0	
+GO:0044732	CC	p	mitotic spindle pole body	0/6	14/6920	1.0	4	0	1.0	
+GO:0030658	CC	p	transport vesicle membrane	0/6	20/6920	1.0	6	0	1.0	
+GO:0031315	CC	p	extrinsic component of mitochondrial outer membrane	0/6	1/6920	1.0	4	0	1.0	
+GO:0034245	CC	p	mitochondrial DNA-directed RNA polymerase complex	0/6	2/6920	1.0	7	0	1.0	
+GO:0000124	CC	p	SAGA complex	0/6	20/6920	1.0	8	0	1.0	
+GO:0090694	CC	p	Scc2-Scc4 cohesin loading complex	0/6	1/6920	1.0	4	0	1.0	
+GO:0070822	CC	p	Sin3-type complex	0/6	21/6920	1.0	4	0	1.0	
+GO:0016586	CC	p	RSC-type complex	0/6	18/6920	1.0	5	0	1.0	
+GO:1905347	CC	p	endodeoxyribonuclease complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0016272	CC	p	prefoldin complex	0/6	7/6920	1.0	2	0	1.0	
+GO:0070069	CC	p	cytochrome complex	0/6	27/6920	1.0	3	0	1.0	
+GO:0072380	CC	p	TRC complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0097584	CC	p	dolichyl-phosphate-mannose-protein mannosyltransferase Pmt5p-Pmt2p dimer complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0005777	CC	p	peroxisome	0/6	137/6920	1.0	6	0	1.0	
+GO:0000814	CC	p	ESCRT II complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0070390	CC	p	transcription export complex 2	0/6	5/6920	1.0	3	0	1.0	
+GO:0031012	CC	p	extracellular matrix	0/6	1/6920	1.0	3	0	1.0	
+GO:0036286	CC	p	eisosome filament	0/6	2/6920	1.0	2	0	1.0	
+GO:0000795	CC	p	synaptonemal complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0061499	CC	p	outer plaque of mitotic spindle pole body	0/6	3/6920	1.0	3	0	1.0	
+GO:0030892	CC	p	mitotic cohesin complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0033309	CC	p	SBF transcription complex	0/6	8/6920	1.0	4	0	1.0	
+GO:0002189	CC	p	ribose phosphate diphosphokinase complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0012510	CC	p	trans-Golgi network transport vesicle membrane	0/6	1/6920	1.0	8	0	1.0	
+GO:0005956	CC	p	protein kinase CK2 complex	0/6	4/6920	1.0	7	0	1.0	
+GO:0061672	CC	p	glutathione hydrolase complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0000221	CC	p	vacuolar proton-transporting V-type ATPase, V1 domain	0/6	7/6920	1.0	5	0	1.0	
+GO:0005952	CC	p	cAMP-dependent protein kinase complex	0/6	4/6920	1.0	7	0	1.0	
+GO:0120171	CC	p	Cdc24p-Far1p-Gbetagamma complex	0/6	4/6920	1.0	2	0	1.0	
+GO:0032389	CC	p	MutLalpha complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0070187	CC	p	shelterin complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0033648	CC	p	host intracellular membrane-bounded organelle	0/6	1/6920	1.0	6	0	1.0	
+GO:0033643	CC	p	host cell part	0/6	1/6920	1.0	3	0	1.0	
+GO:1905354	CC	p	exoribonuclease complex	0/6	18/6920	1.0	3	0	1.0	
+GO:0070013	CC	p	intracellular organelle lumen	0/6	281/6920	1.0	4	0	1.0	
+GO:0033597	CC	p	mitotic checkpoint complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0030287	CC	p	cell wall-bounded periplasmic space	0/6	7/6920	1.0	3	0	1.0	
+GO:0033698	CC	p	Rpd3L complex	0/6	16/6920	1.0	5	0	1.0	
+GO:0034518	CC	p	RNA cap binding complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0031298	CC	p	replication fork protection complex	0/6	11/6920	1.0	3	0	1.0	
+GO:0099115	CC	p	chromosome, subtelomeric region	0/6	1/6920	1.0	4	0	1.0	
+GO:0005665	CC	p	RNA polymerase II, core complex	0/6	13/6920	1.0	8	0	1.0	
+GO:0042555	CC	p	MCM complex	0/6	6/6920	1.0	2	0	1.0	
+GO:0097078	CC	p	FAL1-SGD1 complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0071819	CC	p	DUBm complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0044613	CC	p	nuclear pore central transport channel	0/6	14/6920	1.0	3	0	1.0	
+GO:0034704	CC	p	calcium channel complex	0/6	1/6920	1.0	6	0	1.0	
+GO:0045277	CC	p	respiratory chain complex IV	0/6	17/6920	1.0	4	0	1.0	
+GO:0017101	CC	p	aminoacyl-tRNA synthetase multienzyme complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0071021	CC	p	U2-type post-spliceosomal complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0000408	CC	p	EKC/KEOPS complex	0/6	5/6920	1.0	4	0	1.0	
+GO:0031314	CC	p	extrinsic component of mitochondrial inner membrane	0/6	5/6920	1.0	4	0	1.0	
+GO:0005778	CC	p	peroxisomal membrane	0/6	45/6920	1.0	7	0	1.0	
+GO:0060187	CC	p	cell pole	0/6	131/6920	1.0	2	0	1.0	
+GO:0000407	CC	p	phagophore assembly site	0/6	41/6920	1.0	2	0	1.0	
+GO:0071013	CC	p	catalytic step 2 spliceosome	0/6	33/6920	1.0	4	0	1.0	
+GO:1990131	CC	p	Gtr1-Gtr2 GTPase complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0106143	CC	p	tRNA (m7G46) methyltransferase complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0031463	CC	p	Cul3-RING ubiquitin ligase complex	0/6	7/6920	1.0	6	0	1.0	
+GO:0000142	CC	p	cellular bud neck contractile ring	0/6	14/6920	1.0	5	0	1.0	
+GO:0005851	CC	p	eukaryotic translation initiation factor 2B complex	0/6	5/6920	1.0	4	0	1.0	
+GO:0000220	CC	p	vacuolar proton-transporting V-type ATPase, V0 domain	0/6	7/6920	1.0	5	0	1.0	
+GO:0062092	CC	p	Yae1-Lto1 complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0051286	CC	p	cell tip	0/6	131/6920	1.0	3	0	1.0	
+GO:0005940	CC	p	septin ring	0/6	23/6920	1.0	7	0	1.0	
+GO:0000262	CC	p	mitochondrial chromosome	0/6	3/6920	1.0	6	0	1.0	
+GO:1902495	CC	p	transmembrane transporter complex	0/6	64/6920	1.0	3	0	1.0	
+GO:0022626	CC	p	cytosolic ribosome	0/6	25/6920	1.0	6	0	1.0	
+GO:0031390	CC	p	Ctf18 RFC-like complex	0/6	7/6920	1.0	3	0	1.0	
+GO:0048500	CC	p	signal recognition particle	0/6	7/6920	1.0	3	0	1.0	
+GO:0030880	CC	p	RNA polymerase complex	0/6	38/6920	1.0	5	0	1.0	
+GO:0008275	CC	p	gamma-tubulin small complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0046930	CC	p	pore complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0005677	CC	p	chromatin silencing complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0033646	CC	p	host intracellular part	0/6	1/6920	1.0	4	0	1.0	
+GO:0140671	CC	p	ADA complex	0/6	6/6920	1.0	8	0	1.0	
+GO:0030692	CC	p	Noc4p-Nop14p complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0005819	CC	p	spindle	0/6	44/6920	1.0	5	0	1.0	
+GO:0031680	CC	p	G-protein beta/gamma-subunit complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0000399	CC	p	cellular bud neck septin structure	0/6	25/6920	1.0	2	0	1.0	
+GO:0032301	CC	p	MutSalpha complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0000839	CC	p	Hrd1p ubiquitin ligase ERAD-L complex	0/6	10/6920	1.0	8	0	1.0	
+GO:0042405	CC	p	nuclear inclusion body	0/6	1/6920	1.0	4	0	1.0	
+GO:0000324	CC	p	fungal-type vacuole	0/6	276/6920	1.0	7	0	1.0	
+GO:0070250	CC	p	mating projection membrane	0/6	2/6920	1.0	5	0	1.0	
+GO:1903561	CC	p	extracellular vesicle	0/6	2/6920	1.0	5	0	1.0	
+GO:0000815	CC	p	ESCRT III complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0005825	CC	p	half bridge of spindle pole body	0/6	4/6920	1.0	2	0	1.0	
+GO:0034044	CC	p	exomer complex	0/6	5/6920	1.0	2	0	1.0	
+GO:0043224	CC	p	nuclear SCF ubiquitin ligase complex	0/6	2/6920	1.0	7	0	1.0	
+GO:0097361	CC	p	cytosolic [4Fe-4S] assembly targeting complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0000500	CC	p	RNA polymerase I upstream activating factor complex	0/6	5/6920	1.0	4	0	1.0	
+GO:0097038	CC	p	perinuclear endoplasmic reticulum	0/6	8/6920	1.0	2	0	1.0	
+GO:0005759	CC	p	mitochondrial matrix	0/6	139/6920	1.0	5	0	1.0	
+GO:0031907	CC	p	microbody lumen	0/6	20/6920	1.0	5	0	1.0	
+GO:1990498	CC	p	mitotic spindle microtubule	0/6	1/6920	1.0	8	0	1.0	
+GO:0070449	CC	p	elongin complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0005942	CC	p	phosphatidylinositol 3-kinase complex	0/6	6/6920	1.0	5	0	1.0	
+GO:0061671	CC	p	Cbp3p-Cbp6 complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0071541	CC	p	eukaryotic translation initiation factor 3 complex, eIF3m	0/6	2/6920	1.0	3	0	1.0	
+GO:0031941	CC	p	filamentous actin	0/6	2/6920	1.0	2	0	1.0	
+GO:0090571	CC	p	RNA polymerase II transcription repressor complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0071011	CC	p	precatalytic spliceosome	0/6	16/6920	1.0	4	0	1.0	
+GO:0098853	CC	p	endoplasmic reticulum-vacuole membrane contact site	0/6	1/6920	1.0	3	0	1.0	
+GO:1990615	CC	p	Kelch-containing formin regulatory complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0000800	CC	p	lateral element	0/6	2/6920	1.0	2	0	1.0	
+GO:0097268	CC	p	cytoophidium	0/6	2/6920	1.0	5	0	1.0	
+GO:1902562	CC	p	H4 histone acetyltransferase complex	0/6	17/6920	1.0	7	0	1.0	
+GO:0051233	CC	p	spindle midzone	0/6	10/6920	1.0	2	0	1.0	
+GO:0005848	CC	p	mRNA cleavage stimulating factor complex	0/6	2/6920	1.0	4	0	1.0	
+GO:1990533	CC	p	Dom34-Hbs1 complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0030312	CC	p	external encapsulating structure	0/6	129/6920	1.0	2	0	1.0	
+GO:0005680	CC	p	anaphase-promoting complex	0/6	16/6920	1.0	6	0	1.0	
+GO:0030135	CC	p	coated vesicle	0/6	49/6920	1.0	7	0	1.0	
+GO:0030662	CC	p	coated vesicle membrane	0/6	36/6920	1.0	6	0	1.0	
+GO:0030140	CC	p	trans-Golgi network transport vesicle	0/6	4/6920	1.0	9	0	1.0	
+GO:0005675	CC	p	transcription factor TFIIH holo complex	0/6	11/6920	1.0	9	0	1.0	
+GO:0005881	CC	p	cytoplasmic microtubule	0/6	15/6920	1.0	7	0	1.0	
+GO:0000329	CC	p	fungal-type vacuole membrane	0/6	220/6920	1.0	7	0	1.0	
+GO:0005847	CC	p	mRNA cleavage and polyadenylation specificity factor complex	0/6	16/6920	1.0	4	0	1.0	
+GO:0072517	CC	p	host cell viral assembly compartment	0/6	1/6920	1.0	7	0	1.0	
+GO:0008287	CC	p	protein serine/threonine phosphatase complex	0/6	27/6920	1.0	4	0	1.0	
+GO:0005667	CC	p	transcription regulator complex	0/6	104/6920	1.0	2	0	1.0	
+GO:0030127	CC	p	COPII vesicle coat	0/6	8/6920	1.0	5	0	1.0	
+GO:0005681	CC	p	spliceosomal complex	0/6	99/6920	1.0	3	0	1.0	
+GO:1990860	CC	p	Pho85-Pho80 CDK-cyclin complex	0/6	2/6920	1.0	8	0	1.0	
+GO:1990528	CC	p	Rvs161p-Rvs167p complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0097648	CC	p	G protein-coupled receptor complex	0/6	1/6920	1.0	5	0	1.0	
+GO:0031515	CC	p	tRNA (m1A) methyltransferase complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0038201	CC	p	TOR complex	0/6	10/6920	1.0	3	0	1.0	
+GO:0043601	CC	p	nuclear replisome	0/6	1/6920	1.0	4	0	1.0	
+GO:0001401	CC	p	SAM complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0005643	CC	p	nuclear pore	0/6	48/6920	1.0	3	0	1.0	
+GO:0070603	CC	p	SWI/SNF superfamily-type complex	0/6	61/6920	1.0	4	0	1.0	
+GO:0034399	CC	p	nuclear periphery	0/6	57/6920	1.0	2	0	1.0	
+GO:0070692	CC	p	CTDK-1 complex	0/6	3/6920	1.0	10	0	1.0	
+GO:0000943	CC	p	retrotransposon nucleocapsid	0/6	91/6920	1.0	2	0	1.0	
+GO:0000136	CC	p	mannan polymerase complex	0/6	7/6920	1.0	5	0	1.0	
+GO:0098827	CC	p	endoplasmic reticulum subcompartment	0/6	32/6920	1.0	3	0	1.0	
+GO:0044614	CC	p	nuclear pore cytoplasmic filaments	0/6	11/6920	1.0	3	0	1.0	
+GO:0120025	CC	p	plasma membrane bounded cell projection	0/6	8/6920	1.0	3	0	1.0	
+GO:0034424	CC	p	Vps55/Vps68 complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0098791	CC	p	Golgi apparatus subcompartment	0/6	69/6920	1.0	3	0	1.0	
+GO:0030870	CC	p	Mre11 complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0120114	CC	p	Sm-like protein family complex	0/6	67/6920	1.0	2	0	1.0	
+GO:0000322	CC	p	storage vacuole	0/6	276/6920	1.0	6	0	1.0	
+GO:1904949	CC	p	ATPase complex	0/6	71/6920	1.0	3	0	1.0	
+GO:0031901	CC	p	early endosome membrane	0/6	9/6920	1.0	7	0	1.0	
+GO:0030869	CC	p	RENT complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0016363	CC	p	nuclear matrix	0/6	3/6920	1.0	2	0	1.0	
+GO:0035649	CC	p	Nrd1 complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0005730	CC	p	nucleolus	0/6	365/6920	1.0	5	0	1.0	
+GO:0000779	CC	p	condensed chromosome, centromeric region	0/6	12/6920	1.0	4	0	1.0	
+GO:0033588	CC	p	elongator holoenzyme complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0045259	CC	p	proton-transporting ATP synthase complex	0/6	18/6920	1.0	6	0	1.0	
+GO:0016592	CC	p	mediator complex	0/6	27/6920	1.0	3	0	1.0	
+GO:1990304	CC	p	MUB1-RAD6-UBR2 ubiquitin ligase complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0005741	CC	p	mitochondrial outer membrane	0/6	110/6920	1.0	6	0	1.0	
+GO:0036452	CC	p	ESCRT complex	0/6	15/6920	1.0	2	0	1.0	
+GO:0097587	CC	p	MutLgamma complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0005774	CC	p	vacuolar membrane	0/6	290/6920	1.0	5	0	1.0	
+GO:0005875	CC	p	microtubule associated complex	0/6	21/6920	1.0	2	0	1.0	
+GO:0005838	CC	p	proteasome regulatory particle	0/6	4/6920	1.0	2	0	1.0	
+GO:0071162	CC	p	CMG complex	0/6	11/6920	1.0	4	0	1.0	
+GO:0106094	CC	p	nuclear membrane microtubule tethering complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0005802	CC	p	trans-Golgi network	0/6	45/6920	1.0	4	0	1.0	
+GO:0030120	CC	p	vesicle coat	0/6	23/6920	1.0	4	0	1.0	
+GO:0036437	CC	p	Isw1b complex	0/6	3/6920	1.0	7	0	1.0	
+GO:0008541	CC	p	proteasome regulatory particle, lid subcomplex	0/6	10/6920	1.0	2	0	1.0	
+GO:0032302	CC	p	MutSbeta complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0012505	CC	p	endomembrane system	0/6	50/6920	1.0	2	0	1.0	
+GO:0033061	CC	p	DNA recombinase mediator complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0008303	CC	p	caspase complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0098562	CC	p	cytoplasmic side of membrane	0/6	22/6920	1.0	3	0	1.0	
+GO:0101031	CC	p	protein folding chaperone complex	0/6	10/6920	1.0	3	0	1.0	
+GO:0000139	CC	p	Golgi membrane	0/6	146/6920	1.0	5	0	1.0	
+GO:0098798	CC	p	mitochondrial protein-containing complex	0/6	156/6920	1.0	2	0	1.0	
+GO:0005618	CC	p	cell wall	0/6	128/6920	1.0	3	0	1.0	
+GO:0032865	CC	p	ERMES complex	0/6	5/6920	1.0	4	0	1.0	
+GO:0061493	CC	p	central plaque of mitotic spindle pole body	0/6	1/6920	1.0	3	0	1.0	
+GO:0005835	CC	p	fatty acid synthase complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0070056	CC	p	prospore membrane leading edge	0/6	5/6920	1.0	3	0	1.0	
+GO:0055029	CC	p	nuclear DNA-directed RNA polymerase complex	0/6	36/6920	1.0	7	0	1.0	
+GO:0043541	CC	p	UDP-N-acetylglucosamine transferase complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0070382	CC	p	exocytic vesicle	0/6	1/6920	1.0	8	0	1.0	
+GO:0071540	CC	p	eukaryotic translation initiation factor 3 complex, eIF3e	0/6	1/6920	1.0	3	0	1.0	
+GO:0005971	CC	p	ribonucleoside-diphosphate reductase complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0005822	CC	p	inner plaque of spindle pole body	0/6	4/6920	1.0	2	0	1.0	
+GO:0000313	CC	p	organellar ribosome	0/6	9/6920	1.0	6	0	1.0	
+GO:0005619	CC	p	ascospore wall	0/6	11/6920	1.0	5	0	1.0	
+GO:0005736	CC	p	RNA polymerase I complex	0/6	14/6920	1.0	8	0	1.0	
+GO:0031105	CC	p	septin complex	0/6	8/6920	1.0	2	0	1.0	
+GO:0030139	CC	p	endocytic vesicle	0/6	7/6920	1.0	7	0	1.0	
+GO:0042597	CC	p	periplasmic space	0/6	12/6920	1.0	2	0	1.0	
+GO:1990578	CC	p	perinuclear endoplasmic reticulum membrane	0/6	1/6920	1.0	4	0	1.0	
+GO:0098797	CC	p	plasma membrane protein complex	0/6	15/6920	1.0	3	0	1.0	
+GO:0071020	CC	p	post-spliceosomal complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0030479	CC	p	actin cortical patch	0/6	61/6920	1.0	3	0	1.0	
+GO:0033180	CC	p	proton-transporting V-type ATPase, V1 domain	0/6	7/6920	1.0	4	0	1.0	
+GO:0030665	CC	p	clathrin-coated vesicle membrane	0/6	10/6920	1.0	7	0	1.0	
+GO:1990391	CC	p	DNA repair complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0031982	CC	p	vesicle	0/6	284/6920	1.0	4	0	1.0	
+GO:0000793	CC	p	condensed chromosome	0/6	31/6920	1.0	6	0	1.0	
+GO:0000151	CC	p	ubiquitin ligase complex	0/6	96/6920	1.0	4	0	1.0	
+GO:1990524	CC	p	INA complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0140595	CC	p	MIM complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0065010	CC	p	extracellular membrane-bounded organelle	0/6	2/6920	1.0	4	0	1.0	
+GO:1990423	CC	p	RZZ complex	0/6	1/6920	1.0	2	0	1.0	
+GO:0045025	CC	p	mitochondrial degradosome	0/6	2/6920	1.0	4	0	1.0	
+GO:0120231	CC	p	DNA recombinase auxiliary factor complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0016471	CC	p	vacuolar proton-transporting V-type ATPase complex	0/6	5/6920	1.0	7	0	1.0	
+GO:0099081	CC	p	supramolecular polymer	0/6	82/6920	1.0	3	0	1.0	
+GO:0000785	CC	p	chromatin	0/6	148/6920	1.0	2	0	1.0	
+GO:0098745	CC	p	RNA decapping complex	0/6	3/6920	1.0	2	0	1.0	
+GO:1990072	CC	p	TRAPPIII protein complex	0/6	7/6920	1.0	4	0	1.0	
+GO:0035101	CC	p	FACT complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0005729	CC	p	2-micrometer circle DNA	0/6	2/6920	1.0	4	0	1.0	
+GO:0005784	CC	p	Sec61 translocon complex	0/6	5/6920	1.0	4	0	1.0	
+GO:0005785	CC	p	signal recognition particle receptor complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0044284	CC	p	mitochondrial crista junction	0/6	7/6920	1.0	3	0	1.0	
+GO:0031967	CC	p	organelle envelope	0/6	95/6920	1.0	2	0	1.0	
+GO:0017059	CC	p	serine palmitoyltransferase complex	0/6	6/6920	1.0	5	0	1.0	
+GO:0005826	CC	p	actomyosin contractile ring	0/6	21/6920	1.0	3	0	1.0	
+GO:0031417	CC	p	NatC complex	0/6	3/6920	1.0	7	0	1.0	
+GO:0017102	CC	p	methionyl glutamyl tRNA synthetase complex	0/6	3/6920	1.0	2	0	1.0	
+GO:1990877	CC	p	FNIP-folliculin RagC/D GAP	0/6	2/6920	1.0	4	0	1.0	
+GO:0000932	CC	p	P-body	0/6	60/6920	1.0	7	0	1.0	
+GO:0030427	CC	p	site of polarized growth	0/6	282/6920	1.0	2	0	1.0	
+GO:0032993	CC	p	protein-DNA complex	0/6	53/6920	1.0	2	0	1.0	
+GO:0031966	CC	p	mitochondrial membrane	0/6	422/6920	1.0	4	0	1.0	
+GO:0089716	CC	p	Pip2-Oaf1 complex	0/6	2/6920	1.0	4	0	1.0	
+GO:1990467	CC	p	NuA3a histone acetyltransferase complex	0/6	5/6920	1.0	9	0	1.0	
+GO:0030134	CC	p	COPII-coated ER to Golgi transport vesicle	0/6	27/6920	1.0	8	0	1.0	
+GO:0005782	CC	p	peroxisomal matrix	0/6	20/6920	1.0	6	0	1.0	
+GO:0046695	CC	p	SLIK (SAGA-like) complex	0/6	16/6920	1.0	8	0	1.0	
+GO:0030123	CC	p	AP-3 adaptor complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0030897	CC	p	HOPS complex	0/6	7/6920	1.0	3	0	1.0	
+GO:0000931	CC	p	gamma-tubulin ring complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0005674	CC	p	transcription factor TFIIF complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0071010	CC	p	prespliceosome	0/6	31/6920	1.0	4	0	1.0	
+GO:0042272	CC	p	nuclear RNA export factor complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0097002	CC	p	mitochondrial inner boundary membrane	0/6	4/6920	1.0	2	0	1.0	
+GO:0010494	CC	p	cytoplasmic stress granule	0/6	101/6920	1.0	7	0	1.0	
+GO:0071821	CC	p	FANCM-MHF complex	0/6	2/6920	1.0	3	0	1.0	
+GO:1990204	CC	p	oxidoreductase complex	0/6	29/6920	1.0	3	0	1.0	
+GO:0005846	CC	p	nuclear cap binding complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0005635	CC	p	nuclear envelope	0/6	82/6920	1.0	3	0	1.0	
+GO:0055087	CC	p	Ski complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0071007	CC	p	U2-type catalytic step 2 spliceosome	0/6	11/6920	1.0	5	0	1.0	
+GO:0061576	CC	p	acyl-CoA ceramide synthase complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0032777	CC	p	piccolo histone acetyltransferase complex	0/6	6/6920	1.0	2	0	1.0	
+GO:0045273	CC	p	respiratory chain complex II (succinate dehydrogenase)	0/6	7/6920	1.0	4	0	1.0	
+GO:1990071	CC	p	TRAPPII protein complex	0/6	10/6920	1.0	4	0	1.0	
+GO:1902773	CC	p	GTPase activator complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0005682	CC	p	U5 snRNP	0/6	17/6920	1.0	5	0	1.0	
+GO:0034973	CC	p	Sid2-Mob1 complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0030688	CC	p	preribosome, small subunit precursor	0/6	12/6920	1.0	4	0	1.0	
+GO:0005794	CC	p	Golgi apparatus	0/6	265/6920	1.0	5	0	1.0	
+GO:0048471	CC	p	perinuclear region of cytoplasm	0/6	23/6920	1.0	2	0	1.0	
+GO:0035838	CC	p	growing cell tip	0/6	3/6920	1.0	4	0	1.0	
+GO:0033202	CC	p	DNA helicase complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0071958	CC	p	new mitotic spindle pole body	0/6	1/6920	1.0	5	0	1.0	
+GO:1902911	CC	p	protein kinase complex	0/6	64/6920	1.0	5	0	1.0	
+GO:0098852	CC	p	lytic vacuole membrane	0/6	220/6920	1.0	6	0	1.0	
+GO:0000131	CC	p	incipient cellular bud site	0/6	69/6920	1.0	3	0	1.0	
+GO:1990526	CC	p	Ste12p-Dig1p-Dig2p complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0097582	CC	p	dolichyl-phosphate-mannose-protein mannosyltransferase Pmt1p-Pmt2p dimer complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0034066	CC	p	Ric1-Rgp1 guanyl-nucleotide exchange factor complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0061645	CC	p	endocytic patch	0/6	63/6920	1.0	2	0	1.0	
+GO:0030681	CC	p	multimeric ribonuclease P complex	0/6	11/6920	1.0	6	0	1.0	
+GO:0098576	CC	p	lumenal side of membrane	0/6	7/6920	1.0	3	0	1.0	
+GO:0005664	CC	p	nuclear origin of replication recognition complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0000153	CC	p	cytoplasmic ubiquitin ligase complex	0/6	11/6920	1.0	5	0	1.0	
+GO:0000159	CC	p	protein phosphatase type 2A complex	0/6	8/6920	1.0	5	0	1.0	
+GO:0005798	CC	p	Golgi-associated vesicle	0/6	13/6920	1.0	7	0	1.0	
+GO:0005874	CC	p	microtubule	0/6	69/6920	1.0	6	0	1.0	
+GO:0016469	CC	p	proton-transporting two-sector ATPase complex	0/6	23/6920	1.0	3	0	1.0	
+GO:0098548	CC	p	cytoplasmic side of Golgi membrane	0/6	1/6920	1.0	4	0	1.0	
+GO:0030904	CC	p	retromer complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0097550	CC	p	transcription preinitiation complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0005871	CC	p	kinesin complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0005935	CC	p	cellular bud neck	0/6	201/6920	1.0	3	0	1.0	
+GO:0090576	CC	p	RNA polymerase III transcription regulator complex	0/6	9/6920	1.0	3	0	1.0	
+GO:0071014	CC	p	post-mRNA release spliceosomal complex	0/6	9/6920	1.0	4	0	1.0	
+GO:0031511	CC	p	Mis6-Sim4 complex	0/6	1/6920	1.0	2	0	1.0	
+GO:0031080	CC	p	nuclear pore outer ring	0/6	7/6920	1.0	3	0	1.0	
+GO:0001400	CC	p	mating projection base	0/6	6/6920	1.0	2	0	1.0	
+GO:0017177	CC	p	glucosidase II complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0031253	CC	p	cell projection membrane	0/6	2/6920	1.0	4	0	1.0	
+GO:0106083	CC	p	nuclear membrane protein complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0034663	CC	p	endoplasmic reticulum chaperone complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0030659	CC	p	cytoplasmic vesicle membrane	0/6	149/6920	1.0	5	0	1.0	
+GO:0070211	CC	p	Snt2C complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0071942	CC	p	XPC complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0032044	CC	p	DSIF complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0090730	CC	p	Las1 complex	0/6	1/6920	1.0	6	0	1.0	
+GO:0071012	CC	p	catalytic step 1 spliceosome	0/6	13/6920	1.0	4	0	1.0	
+GO:0031082	CC	p	BLOC complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0170049	CC	p	box C/D RNP complex	0/6	53/6920	1.0	4	0	1.0	
+GO:0099512	CC	p	supramolecular fiber	0/6	82/6920	1.0	4	0	1.0	
+GO:0071008	CC	p	U2-type post-mRNA release spliceosomal complex	0/6	5/6920	1.0	5	0	1.0	
+GO:1905360	CC	p	GTPase complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0043189	CC	p	H4/H2A histone acetyltransferase complex	0/6	17/6920	1.0	8	0	1.0	
+GO:1990529	CC	p	glycosylphosphatidylinositol-mannosyltransferase I complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0019908	CC	p	nuclear cyclin-dependent protein kinase holoenzyme complex	0/6	15/6920	1.0	8	0	1.0	
+GO:0005891	CC	p	voltage-gated calcium channel complex	0/6	1/6920	1.0	7	0	1.0	
+GO:0033557	CC	p	Slx1-Slx4 complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0000346	CC	p	transcription export complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0016460	CC	p	myosin II complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0030687	CC	p	preribosome, large subunit precursor	0/6	59/6920	1.0	4	0	1.0	
+GO:0033203	CC	p	DNA helicase A complex	0/6	1/6920	1.0	4	0	1.0	
+GO:0090533	CC	p	cation-transporting ATPase complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0000837	CC	p	Doa10p ubiquitin ligase complex	0/6	7/6920	1.0	7	0	1.0	
+GO:0097047	CC	p	DNA replication termination region	0/6	1/6920	1.0	2	0	1.0	
+GO:0034270	CC	p	Cvt complex	0/6	4/6920	1.0	2	0	1.0	
+GO:0031518	CC	p	CBF3 complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0031984	CC	p	organelle subcompartment	0/6	100/6920	1.0	2	0	1.0	
+GO:0042995	CC	p	cell projection	0/6	13/6920	1.0	2	0	1.0	
+GO:0098588	CC	p	bounding membrane of organelle	0/6	635/6920	1.0	4	0	1.0	
+GO:0000936	CC	p	primary cell septum	0/6	1/6920	1.0	4	0	1.0	
+GO:0120330	CC	p	rixosome complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0000109	CC	p	nucleotide-excision repair complex	0/6	18/6920	1.0	3	0	1.0	
+GO:0005815	CC	p	microtubule organizing center	0/6	75/6920	1.0	2	0	1.0	
+GO:0099568	CC	p	cytoplasmic region	0/6	11/6920	1.0	3	0	1.0	
+GO:0110131	CC	p	Aim21-Tda2 complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0000347	CC	p	THO complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0034457	CC	p	Mpp10 complex	0/6	3/6920	1.0	3	0	1.0	
+GO:1903600	CC	p	glutaminase complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0035361	CC	p	Cul8-RING ubiquitin ligase complex	0/6	5/6920	1.0	6	0	1.0	
+GO:0034274	CC	p	Atg12-Atg5-Atg16 complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0032156	CC	p	septin cytoskeleton	0/6	31/6920	1.0	6	0	1.0	
+GO:0005621	CC	p	cellular bud scar	0/6	14/6920	1.0	2	0	1.0	
+GO:0097255	CC	p	R2TP complex	0/6	4/6920	1.0	2	0	1.0	
+GO:0033177	CC	p	proton-transporting two-sector ATPase complex, proton-transporting domain	0/6	8/6920	1.0	3	0	1.0	
+GO:0031248	CC	p	protein acetyltransferase complex	0/6	54/6920	1.0	5	0	1.0	
+GO:1902929	CC	p	plasma membrane of growing cell tip	0/6	1/6920	1.0	5	0	1.0	
+GO:0035371	CC	p	microtubule plus-end	0/6	5/6920	1.0	3	0	1.0	
+GO:0016593	CC	p	Cdc73/Paf1 complex	0/6	7/6920	1.0	4	0	1.0	
+GO:0005666	CC	p	RNA polymerase III complex	0/6	17/6920	1.0	8	0	1.0	
+GO:0005662	CC	p	DNA replication factor A complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0018995	CC	p	host cellular component	0/6	1/6920	1.0	2	0	1.0	
+GO:0071439	CC	p	clathrin complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0005789	CC	p	endoplasmic reticulum membrane	0/6	406/6920	1.0	4	0	1.0	
+GO:0120155	CC	p	MIH complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0032545	CC	p	CURI complex	0/6	7/6920	1.0	3	0	1.0	
+GO:1904511	CC	p	cytoplasmic microtubule plus-end	0/6	1/6920	1.0	4	0	1.0	
+GO:0005965	CC	p	protein farnesyltransferase complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0045298	CC	p	tubulin complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0097196	CC	p	Shu complex	0/6	4/6920	1.0	2	0	1.0	
+GO:0071563	CC	p	Myo2p-Vac17p-Vac8p transport complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0035808	CC	p	meiotic recombination initiation complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0035145	CC	p	exon-exon junction complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0015630	CC	p	microtubule cytoskeleton	0/6	14/6920	1.0	6	0	1.0	
+GO:0005780	CC	p	extrinsic component of intraperoxisomal membrane	0/6	1/6920	1.0	4	0	1.0	
+GO:0033263	CC	p	CORVET complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0070210	CC	p	Rpd3L-Expanded complex	0/6	26/6920	1.0	4	0	1.0	
+GO:0005742	CC	p	mitochondrial outer membrane translocase complex	0/6	14/6920	1.0	4	0	1.0	
+GO:0036266	CC	p	Cdc48p-Npl4p-Vms1p AAA ATPase complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0000214	CC	p	tRNA-intron endonuclease complex	0/6	4/6920	1.0	5	0	1.0	
+GO:0000794	CC	p	condensed nuclear chromosome	0/6	28/6920	1.0	7	0	1.0	
+GO:0072686	CC	p	mitotic spindle	0/6	19/6920	1.0	6	0	1.0	
+GO:0005824	CC	p	outer plaque of spindle pole body	0/6	7/6920	1.0	2	0	1.0	
+GO:0071782	CC	p	endoplasmic reticulum tubular network	0/6	32/6920	1.0	4	0	1.0	
+GO:0005869	CC	p	dynactin complex	0/6	5/6920	1.0	3	0	1.0	
+GO:1990229	CC	p	iron-sulfur cluster assembly complex	0/6	9/6920	1.0	2	0	1.0	
+GO:1990429	CC	p	peroxisomal importomer complex	0/6	11/6920	1.0	3	0	1.0	
+GO:0030008	CC	p	TRAPP complex	0/6	11/6920	1.0	3	0	1.0	
+GO:0032807	CC	p	DNA ligase IV complex	0/6	3/6920	1.0	5	0	1.0	
+GO:1990468	CC	p	NuA3b histone acetyltransferase complex	0/6	5/6920	1.0	9	0	1.0	
+GO:0016604	CC	p	nuclear body	0/6	3/6920	1.0	5	0	1.0	
+GO:0032300	CC	p	mismatch repair complex	0/6	9/6920	1.0	2	0	1.0	
+GO:0030118	CC	p	clathrin coat	0/6	7/6920	1.0	4	0	1.0	
+GO:0005686	CC	p	U2 snRNP	0/6	20/6920	1.0	5	0	1.0	
+GO:0046540	CC	p	U4/U6 x U5 tri-snRNP complex	0/6	33/6920	1.0	6	0	1.0	
+GO:0072687	CC	p	meiotic spindle	0/6	4/6920	1.0	6	0	1.0	
+GO:0031981	CC	p	nuclear lumen	0/6	8/6920	1.0	5	0	1.0	
+GO:0005795	CC	p	Golgi stack	0/6	6/6920	1.0	4	0	1.0	
+GO:0017087	CC	p	mitochondrial processing peptidase complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0030907	CC	p	MBF transcription complex	0/6	7/6920	1.0	4	0	1.0	
+GO:0030677	CC	p	ribonuclease P complex	0/6	13/6920	1.0	5	0	1.0	
+GO:0031371	CC	p	ubiquitin conjugating enzyme complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0005672	CC	p	transcription factor TFIIA complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0099503	CC	p	secretory vesicle	0/6	3/6920	1.0	7	0	1.0	
+GO:0071513	CC	p	phosphopantothenoylcysteine decarboxylase complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0034388	CC	p	Pwp2p-containing subcomplex of 90S preribosome	0/6	6/6920	1.0	3	0	1.0	
+GO:1904423	CC	p	dehydrodolichyl diphosphate synthase complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0070762	CC	p	nuclear pore transmembrane ring	0/6	3/6920	1.0	3	0	1.0	
+GO:0017053	CC	p	transcription repressor complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0140535	CC	p	intracellular protein-containing complex	0/6	410/6920	1.0	2	0	1.0	
+GO:0097586	CC	p	dolichyl-phosphate-mannose-protein mannosyltransferase Pmt4p homodimer complex	0/6	1/6920	1.0	6	0	1.0	
+GO:0031965	CC	p	nuclear membrane	0/6	94/6920	1.0	4	0	1.0	
+GO:0031389	CC	p	Rad17 RFC-like complex	0/6	5/6920	1.0	2	0	1.0	
+GO:0044695	CC	p	Dsc E3 ubiquitin ligase complex	0/6	6/6920	1.0	5	0	1.0	
+GO:0030689	CC	p	Noc complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0005787	CC	p	signal peptidase complex	0/6	4/6920	1.0	6	0	1.0	
+GO:0033186	CC	p	CAF-1 complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0048189	CC	p	Lid2 complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0035974	CC	p	meiotic spindle pole body	0/6	5/6920	1.0	4	0	1.0	
+GO:0180022	CC	p	RQC-trigger complex	0/6	1/6920	1.0	2	0	1.0	
+GO:0030133	CC	p	transport vesicle	0/6	11/6920	1.0	7	0	1.0	
+GO:0043527	CC	p	tRNA methyltransferase complex	0/6	6/6920	1.0	5	0	1.0	
+GO:0099617	CC	p	matrix side of mitochondrial inner membrane	0/6	6/6920	1.0	4	0	1.0	
+GO:0005684	CC	p	U2-type spliceosomal complex	0/6	61/6920	1.0	4	0	1.0	
+GO:0000176	CC	p	nuclear exosome (RNase complex)	0/6	12/6920	1.0	5	0	1.0	
+GO:1990964	CC	p	actin cytoskeleton-regulatory complex	0/6	3/6920	1.0	2	0	1.0	
+GO:1905286	CC	p	serine-type peptidase complex	0/6	7/6920	1.0	4	0	1.0	
+GO:0071561	CC	p	nucleus-vacuole junction	0/6	13/6920	1.0	3	0	1.0	
+GO:0043596	CC	p	nuclear replication fork	0/6	20/6920	1.0	3	0	1.0	
+GO:0042719	CC	p	mitochondrial intermembrane space protein transporter complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0031011	CC	p	Ino80 complex	0/6	16/6920	1.0	6	0	1.0	
+GO:0030684	CC	p	preribosome	0/6	163/6920	1.0	3	0	1.0	
+GO:0070772	CC	p	PAS complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0005840	CC	p	ribosome	0/6	266/6920	1.0	5	0	1.0	
+GO:0030131	CC	p	clathrin adaptor complex	0/6	10/6920	1.0	4	0	1.0	
+GO:0005882	CC	p	intermediate filament	0/6	1/6920	1.0	6	0	1.0	
+GO:1990861	CC	p	Ubp3-Bre5 deubiquitination complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0150005	CC	p	enzyme activator complex	0/6	7/6920	1.0	2	0	1.0	
+GO:0019866	CC	p	organelle inner membrane	0/6	282/6920	1.0	4	0	1.0	
+GO:0032476	CC	p	polyprenyl diphosphate synthase complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0042175	CC	p	nuclear outer membrane-endoplasmic reticulum membrane network	0/6	11/6920	1.0	3	0	1.0	
+GO:0034708	CC	p	methyltransferase complex	0/6	20/6920	1.0	4	0	1.0	
+GO:0120104	CC	p	mitotic actomyosin contractile ring, proximal layer	0/6	1/6920	1.0	2	0	1.0	
+GO:0036396	CC	p	RNA N6-methyladenosine methyltransferase complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0031461	CC	p	cullin-RING ubiquitin ligase complex	0/6	47/6920	1.0	5	0	1.0	
+GO:0033290	CC	p	eukaryotic 48S preinitiation complex	0/6	16/6920	1.0	4	0	1.0	
+GO:0071261	CC	p	Ssh1 translocon complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0005760	CC	p	gamma DNA polymerase complex	0/6	1/6920	1.0	6	0	1.0	
+GO:0019005	CC	p	SCF ubiquitin ligase complex	0/6	21/6920	1.0	6	0	1.0	
+GO:0000110	CC	p	nucleotide-excision repair factor 1 complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0030137	CC	p	COPI-coated vesicle	0/6	6/6920	1.0	8	0	1.0	
+GO:0005745	CC	p	m-AAA complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0097658	CC	p	Asi complex	0/6	3/6920	1.0	6	0	1.0	
+GO:0000333	CC	p	telomerase catalytic core complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0005801	CC	p	cis-Golgi network	0/6	17/6920	1.0	5	0	1.0	
+GO:0032045	CC	p	guanyl-nucleotide exchange factor complex	0/6	15/6920	1.0	3	0	1.0	
+GO:0000812	CC	p	Swr1 complex	0/6	15/6920	1.0	6	0	1.0	
+GO:0031207	CC	p	Sec62/Sec63 complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0098553	CC	p	lumenal side of endoplasmic reticulum membrane	0/6	1/6920	1.0	4	0	1.0	
+GO:0000172	CC	p	ribonuclease MRP complex	0/6	12/6920	1.0	5	0	1.0	
+GO:0031968	CC	p	organelle outer membrane	0/6	119/6920	1.0	5	0	1.0	
+GO:0005905	CC	p	clathrin-coated pit	0/6	10/6920	1.0	3	0	1.0	
+GO:0005960	CC	p	glycine cleavage complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0009316	CC	p	3-isopropylmalate dehydratase complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0031261	CC	p	DNA replication preinitiation complex	0/6	22/6920	1.0	3	0	1.0	
+GO:0016234	CC	p	inclusion body	0/6	1/6920	1.0	3	0	1.0	
+GO:0070274	CC	p	RES complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0008622	CC	p	epsilon DNA polymerase complex	0/6	4/6920	1.0	6	0	1.0	
+GO:0005953	CC	p	CAAX-protein geranylgeranyltransferase complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0032161	CC	p	cleavage apparatus septin structure	0/6	25/6920	1.0	2	0	1.0	
+GO:0098803	CC	p	respiratory chain complex	0/6	54/6920	1.0	2	0	1.0	
+GO:0005775	CC	p	vacuolar lumen	0/6	21/6920	1.0	5	0	1.0	
+GO:0033565	CC	p	ESCRT-0 complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0030286	CC	p	dynein complex	0/6	8/6920	1.0	3	0	1.0	
+GO:0042564	CC	p	NLS-dependent protein nuclear import complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0032432	CC	p	actin filament bundle	0/6	7/6920	1.0	2	0	1.0	
+GO:0043528	CC	p	tRNA (m2G10) methyltransferase complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0042721	CC	p	TIM22 mitochondrial import inner membrane insertion complex	0/6	6/6920	1.0	4	0	1.0	
+GO:1990904	CC	p	ribonucleoprotein complex	0/6	622/6920	1.0	2	0	1.0	
+GO:0005758	CC	p	mitochondrial intermembrane space	0/6	71/6920	1.0	6	0	1.0	
+GO:0071595	CC	p	Nem1-Spo7 phosphatase complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0030121	CC	p	AP-1 adaptor complex	0/6	4/6920	1.0	5	0	1.0	
+GO:0005763	CC	p	mitochondrial small ribosomal subunit	0/6	37/6920	1.0	6	0	1.0	
+GO:0055037	CC	p	recycling endosome	0/6	4/6920	1.0	8	0	1.0	
+GO:0009349	CC	p	riboflavin synthase complex	0/6	1/6920	1.0	4	0	1.0	
+GO:1905721	CC	p	mitotic spindle astral microtubule end	0/6	1/6920	1.0	3	0	1.0	
+GO:0071957	CC	p	old mitotic spindle pole body	0/6	1/6920	1.0	5	0	1.0	
+GO:0031431	CC	p	Dbf4-dependent protein kinase complex	0/6	2/6920	1.0	7	0	1.0	
+GO:0035861	CC	p	site of double-strand break	0/6	18/6920	1.0	3	0	1.0	
+GO:0061617	CC	p	MICOS complex	0/6	6/6920	1.0	4	0	1.0	
+GO:0032133	CC	p	chromosome passenger complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0030915	CC	p	Smc5-Smc6 complex	0/6	8/6920	1.0	5	0	1.0	
+GO:0098590	CC	p	plasma membrane region	0/6	8/6920	1.0	3	0	1.0	
+GO:0033503	CC	p	HULC complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0098857	CC	p	membrane microdomain	0/6	29/6920	1.0	3	0	1.0	
+GO:0000922	CC	p	spindle pole	0/6	26/6920	1.0	2	0	1.0	
+GO:0000148	CC	p	1,3-beta-D-glucan synthase complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0031588	CC	p	nucleotide-activated protein kinase complex	0/6	7/6920	1.0	6	0	1.0	
+GO:0070823	CC	p	HDA1 complex	0/6	3/6920	1.0	4	0	1.0	
+GO:1990143	CC	p	CoA-synthesizing protein complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0030136	CC	p	clathrin-coated vesicle	0/6	18/6920	1.0	8	0	1.0	
+GO:0030896	CC	p	checkpoint clamp complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0072546	CC	p	EMC complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0030660	CC	p	Golgi-associated vesicle membrane	0/6	15/6920	1.0	6	0	1.0	
+GO:1990228	CC	p	sulfurtransferase complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0110078	CC	p	TTT Hsp90 cochaperone complex	0/6	7/6920	1.0	2	0	1.0	
+GO:0043233	CC	p	organelle lumen	0/6	281/6920	1.0	3	0	1.0	
+GO:0031974	CC	p	membrane-enclosed lumen	0/6	281/6920	1.0	2	0	1.0	
+GO:0070319	CC	p	Golgi to plasma membrane transport vesicle	0/6	1/6920	1.0	9	0	1.0	
+GO:0000439	CC	p	transcription factor TFIIH core complex	0/6	7/6920	1.0	4	0	1.0	
+GO:0000307	CC	p	cyclin-dependent protein kinase holoenzyme complex	0/6	40/6920	1.0	7	0	1.0	
+GO:0031499	CC	p	TRAMP complex	0/6	6/6920	1.0	3	0	1.0	
+GO:0008540	CC	p	proteasome regulatory particle, base subcomplex	0/6	10/6920	1.0	2	0	1.0	
+GO:0033768	CC	p	SUMO-targeted ubiquitin ligase complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0000786	CC	p	nucleosome	0/6	12/6920	1.0	3	0	1.0	
+GO:0034098	CC	p	VCP-NPL4-UFD1 AAA ATPase complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0032299	CC	p	ribonuclease H2 complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0035859	CC	p	Seh1-associated complex	0/6	8/6920	1.0	2	0	1.0	
+GO:1902716	CC	p	cell cortex of growing cell tip	0/6	2/6920	1.0	6	0	1.0	
+GO:0005823	CC	p	central plaque of spindle pole body	0/6	6/6920	1.0	2	0	1.0	
+GO:0045242	CC	p	isocitrate dehydrogenase complex (NAD+)	0/6	2/6920	1.0	4	0	1.0	
+GO:0000808	CC	p	origin recognition complex	0/6	6/6920	1.0	2	0	1.0	
+GO:0070761	CC	p	pre-snoRNP complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0070985	CC	p	transcription factor TFIIK complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0000813	CC	p	ESCRT I complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0005640	CC	p	nuclear outer membrane	0/6	10/6920	1.0	6	0	1.0	
+GO:0098796	CC	p	membrane protein complex	0/6	336/6920	1.0	2	0	1.0	
+GO:0030956	CC	p	glutamyl-tRNA(Gln) amidotransferase complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0005771	CC	p	multivesicular body	0/6	10/6920	1.0	9	0	1.0	
+GO:0000802	CC	p	transverse filament	0/6	1/6920	1.0	2	0	1.0	
+GO:0005811	CC	p	lipid droplet	0/6	68/6920	1.0	5	0	1.0	
+GO:0031970	CC	p	organelle envelope lumen	0/6	76/6920	1.0	5	0	1.0	
+GO:1990531	CC	p	phospholipid-translocating ATPase complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0044391	CC	p	ribosomal subunit	0/6	242/6920	1.0	3	0	1.0	
+GO:0005856	CC	p	cytoskeleton	0/6	188/6920	1.0	5	0	1.0	
+GO:0033101	CC	p	cellular bud membrane	0/6	9/6920	1.0	2	0	1.0	
+GO:0005768	CC	p	endosome	0/6	175/6920	1.0	7	0	1.0	
+GO:1990351	CC	p	transporter complex	0/6	82/6920	1.0	2	0	1.0	
+GO:0044796	CC	p	DNA polymerase processivity factor complex	0/6	1/6920	1.0	3	0	1.0	
+GO:0019774	CC	p	proteasome core complex, beta-subunit complex	0/6	7/6920	1.0	2	0	1.0	
+GO:0005937	CC	p	mating projection	0/6	8/6920	1.0	4	0	1.0	
+GO:0008180	CC	p	COP9 signalosome	0/6	7/6920	1.0	3	0	1.0	
+GO:0120095	CC	p	vacuole-isolation membrane contact site	0/6	9/6920	1.0	3	0	1.0	
+GO:0032806	CC	p	carboxy-terminal domain protein kinase complex	0/6	15/6920	1.0	7	0	1.0	
+GO:1902494	CC	p	catalytic complex	0/6	851/6920	1.0	2	0	1.0	
+GO:0000796	CC	p	condensin complex	0/6	6/6920	1.0	2	0	1.0	
+GO:0070775	CC	p	H3 histone acetyltransferase complex	0/6	6/6920	1.0	7	0	1.0	
+GO:0015934	CC	p	large ribosomal subunit	0/6	143/6920	1.0	4	0	1.0	
+GO:0045009	CC	p	chitosome	0/6	2/6920	1.0	7	0	1.0	
+GO:0032173	CC	p	septin collar	0/6	8/6920	1.0	7	0	1.0	
+GO:0005669	CC	p	transcription factor TFIID complex	0/6	16/6920	1.0	4	0	1.0	
+GO:0030428	CC	p	cell septum	0/6	10/6920	1.0	2	0	1.0	
+GO:0043235	CC	p	receptor complex	0/6	1/6920	1.0	2	0	1.0	
+GO:0039714	CC	p	cytoplasmic viral factory	0/6	1/6920	1.0	6	0	1.0	
+GO:0005732	CC	p	sno(s)RNA-containing ribonucleoprotein complex	0/6	107/6920	1.0	3	0	1.0	
+GO:0000177	CC	p	cytoplasmic exosome (RNase complex)	0/6	10/6920	1.0	5	0	1.0	
+GO:0032982	CC	p	myosin filament	0/6	2/6920	1.0	5	0	1.0	
+GO:0005786	CC	p	signal recognition particle, endoplasmic reticulum targeting	0/6	7/6920	1.0	4	0	1.0	
+GO:0000930	CC	p	gamma-tubulin complex	0/6	3/6920	1.0	2	0	1.0	
+GO:0002144	CC	p	cytosolic tRNA wobble base thiouridylase complex	0/6	1/6920	1.0	5	0	1.0	
+GO:0098802	CC	p	plasma membrane signaling receptor complex	0/6	1/6920	1.0	4	0	1.0	
+GO:0070867	CC	p	mating projection tip membrane	0/6	4/6920	1.0	5	0	1.0	
+GO:0034967	CC	p	Set3 complex	0/6	8/6920	1.0	4	0	1.0	
+GO:0042729	CC	p	DASH complex	0/6	10/6920	1.0	3	0	1.0	
+GO:0031391	CC	p	Elg1 RFC-like complex	0/6	5/6920	1.0	3	0	1.0	
+GO:1990816	CC	p	vacuole-mitochondrion membrane contact site	0/6	15/6920	1.0	3	0	1.0	
+GO:0044233	CC	p	mitochondria-associated endoplasmic reticulum membrane contact site	0/6	13/6920	1.0	3	0	1.0	
+GO:0034993	CC	p	meiotic nuclear membrane microtubule tethering complex	0/6	4/6920	1.0	5	0	1.0	
+GO:0000145	CC	p	exocyst	0/6	9/6920	1.0	3	0	1.0	
+GO:0090734	CC	p	site of DNA damage	0/6	18/6920	1.0	2	0	1.0	
+GO:0033573	CC	p	high-affinity iron permease complex	0/6	3/6920	1.0	5	0	1.0	
+GO:0005740	CC	p	mitochondrial envelope	0/6	13/6920	1.0	3	0	1.0	
+GO:0070938	CC	p	contractile ring	0/6	21/6920	1.0	2	0	1.0	
+GO:1903293	CC	p	phosphatase complex	0/6	27/6920	1.0	3	0	1.0	
+GO:0008623	CC	p	CHRAC	0/6	5/6920	1.0	6	0	1.0	
+GO:0030863	CC	p	cortical cytoskeleton	0/6	8/6920	1.0	6	0	1.0	
+GO:0030874	CC	p	nucleolar chromatin	0/6	4/6920	1.0	3	0	1.0	
+GO:0031985	CC	p	Golgi cisterna	0/6	19/6920	1.0	4	0	1.0	
+GO:0030663	CC	p	COPI-coated vesicle membrane	0/6	14/6920	1.0	7	0	1.0	
+GO:0045252	CC	p	oxoglutarate dehydrogenase complex	0/6	5/6920	1.0	5	0	1.0	
+GO:0031416	CC	p	NatB complex	0/6	2/6920	1.0	7	0	1.0	
+GO:0005839	CC	p	proteasome core complex	0/6	15/6920	1.0	3	0	1.0	
+GO:0030014	CC	p	CCR4-NOT complex	0/6	5/6920	1.0	3	0	1.0	
+GO:0140224	CC	p	SLAC complex	0/6	2/6920	1.0	2	0	1.0	
+GO:0012507	CC	p	ER to Golgi transport vesicle membrane	0/6	16/6920	1.0	7	0	1.0	
+GO:0030122	CC	p	AP-2 adaptor complex	0/6	4/6920	1.0	5	0	1.0	
+GO:0044612	CC	p	nuclear pore linkers	0/6	2/6920	1.0	3	0	1.0	
+GO:0042579	CC	p	microbody	0/6	145/6920	1.0	5	0	1.0	
+GO:0099128	CC	p	mitochondrial [2Fe-2S] assembly complex	0/6	1/6920	1.0	6	0	1.0	
+GO:0043529	CC	p	GET complex	0/6	3/6920	1.0	3	0	1.0	
+GO:0010009	CC	p	cytoplasmic side of endosome membrane	0/6	3/6920	1.0	4	0	1.0	
+GO:0005950	CC	p	anthranilate synthase complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0008250	CC	p	oligosaccharyltransferase complex	0/6	9/6920	1.0	4	0	1.0	
+GO:0031097	CC	p	medial cortex	0/6	2/6920	1.0	5	0	1.0	
+GO:0170069	CC	p	geranylgeranyltransferase-III complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0005793	CC	p	endoplasmic reticulum-Golgi intermediate compartment	0/6	17/6920	1.0	5	0	1.0	
+GO:0009295	CC	p	nucleoid	0/6	25/6920	1.0	2	0	1.0	
+GO:0009277	CC	p	fungal-type cell wall	0/6	127/6920	1.0	4	0	1.0	
+GO:0140168	CC	p	nuclear ribonucleoprotein granule	0/6	2/6920	1.0	6	0	1.0	
+GO:0032116	CC	p	SMC loading complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0000935	CC	p	division septum	0/6	4/6920	1.0	3	0	1.0	
+GO:0034702	CC	p	monoatomic ion channel complex	0/6	22/6920	1.0	4	0	1.0	
+GO:0016602	CC	p	CCAAT-binding factor complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0000127	CC	p	transcription factor TFIIIC complex	0/6	6/6920	1.0	4	0	1.0	
+GO:0042720	CC	p	mitochondrial inner membrane peptidase complex	0/6	3/6920	1.0	6	0	1.0	
+GO:1905369	CC	p	endopeptidase complex	0/6	54/6920	1.0	4	0	1.0	
+GO:0097526	CC	p	spliceosomal tri-snRNP complex	0/6	33/6920	1.0	5	0	1.0	
+GO:1990303	CC	p	UBR1-RAD6 ubiquitin ligase complex	0/6	2/6920	1.0	4	0	1.0	
+GO:1990023	CC	p	mitotic spindle midzone	0/6	4/6920	1.0	3	0	1.0	
+GO:0033176	CC	p	proton-transporting V-type ATPase complex	0/6	5/6920	1.0	6	0	1.0	
+GO:0000315	CC	p	organellar large ribosomal subunit	0/6	48/6920	1.0	5	0	1.0	
+GO:0005797	CC	p	Golgi medial cisterna	0/6	7/6920	1.0	5	0	1.0	
+GO:0036436	CC	p	Isw1a complex	0/6	2/6920	1.0	7	0	1.0	
+GO:0034271	CC	p	phosphatidylinositol 3-kinase complex, class III, type I	0/6	5/6920	1.0	7	0	1.0	
+GO:0000126	CC	p	transcription factor TFIIIB complex	0/6	3/6920	1.0	4	0	1.0	
+GO:0000112	CC	p	nucleotide-excision repair factor 3 complex	0/6	7/6920	1.0	4	0	1.0	
+GO:0005673	CC	p	transcription factor TFIIE complex	0/6	2/6920	1.0	4	0	1.0	
+GO:0031932	CC	p	TORC2 complex	0/6	7/6920	1.0	4	0	1.0	
+GO:0032174	CC	p	cellular bud neck septin collar	0/6	8/6920	1.0	8	0	1.0	
+GO:0005688	CC	p	U6 snRNP	0/6	10/6920	1.0	5	0	1.0	
+GO:0030061	CC	p	mitochondrial crista	0/6	4/6920	1.0	2	0	1.0	
+GO:0031428	CC	p	box C/D methylation guide snoRNP complex	0/6	53/6920	1.0	5	0	1.0	
+GO:0016282	CC	p	eukaryotic 43S preinitiation complex	0/6	15/6920	1.0	4	0	1.0	
+GO:0005832	CC	p	chaperonin-containing T-complex	0/6	8/6920	1.0	4	0	1.0	
+GO:1903754	CC	p	cortical microtubule plus-end	0/6	1/6920	1.0	5	0	1.0	
+GO:0048476	CC	p	Holliday junction resolvase complex	0/6	2/6920	1.0	5	0	1.0	
+GO:0099513	CC	p	polymeric cytoskeletal fiber	0/6	78/6920	1.0	5	0	1.0	
+GO:0061908	CC	p	phagophore	0/6	7/6920	1.0	2	0	1.0	
+GO:0000791	CC	p	euchromatin	0/6	9/6920	1.0	3	0	1.0	
+GO:1990316	CC	p	Atg1/ULK1 kinase complex	0/6	6/6920	1.0	7	0	1.0	
+GO:0030015	CC	p	CCR4-NOT core complex	0/6	10/6920	1.0	3	0	1.0	
+GO:0000323	CC	p	lytic vacuole	0/6	277/6920	1.0	6	0	1.0	
+GO:0097708	CC	p	intracellular vesicle	0/6	279/6920	1.0	5	0	1.0	
+GO:0036464	CC	p	cytoplasmic ribonucleoprotein granule	0/6	141/6920	1.0	6	0	1.0	
+GO:0005813	CC	p	centrosome	0/6	1/6920	1.0	3	0	1.0	
+GO:0000838	CC	p	Hrd1p ubiquitin ligase ERAD-M complex	0/6	2/6920	1.0	8	0	1.0	
+GO:0140534	CC	p	endoplasmic reticulum protein-containing complex	0/6	79/6920	1.0	2	0	1.0	
+GO:0034657	CC	p	GID complex	0/6	8/6920	1.0	5	0	1.0	
+GO:0045121	CC	p	membrane raft	0/6	29/6920	1.0	4	0	1.0	
+GO:0034515	CC	p	proteasome storage granule	0/6	21/6920	1.0	5	0	1.0	
+GO:0090575	CC	p	RNA polymerase II transcription regulator complex	0/6	74/6920	1.0	3	0	1.0	
+GO:0005834	CC	p	heterotrimeric G-protein complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0005743	CC	p	mitochondrial inner membrane	0/6	262/6920	1.0	5	0	1.0	
+GO:0031160	CC	p	spore wall	0/6	13/6920	1.0	4	0	1.0	
+GO:0000444	CC	p	MIS12/MIND type complex	0/6	4/6920	1.0	3	0	1.0	
+GO:0005880	CC	p	nuclear microtubule	0/6	5/6920	1.0	7	0	1.0	
+GO:0097583	CC	p	dolichyl-phosphate-mannose-protein mannosyltransferase Pmt1p-Pmt3p dimer complex	0/6	2/6920	1.0	6	0	1.0	
+GO:0000138	CC	p	Golgi trans cisterna	0/6	7/6920	1.0	5	0	1.0	
+GO:0043614	CC	p	multi-eIF complex	0/6	10/6920	1.0	3	0	1.0	
+GO:0080008	CC	p	Cul4-RING E3 ubiquitin ligase complex	0/6	1/6920	1.0	6	0	1.0	
+GO:1990070	CC	p	TRAPPI protein complex	0/6	6/6920	1.0	4	0	1.0	
+GO:0035032	CC	p	phosphatidylinositol 3-kinase complex, class III	0/6	6/6920	1.0	6	0	1.0	
+GO:0005968	CC	p	Rab-protein geranylgeranyltransferase complex	0/6	4/6920	1.0	4	0	1.0	
+GO:0032126	CC	p	eisosome	0/6	16/6920	1.0	2	0	1.0	
+GO:0031510	CC	p	SUMO activating enzyme complex	0/6	2/6920	1.0	3	0	1.0	
+GO:0071944	CC	p	cell periphery	0/6	291/6920	1.0	2	0	1.0	
+GO:0033551	CC	p	monopolin complex	0/6	4/6920	1.0	2	0	1.0	
+GO:0033116	CC	p	endoplasmic reticulum-Golgi intermediate compartment membrane	0/6	2/6920	1.0	5	0	1.0	
+GO:0032040	CC	p	small-subunit processome	0/6	60/6920	1.0	4	0	1.0	
+GO:0005849	CC	p	mRNA cleavage factor complex	0/6	20/6920	1.0	3	0	1.0	
