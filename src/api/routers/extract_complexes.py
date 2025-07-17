@@ -78,7 +78,7 @@ async def extract_complexes(
     # Load PPI data
     ppi_name = embeddings_weights.filename.rsplit('.', 1)[0]
     ppi_list, ppi_dict = load_ppi_data(data_path, species, ppi_name + "_1", ppi_name)
-    print("ppi_dict",ppi_dict)
+    # print("ppi_dict",ppi_dict)
     
     if ppi_list is None or ppi_dict is None:
         raise HTTPException(status_code=500, detail="Could not load PPI data") 
@@ -241,9 +241,9 @@ async def extract_complexes(
         "model_source": "custom_weights" if dnn_weights is not None else "pretrained",
         "output_file": output_filename,
         "metrics": {
-            "F1_score": F1_score,
+            "F1_score": f1,
             "Precision": precision,
-            "Recall": Recall,
+            "Recall": recall,
             "Sensitivity": sn,
             "Accuracy": acc,
         }

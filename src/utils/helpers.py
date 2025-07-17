@@ -400,6 +400,7 @@ def subgraph_expansion(subgraph,PPI_dict,model_score,threshold_alpha):
         scores = model_score([expanded_subgraph + [v] for v in adjacent])
         max_index = np.argmax(scores)
 
+        
         if scores[max_index] > threshold_alpha:
             expanded_subgraph.append(adjacent[max_index])
         else:
@@ -425,7 +426,7 @@ def calculate_overlap_ratio(subgraph_i, subgraph_k):
 
     return overlap_ratio
 
-def subgraph_filtration(candidate_subgraphs,scores,threshold_beta):
+def subgraph_filtration(candidate_subgraphs,scores,threshold_beta, model_score=None):
     
     sorted_complexes = sorted(zip(candidate_subgraphs, scores), key=lambda x: x[1], reverse=True)
     
@@ -440,7 +441,7 @@ def subgraph_filtration(candidate_subgraphs,scores,threshold_beta):
                 overlapping_ratio = calculate_overlap_ratio(candidate_subgraph_i, candidate_subgraph_k)
                 if overlapping_ratio >= threshold_beta:
                     candidate_subgraph = list(set(candidate_subgraph_i).union(set(candidate_subgraph_k)))
-                    if model_score([candidate_subgraph])[0] > score_i:
+                    if model_score and model_score([candidate_subgraph])[0] > score_i:
                         filtered_PC_i.append(candidate_subgraph)
                     else:
                         sorted_complexes[k] = [],[]

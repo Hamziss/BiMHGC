@@ -207,7 +207,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
        
         Train_PC = [PC[i] for i in train_index]
         Train_label1 = torch.ones(len(Train_PC), 1, dtype=torch.float)
-        Train_PC_negative = negative_on_distribution(Train_PC, list(PPI_dict.keys()), 5)
+        Train_PC_negative = negative_on_distribution(Train_PC, list(PPI_dict.keys()), 10)
         Train_label0 = torch.zeros(len(Train_PC_negative), 1, dtype=torch.float)
         Train_labels = torch.cat((Train_label1, Train_label0), dim=0)
         Train_PC_PN = Train_PC + Train_PC_negative
@@ -217,7 +217,7 @@ def HGC_DNN(PC, protein_dict, PPI_dict, X, save_predictions=True, dataset_info=N
         Train_labels = Train_labels[all_idx]    
         Test_PC = [PC[i] for i in test_index]
         Test_label1 = torch.ones(len(Test_PC), 1, dtype=torch.float)
-        Test_PC_negative = negative_on_distribution(Test_PC, list(PPI_dict.keys()), 5)
+        Test_PC_negative = negative_on_distribution(Test_PC, list(PPI_dict.keys()), 10)
         Test_label0 = torch.zeros(len(Test_PC_negative), 1, dtype=torch.float)
         Test_labels = torch.cat((Test_label1, Test_label0), dim=0)
         Test_PC_PN = Test_PC + Test_PC_negative
