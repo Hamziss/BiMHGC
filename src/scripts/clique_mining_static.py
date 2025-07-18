@@ -13,6 +13,15 @@ from utils.loaders import load_custom_dnn_model, load_ppi_data
 from utils.helpers import subgraph_expansion, subgraph_filtration, convert_ppi, Nested_list_dup
 from evaluation.metrics import calculate_overlap_scores
 
+# GO enrichment imports
+try:
+    from goatools.obo_parser import GODag
+    from goatools.goea.go_enrichment_ns import GOEnrichmentStudyNS
+    GO_AVAILABLE = True
+except ImportError:
+    print("Warning: goatools not available. GO enrichment analysis will be skipped.")
+    GO_AVAILABLE = False
+
 # Global variables for model and embeddings
 model = None
 X = None
@@ -164,6 +173,207 @@ def find_maximal_cliques(ppi_list):
     
     return filtered_cliques
 
+def parse_gaf(gaf_path):
+    """Parse GAF to build associations keyed by gene symbol for CC, BP, and MF."""
+    assoc_cc = {}
+    assoc_bp = {}
+    assoc_mf = {}
+    syn_map = {}
+    
+    if not os.path.exists(gaf_path):
+        print(f"Warning: GAF file not found at {gaf_path}")
+        return assoc_cc, assoc_bp, assoc_mf, syn_map
+        
+    with open(gaf_path) as gf:
+        for ln in gf:
+            if ln.startswith('!'):
+                continue
+            parts = ln.rstrip("\n").split("\t")
+            if len(parts) < 13:
+                continue
+            symbol = parts[2]
+            go_id  = parts[4]
+            aspect = parts[8]  # C, P or F
+            # collect per-ontology associations
+            if aspect == 'C':
+                assoc_cc.setdefault(symbol, set()).add(go_id)
+            elif aspect == 'P':
+                assoc_bp.setdefault(symbol, set()).add(go_id)
+            elif aspect == 'F':
+                assoc_mf.setdefault(symbol, set()).add(go_id)
+            # build synonym map: include symbol and listed synonyms
+            syn_names = [symbol]
+            syn_field = parts[10] if len(parts) > 10 else ''
+            if syn_field:
+                syn_names.extend(syn_field.split('|'))
+            for n in syn_names:
+                syn_map[n] = symbol
+    return assoc_cc, assoc_bp, assoc_mf, syn_map
+
+def setup_go_enrichment():
+    """Setup GO enrichment analysis tools."""
+    if not GO_AVAILABLE:
+        return None, None, None, None, None
+        
+    try:
+        # Paths to GO files
+        obo_path = "./data/Saccharomyces_cerevisiae/GO/go-basic.obo"
+        gaf_path = "./data/Saccharomyces_cerevisiae/GO/sgd.gaf"
+        
+        print("Setting up GO enrichment analysis...")
+        
+        # Load GO ontology
+        print(f"Loading GO ontology from {obo_path}")
+        godag = GODag(obo_path)
+        
+        # Parse GAF
+        print(f"Parsing GAF from {gaf_path}")
+        assoc_cc, assoc_bp, assoc_mf, syn_map = parse_gaf(gaf_path)
+        
+        # Determine background universe
+        bg = sorted(set(assoc_cc) | set(assoc_bp) | set(assoc_mf))
+        print(f"Using background of {len(bg)} genes from GAF.")
+        
+        # Initialize GO enrichment study
+        ns2assoc = {"CC": assoc_cc, "BP": assoc_bp, "MF": assoc_mf}
+        goea = GOEnrichmentStudyNS(
+            pop=bg,
+            ns2assoc=ns2assoc,
+            godag=godag,
+            propagate_counts=True,
+            alpha=0.05,
+            methods=["fdr_bh"]
+        )
+        
+        print("GO enrichment analysis setup complete!")
+        return goea, syn_map, assoc_cc, assoc_bp, assoc_mf
+        
+    except Exception as e:
+        print(f"Error setting up GO enrichment: {e}")
+        return None, None, None, None, None
+
+def analyze_complex_go_enrichment(complex_proteins, id_to_name, goea, syn_map):
+    """Analyze GO enrichment for a single complex."""
+    if not GO_AVAILABLE or goea is None:
+        return {
+            'CC_enriched_terms': 0,
+            'CC_min_pvalue': 1.0,
+            'CC_significant': False,
+            'BP_enriched_terms': 0,
+            'BP_min_pvalue': 1.0,
+            'BP_significant': False,
+            'MF_enriched_terms': 0,
+            'MF_min_pvalue': 1.0,
+            'MF_significant': False,
+            'total_enriched_terms': 0,
+            'overall_min_pvalue': 1.0,
+            'overall_significant': False
+        }
+    
+    try:
+        # Convert protein IDs to gene names
+        gene_names = []
+        for protein_id in complex_proteins:
+            if protein_id in id_to_name:
+                gene_names.append(id_to_name[protein_id])
+        
+        if not gene_names:
+            return {
+                'CC_enriched_terms': 0,
+                'CC_min_pvalue': 1.0,
+                'CC_significant': False,
+                'BP_enriched_terms': 0,
+                'BP_min_pvalue': 1.0,
+                'BP_significant': False,
+                'MF_enriched_terms': 0,
+                'MF_min_pvalue': 1.0,
+                'MF_significant': False,
+                'total_enriched_terms': 0,
+                'overall_min_pvalue': 1.0,
+                'overall_significant': False
+            }
+        
+        # Map gene names using synonym map
+        mapped_genes = []
+        for gene in gene_names:
+            if gene in syn_map:
+                mapped_genes.append(syn_map[gene])
+            else:
+                mapped_genes.append(gene)
+        
+        mapped_genes = list(set(mapped_genes))  # Remove duplicates
+        
+        if not mapped_genes:
+            return {
+                'CC_enriched_terms': 0,
+                'CC_min_pvalue': 1.0,
+                'CC_significant': False,
+                'BP_enriched_terms': 0,
+                'BP_min_pvalue': 1.0,
+                'BP_significant': False,
+                'MF_enriched_terms': 0,
+                'MF_min_pvalue': 1.0,
+                'MF_significant': False,
+                'total_enriched_terms': 0,
+                'overall_min_pvalue': 1.0,
+                'overall_significant': False
+            }
+        
+        # Analyze enrichment for each namespace
+        results = {}
+        total_enriched = 0
+        min_pvalue_overall = 1.0
+        
+        for ns in ['CC', 'BP', 'MF']:
+            try:
+                enrichment_results = goea.ns2objgoea[ns].run_study(mapped_genes)
+                
+                # Count enriched terms (p_fdr_bh <= 0.05)
+                enriched_terms = [r for r in enrichment_results if hasattr(r, 'p_fdr_bh') and r.p_fdr_bh <= 0.05]
+                num_enriched = len(enriched_terms)
+                
+                # Find minimum p-value
+                min_pvalue = 1.0
+                if enrichment_results:
+                    min_pvalue = min([r.p_fdr_bh for r in enrichment_results if hasattr(r, 'p_fdr_bh')])
+                
+                # Update overall stats
+                total_enriched += num_enriched
+                min_pvalue_overall = min(min_pvalue_overall, min_pvalue)
+                
+                results[f'{ns}_enriched_terms'] = num_enriched
+                results[f'{ns}_min_pvalue'] = min_pvalue
+                results[f'{ns}_significant'] = min_pvalue <= 0.05
+                
+            except Exception as e:
+                print(f"Error in {ns} enrichment analysis: {e}")
+                results[f'{ns}_enriched_terms'] = 0
+                results[f'{ns}_min_pvalue'] = 1.0
+                results[f'{ns}_significant'] = False
+        
+        results['total_enriched_terms'] = total_enriched
+        results['overall_min_pvalue'] = min_pvalue_overall
+        results['overall_significant'] = min_pvalue_overall <= 0.05
+        
+        return results
+        
+    except Exception as e:
+        print(f"Error in GO enrichment analysis: {e}")
+        return {
+            'CC_enriched_terms': 0,
+            'CC_min_pvalue': 1.0,
+            'CC_significant': False,
+            'BP_enriched_terms': 0,
+            'BP_min_pvalue': 1.0,
+            'BP_significant': False,
+            'MF_enriched_terms': 0,
+            'MF_min_pvalue': 1.0,
+            'MF_significant': False,
+            'total_enriched_terms': 0,
+            'overall_min_pvalue': 1.0,
+            'overall_significant': False
+        }
+
 def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_threshold=0.8, output_dir="./data/results/predicted_complexes"):
     """
     Main clique mining algorithm for protein complex prediction.
@@ -179,6 +389,10 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
     
     # Step 1: Load model and embeddings
     load_model_and_embeddings()
+    
+    # Step 1.5: Setup GO enrichment analysis
+    print("\nStep 1.5: Setting up GO enrichment analysis...")
+    goea, syn_map, assoc_cc, assoc_bp, assoc_mf = setup_go_enrichment()
     
     # Step 2: Load PPI network
     ppi_list, ppi_dict = load_ppi_network()
@@ -264,6 +478,17 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
+    # Step 10.1: Perform GO enrichment analysis for each complex
+    print("Performing GO enrichment analysis for complexes...")
+    go_enrichment_data = []
+    
+    for i, complex_proteins in enumerate(high_score_complexes):
+        if i % 10 == 0 and i > 0:
+            print(f"  Analyzed GO enrichment for {i}/{len(high_score_complexes)} complexes")
+        
+        go_results = analyze_complex_go_enrichment(complex_proteins, id_to_name, goea, syn_map)
+        go_enrichment_data.append(go_results)
+    
     # Save as CSV (only high-scoring complexes)
     csv_output_file = os.path.join(output_dir, f"clique_mined_complexes_filtered_{timestamp}.csv")
     
@@ -281,14 +506,32 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
         # Add overlap score if available
         overlap_score = overlap_scores[i] if i < len(overlap_scores) else 0.0
         
-        csv_data.append({
+        # Get GO enrichment data
+        go_data = go_enrichment_data[i] if i < len(go_enrichment_data) else {}
+        
+        csv_row = {
             'Complex_ID': f"Complex_{i+1}",
             'Size': len(complex_proteins),
             'Score': round(score, 4),
             'Overlap_Score': overlap_score,
             'Protein_Names': ';'.join(protein_names),
-            'Protein_IDs': ';'.join(map(str, complex_proteins))
-        })
+            'Protein_IDs': ';'.join(map(str, complex_proteins)),
+            # GO enrichment columns
+            'CC_Enriched_Terms': go_data.get('CC_enriched_terms', 0),
+            'CC_Min_Pvalue': round(go_data.get('CC_min_pvalue', 1.0), 6),
+            'CC_Significant': go_data.get('CC_significant', False),
+            'BP_Enriched_Terms': go_data.get('BP_enriched_terms', 0),
+            'BP_Min_Pvalue': round(go_data.get('BP_min_pvalue', 1.0), 6),
+            'BP_Significant': go_data.get('BP_significant', False),
+            'MF_Enriched_Terms': go_data.get('MF_enriched_terms', 0),
+            'MF_Min_Pvalue': round(go_data.get('MF_min_pvalue', 1.0), 6),
+            'MF_Significant': go_data.get('MF_significant', False),
+            'Total_Enriched_Terms': go_data.get('total_enriched_terms', 0),
+            'Overall_Min_Pvalue': round(go_data.get('overall_min_pvalue', 1.0), 6),
+            'Overall_Significant': go_data.get('overall_significant', False)
+        }
+        
+        csv_data.append(csv_row)
     
     # Create DataFrame and save
     df = pd.DataFrame(csv_data)
@@ -320,6 +563,7 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
     for i, (complex_proteins, score) in enumerate(zip(high_score_complexes, high_scores)):
         complex_id = f"Complex_{i+1}"
         overlap_score = overlap_scores[i] if i < len(overlap_scores) else 0.0
+        go_data = go_enrichment_data[i] if i < len(go_enrichment_data) else {}
         
         for protein_id in complex_proteins:
             protein_name = id_to_name.get(protein_id, f"UNKNOWN_{protein_id}")
@@ -329,7 +573,20 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
                 'Complex_Score': round(score, 4),
                 'Complex_Overlap_Score': overlap_score,
                 'Protein_ID': protein_id,
-                'Protein_Name': protein_name
+                'Protein_Name': protein_name,
+                # GO enrichment columns (same for all proteins in the complex)
+                'CC_Enriched_Terms': go_data.get('CC_enriched_terms', 0),
+                'CC_Min_Pvalue': round(go_data.get('CC_min_pvalue', 1.0), 6),
+                'CC_Significant': go_data.get('CC_significant', False),
+                'BP_Enriched_Terms': go_data.get('BP_enriched_terms', 0),
+                'BP_Min_Pvalue': round(go_data.get('BP_min_pvalue', 1.0), 6),
+                'BP_Significant': go_data.get('BP_significant', False),
+                'MF_Enriched_Terms': go_data.get('MF_enriched_terms', 0),
+                'MF_Min_Pvalue': round(go_data.get('MF_min_pvalue', 1.0), 6),
+                'MF_Significant': go_data.get('MF_significant', False),
+                'Total_Enriched_Terms': go_data.get('total_enriched_terms', 0),
+                'Overall_Min_Pvalue': round(go_data.get('overall_min_pvalue', 1.0), 6),
+                'Overall_Significant': go_data.get('overall_significant', False)
             })
     
     detailed_df = pd.DataFrame(detailed_data)
@@ -358,6 +615,27 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
             print(f"Average Overlap Score: {np.mean(overlap_scores):.4f}")
             print(f"Max Overlap Score: {max(overlap_scores):.4f}")
             print(f"Min Overlap Score: {min(overlap_scores):.4f}")
+        
+        # GO enrichment statistics
+        if go_enrichment_data and GO_AVAILABLE:
+            print(f"\nGO Enrichment Statistics:")
+            significant_complexes = sum(1 for go_data in go_enrichment_data if go_data.get('overall_significant', False))
+            print(f"Complexes with significant GO enrichment: {significant_complexes}/{len(go_enrichment_data)} ({100*significant_complexes/len(go_enrichment_data):.1f}%)")
+            
+            # CC statistics
+            cc_significant = sum(1 for go_data in go_enrichment_data if go_data.get('CC_significant', False))
+            cc_avg_terms = np.mean([go_data.get('CC_enriched_terms', 0) for go_data in go_enrichment_data])
+            print(f"CC: {cc_significant} significant complexes, avg {cc_avg_terms:.1f} enriched terms")
+            
+            # BP statistics  
+            bp_significant = sum(1 for go_data in go_enrichment_data if go_data.get('BP_significant', False))
+            bp_avg_terms = np.mean([go_data.get('BP_enriched_terms', 0) for go_data in go_enrichment_data])
+            print(f"BP: {bp_significant} significant complexes, avg {bp_avg_terms:.1f} enriched terms")
+            
+            # MF statistics
+            mf_significant = sum(1 for go_data in go_enrichment_data if go_data.get('MF_significant', False))
+            mf_avg_terms = np.mean([go_data.get('MF_enriched_terms', 0) for go_data in go_enrichment_data])
+            print(f"MF: {mf_significant} significant complexes, avg {mf_avg_terms:.1f} enriched terms")
     else:
         print("No complexes passed the score threshold!")
     
