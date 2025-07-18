@@ -68,8 +68,8 @@ def load_model_and_embeddings():
     """Load the DNN model and embeddings."""
     global model, X
     
-    # Load embeddings
-    embeddings_path = "./data/results/embeddings/Embeddings_collins_GASA.pt"
+    # Load embeddings - now using collins_CSSA to match the static network
+    embeddings_path = "./data/results/embeddings/collins_CSSA.pt"
     print(f"Loading embeddings from {embeddings_path}...")
     X = torch.load(embeddings_path)
     print(f"Loaded embeddings with shape: {X.shape}")
@@ -82,15 +82,66 @@ def load_model_and_embeddings():
     model.eval()
     print("Model loaded successfully!")
 
-def load_ppi_network():
-    """Load PPI network for Collins dataset."""
-    data_path = "./data"
-    species = "Saccharomyces_cerevisiae"
-    dataset_name = "collins_GASA"
-    ppi_path = "collins_GASA_1"  # Using first time point
-
-    ppi_list, ppi_dict = load_ppi_data(data_path, species, ppi_path, dataset_name)
+def load_static_ppi_network(dataset_name="collins_CSSA"):
+    """Load static PPI network from collins.tsv and map to numeric IDs."""
+    print("Loading static PPI network from collins.tsv...")
+    
+    # Load the static PPI network
+    static_ppi_path = "./data/Saccharomyces_cerevisiae/static_PPINs/collins.tsv"
+    
+    try:
+        ppi_df = pd.read_csv(static_ppi_path, sep="\t", header=None, names=["protein1", "protein2"])
+        print(f"Loaded {len(ppi_df)} interactions from static PPI network")
+    except Exception as e:
+        print(f"Error loading static PPI network: {e}")
+        return None, None
+    
+    # Load protein mapping to convert gene names to numeric IDs
+    mapping_path = f"./data/Saccharomyces_cerevisiae/Gene_Entry_ID_list/{dataset_name}/Protein_list.csv"
+    
+    try:
+        mapping_df = pd.read_csv(mapping_path, sep='\t', header=None, names=['gene_name', 'protein_id', 'index'])
+        gene_to_id = dict(zip(mapping_df['gene_name'], mapping_df['index']))
+        print(f"Loaded protein mapping for {len(gene_to_id)} proteins")
+    except Exception as e:
+        print(f"Error loading protein mapping: {e}")
+        return None, None
+    
+    # Map gene names to numeric IDs
+    mapped_interactions = []
+    unmapped_count = 0
+    
+    for _, row in ppi_df.iterrows():
+        protein1 = row['protein1']
+        protein2 = row['protein2']
+        
+        if protein1 in gene_to_id and protein2 in gene_to_id:
+            id1 = gene_to_id[protein1]
+            id2 = gene_to_id[protein2]
+            # Add both directions for undirected graph
+            mapped_interactions.append([id1, id2])
+            mapped_interactions.append([id2, id1])
+        else:
+            unmapped_count += 1
+    
+    print(f"Successfully mapped {len(mapped_interactions)//2} interactions")
+    print(f"Failed to map {unmapped_count} interactions (proteins not in mapping file)")
+    
+    if not mapped_interactions:
+        print("No interactions could be mapped!")
+        return None, None
+    
+    # Convert to the expected format
+    ppi_list = Nested_list_dup(mapped_interactions)
+    ppi_dict = convert_ppi(ppi_list)
+    
+    print(f"Final PPI network: {len(ppi_dict)} proteins with {sum(len(interactions) for interactions in ppi_dict.values())} total interactions")
+    
     return ppi_list, ppi_dict
+
+def load_ppi_network():
+    """Load PPI network for Collins dataset - now using static network."""
+    return load_static_ppi_network("collins_CSSA")
 
 def find_maximal_cliques(ppi_list):
     """Find maximal cliques in the PPI network using NetworkX."""
@@ -186,7 +237,7 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
     
     # Step 8: Load reference complexes and calculate overlap scores
     print(f"\nStep 8: Loading reference complexes and calculating overlap scores...")
-    reference_complexes = load_reference_complexes("collins_GASA")
+    reference_complexes = load_reference_complexes("collins_CSSA")
 
     if len(high_score_complexes) > 0 and len(reference_complexes) > 0:
         print(f"Calculating overlap scores for {len(high_score_complexes)} predicted complexes against {len(reference_complexes)} reference complexes...")
@@ -315,7 +366,7 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
 if __name__ == "__main__":
     # Run the clique mining algorithm with default parameters
     complexes, scores, overlap_scores = clique_mining_algorithm(
-        threshold_alpha=0.95,      # Expansion threshold
+        threshold_alpha=0.9,      # Expansion threshold
         threshold_beta=0.8,       # Filtration overlap threshold
         score_threshold=0.9,      # Minimum score threshold for final output
     )

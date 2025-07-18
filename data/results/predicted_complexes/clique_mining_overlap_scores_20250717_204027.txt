@@ -1,0 +1,11 @@
+Clique Mining Overlap Scores Summary
+===================================
+Timestamp: 2025-07-17 20:40:27.995690
+Score Threshold: 0.9
+Number of Predicted Complexes: 195
+Number of Reference Complexes: 388
+
+Overlap Score Statistics:
+Average Overlap Score: 0.3131
+Max Overlap Score: 1.0000
+Min Overlap Score: 0.0000
