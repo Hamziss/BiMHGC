@@ -531,7 +531,6 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
             'Score': round(score, 4),
             'Overlap_Score': overlap_score,
             'Protein_Names': ';'.join(protein_names),
-            'Protein_IDs': ';'.join(map(str, complex_proteins)),
             # GO enrichment columns - use scientific notation for very small p-values
             'CC_Enriched_Terms': go_data.get('CC_enriched_terms', 0),
             'CC_Min_Pvalue': f"{go_data.get('CC_min_pvalue', 1.0):.2e}" if go_data.get('CC_min_pvalue', 1.0) < 0.001 else round(go_data.get('CC_min_pvalue', 1.0), 6),
@@ -571,44 +570,6 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
             f.write(f"Min Overlap Score: {min(overlap_scores):.4f}\n")
         
         print(f"Overlap scores summary saved to: {overlap_file}")
-    
-    # Also save a detailed version with one protein per row for easier analysis
-    detailed_csv_file = os.path.join(output_dir, f"clique_mined_complexes_detailed_filtered_{timestamp}.csv")
-    detailed_data = []
-    
-    for i, (complex_proteins, score) in enumerate(zip(high_score_complexes, high_scores)):
-        complex_id = f"Complex_{i+1}"
-        overlap_score = overlap_scores[i] if i < len(overlap_scores) else 0.0
-        go_data = go_enrichment_data[i] if i < len(go_enrichment_data) else {}
-        
-        for protein_id in complex_proteins:
-            protein_name = id_to_name.get(protein_id, f"UNKNOWN_{protein_id}")
-            detailed_data.append({
-                'Complex_ID': complex_id,
-                'Complex_Size': len(complex_proteins),
-                'Complex_Score': round(score, 4),
-                'Complex_Overlap_Score': overlap_score,
-                'Protein_ID': protein_id,
-                'Protein_Name': protein_name,
-                # GO enrichment columns (same for all proteins in the complex) - use scientific notation for very small p-values
-                'CC_Enriched_Terms': go_data.get('CC_enriched_terms', 0),
-                'CC_Min_Pvalue': f"{go_data.get('CC_min_pvalue', 1.0):.2e}" if go_data.get('CC_min_pvalue', 1.0) < 0.001 else round(go_data.get('CC_min_pvalue', 1.0), 6),
-                'CC_Significant': go_data.get('CC_significant', False),
-                'BP_Enriched_Terms': go_data.get('BP_enriched_terms', 0),
-                'BP_Min_Pvalue': f"{go_data.get('BP_min_pvalue', 1.0):.2e}" if go_data.get('BP_min_pvalue', 1.0) < 0.001 else round(go_data.get('BP_min_pvalue', 1.0), 6),
-                'BP_Significant': go_data.get('BP_significant', False),
-                'MF_Enriched_Terms': go_data.get('MF_enriched_terms', 0),
-                'MF_Min_Pvalue': f"{go_data.get('MF_min_pvalue', 1.0):.2e}" if go_data.get('MF_min_pvalue', 1.0) < 0.001 else round(go_data.get('MF_min_pvalue', 1.0), 6),
-                'MF_Significant': go_data.get('MF_significant', False),
-                'Total_Enriched_Terms': go_data.get('total_enriched_terms', 0),
-                'Overall_Min_Pvalue': f"{go_data.get('overall_min_pvalue', 1.0):.2e}" if go_data.get('overall_min_pvalue', 1.0) < 0.001 else round(go_data.get('overall_min_pvalue', 1.0), 6),
-                'Overall_Significant': go_data.get('overall_significant', False)
-            })
-    
-    detailed_df = pd.DataFrame(detailed_data)
-    detailed_df.to_csv(detailed_csv_file, index=False)
-    
-    print(f"Detailed filtered CSV results saved to: {detailed_csv_file}")
     
     # Step 11: Print summary statistics
     print("\n" + "=" * 60)
