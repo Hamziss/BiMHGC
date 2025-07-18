@@ -252,7 +252,7 @@ def setup_go_enrichment():
         print(f"Error setting up GO enrichment: {e}")
         return None, None, None, None, None
 
-def analyze_complex_go_enrichment(complex_proteins, id_to_name, goea, syn_map):
+def analyze_complex_go_enrichment(complex_proteins, id_to_name, goea, syn_map, debug=False):
     """Analyze GO enrichment for a single complex."""
     if not GO_AVAILABLE or goea is None:
         return {
@@ -332,10 +332,21 @@ def analyze_complex_go_enrichment(complex_proteins, id_to_name, goea, syn_map):
                 enriched_terms = [r for r in enrichment_results if hasattr(r, 'p_fdr_bh') and r.p_fdr_bh <= 0.05]
                 num_enriched = len(enriched_terms)
                 
-                # Find minimum p-value
+                # Find minimum p-value with proper handling of very small values
                 min_pvalue = 1.0
                 if enrichment_results:
-                    min_pvalue = min([r.p_fdr_bh for r in enrichment_results if hasattr(r, 'p_fdr_bh')])
+                    # Get all valid p-values
+                    valid_pvalues = [r.p_fdr_bh for r in enrichment_results if hasattr(r, 'p_fdr_bh') and r.p_fdr_bh is not None]
+                    if valid_pvalues:
+                        min_pvalue = min(valid_pvalues)
+                        # Handle extremely small p-values (set minimum threshold to avoid 0.0)
+                        if min_pvalue <= 0.0:
+                            min_pvalue = 1e-10  # Set to a very small but non-zero value
+                            if debug:
+                                print(f"  Warning: {ns} had p-value <= 0.0, set to 1e-10")
+                        elif min_pvalue < 1e-10:
+                            if debug:
+                                print(f"  {ns} very small p-value: {min_pvalue}, keeping as is")
                 
                 # Update overall stats
                 total_enriched += num_enriched
@@ -345,8 +356,12 @@ def analyze_complex_go_enrichment(complex_proteins, id_to_name, goea, syn_map):
                 results[f'{ns}_min_pvalue'] = min_pvalue
                 results[f'{ns}_significant'] = min_pvalue <= 0.05
                 
+                if debug and num_enriched > 0:
+                    print(f"  {ns}: {num_enriched} enriched terms, min p-value: {min_pvalue:.2e}")
+                
             except Exception as e:
-                print(f"Error in {ns} enrichment analysis: {e}")
+                if debug:
+                    print(f"Error in {ns} enrichment analysis: {e}")
                 results[f'{ns}_enriched_terms'] = 0
                 results[f'{ns}_min_pvalue'] = 1.0
                 results[f'{ns}_significant'] = False
@@ -358,7 +373,8 @@ def analyze_complex_go_enrichment(complex_proteins, id_to_name, goea, syn_map):
         return results
         
     except Exception as e:
-        print(f"Error in GO enrichment analysis: {e}")
+        if debug:
+            print(f"Error in GO enrichment analysis: {e}")
         return {
             'CC_enriched_terms': 0,
             'CC_min_pvalue': 1.0,
@@ -516,18 +532,18 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
             'Overlap_Score': overlap_score,
             'Protein_Names': ';'.join(protein_names),
             'Protein_IDs': ';'.join(map(str, complex_proteins)),
-            # GO enrichment columns
+            # GO enrichment columns - use scientific notation for very small p-values
             'CC_Enriched_Terms': go_data.get('CC_enriched_terms', 0),
-            'CC_Min_Pvalue': round(go_data.get('CC_min_pvalue', 1.0), 6),
+            'CC_Min_Pvalue': f"{go_data.get('CC_min_pvalue', 1.0):.2e}" if go_data.get('CC_min_pvalue', 1.0) < 0.001 else round(go_data.get('CC_min_pvalue', 1.0), 6),
             'CC_Significant': go_data.get('CC_significant', False),
             'BP_Enriched_Terms': go_data.get('BP_enriched_terms', 0),
-            'BP_Min_Pvalue': round(go_data.get('BP_min_pvalue', 1.0), 6),
+            'BP_Min_Pvalue': f"{go_data.get('BP_min_pvalue', 1.0):.2e}" if go_data.get('BP_min_pvalue', 1.0) < 0.001 else round(go_data.get('BP_min_pvalue', 1.0), 6),
             'BP_Significant': go_data.get('BP_significant', False),
             'MF_Enriched_Terms': go_data.get('MF_enriched_terms', 0),
-            'MF_Min_Pvalue': round(go_data.get('MF_min_pvalue', 1.0), 6),
+            'MF_Min_Pvalue': f"{go_data.get('MF_min_pvalue', 1.0):.2e}" if go_data.get('MF_min_pvalue', 1.0) < 0.001 else round(go_data.get('MF_min_pvalue', 1.0), 6),
             'MF_Significant': go_data.get('MF_significant', False),
             'Total_Enriched_Terms': go_data.get('total_enriched_terms', 0),
-            'Overall_Min_Pvalue': round(go_data.get('overall_min_pvalue', 1.0), 6),
+            'Overall_Min_Pvalue': f"{go_data.get('overall_min_pvalue', 1.0):.2e}" if go_data.get('overall_min_pvalue', 1.0) < 0.001 else round(go_data.get('overall_min_pvalue', 1.0), 6),
             'Overall_Significant': go_data.get('overall_significant', False)
         }
         
@@ -574,18 +590,18 @@ def clique_mining_algorithm(threshold_alpha=0.5, threshold_beta=0.8, score_thres
                 'Complex_Overlap_Score': overlap_score,
                 'Protein_ID': protein_id,
                 'Protein_Name': protein_name,
-                # GO enrichment columns (same for all proteins in the complex)
+                # GO enrichment columns (same for all proteins in the complex) - use scientific notation for very small p-values
                 'CC_Enriched_Terms': go_data.get('CC_enriched_terms', 0),
-                'CC_Min_Pvalue': round(go_data.get('CC_min_pvalue', 1.0), 6),
+                'CC_Min_Pvalue': f"{go_data.get('CC_min_pvalue', 1.0):.2e}" if go_data.get('CC_min_pvalue', 1.0) < 0.001 else round(go_data.get('CC_min_pvalue', 1.0), 6),
                 'CC_Significant': go_data.get('CC_significant', False),
                 'BP_Enriched_Terms': go_data.get('BP_enriched_terms', 0),
-                'BP_Min_Pvalue': round(go_data.get('BP_min_pvalue', 1.0), 6),
+                'BP_Min_Pvalue': f"{go_data.get('BP_min_pvalue', 1.0):.2e}" if go_data.get('BP_min_pvalue', 1.0) < 0.001 else round(go_data.get('BP_min_pvalue', 1.0), 6),
                 'BP_Significant': go_data.get('BP_significant', False),
                 'MF_Enriched_Terms': go_data.get('MF_enriched_terms', 0),
-                'MF_Min_Pvalue': round(go_data.get('MF_min_pvalue', 1.0), 6),
+                'MF_Min_Pvalue': f"{go_data.get('MF_min_pvalue', 1.0):.2e}" if go_data.get('MF_min_pvalue', 1.0) < 0.001 else round(go_data.get('MF_min_pvalue', 1.0), 6),
                 'MF_Significant': go_data.get('MF_significant', False),
                 'Total_Enriched_Terms': go_data.get('total_enriched_terms', 0),
-                'Overall_Min_Pvalue': round(go_data.get('overall_min_pvalue', 1.0), 6),
+                'Overall_Min_Pvalue': f"{go_data.get('overall_min_pvalue', 1.0):.2e}" if go_data.get('overall_min_pvalue', 1.0) < 0.001 else round(go_data.get('overall_min_pvalue', 1.0), 6),
                 'Overall_Significant': go_data.get('overall_significant', False)
             })
     
